@@ -36,7 +36,7 @@ module.exports = {
       "m-lg": "1.563rem",
       "m-xl": "1.953rem",
       "m-2xl": "2.441rem",
-      "m-3xl": "3.052rem",
+      "m-3xl": "2.75rem",
 
       // Tablet tekst størrelse
       "t-xs": "0.875rem",
