@@ -82,7 +82,7 @@ class Login extends HTMLElement {
           <div class="modal-dialog">
             <div class="loginmodal-container">
               <h1>Login</h1><br>
-              <p>This is a school project</p>
+              <p>This is a school project for the multimedia designer education at KEA.</p>
               <p>The password is <code>kea</code></p>
               <form>
                 <input type="password" name="pass" placeholder="Password">
