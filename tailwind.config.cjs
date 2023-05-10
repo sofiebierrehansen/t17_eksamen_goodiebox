@@ -3,24 +3,25 @@ module.exports = {
   content: ["./src/**/*.{html,vue,js,ts,jsx,tsx}"],
   theme: {
     colors: {
-       "eggshell-100": "#FFFFF8",
-       "eggshell-200": "#FFFEEC",
-       "stone-100": "#E1E1E1",
-       "stone-200": "#A5A5A5",
-       "stone-300": "#4B4B4B",
-       "stone-400": "#141414",
-       "lime-100": "#F8FED8",
-       "lime-200": "#EAFC88",
-       "lime-300": "#D2F707",
-       "lavender-100": "#E3E0FF",
-       "lavender-200": "#BDB4FF",
-       "lavender-300": "#7462FF",
-       "peachy-100": "#FFE8D7",
-       "peachy-200": "#FFB985",
-       "peachy-300": "#FF8F3B",
-       "bubblegum-100": "#F6DCFB",
-       "bubblegum-200": "#EDB5F7",
-       "bubblegum-300": "#D54CEC",
+      "eggshell-50": "#FFFFFF",
+      "eggshell-100": "#FFFFF8",
+      "eggshell-200": "#FFFEEC",
+      "stone-100": "#E1E1E1",
+      "stone-200": "#A5A5A5",
+      "stone-300": "#4B4B4B",
+      "stone-400": "#141414",
+      "lime-100": "#F8FED8",
+      "lime-200": "#EAFC88",
+      "lime-300": "#D2F707",
+      "lavender-100": "#E3E0FF",
+      "lavender-200": "#BDB4FF",
+      "lavender-300": "#7462FF",
+      "peachy-100": "#FFE8D7",
+      "peachy-200": "#FFB985",
+      "peachy-300": "#FF8F3B",
+      "bubblegum-100": "#F6DCFB",
+      "bubblegum-200": "#EDB5F7",
+      "bubblegum-300": "#D54CEC",
     },
 
     fontFamily: {
@@ -28,7 +29,7 @@ module.exports = {
       poppins: "'poppins', sans-serif",
     },
 
-    fontSize: { 
+    fontSize: {
       // Mobil tekst størrelse
       "m-xs": "0.8rem",
       "m-sm": "1rem",
@@ -59,5 +60,9 @@ module.exports = {
 
     extend: {},
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui"), require("@tailwindcss/forms")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("daisyui"),
+    require("@tailwindcss/forms"),
+  ],
 };

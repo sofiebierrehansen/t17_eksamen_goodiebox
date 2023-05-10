@@ -7,7 +7,7 @@
     <meta name="robots" content="noindex" />
     <title>Goodiebox medlemsunivers</title>
   </head>
-  <body>
+  <body class="bg-eggshell-100 font-poppins text-stone-400">
     <!--------Skip to content--------------->
     <a
       class="absolute top-32 -left-full font-poppins transition-transform focus:left-8 focus:outline-none focus:outline-bubblegum-300"
@@ -18,95 +18,145 @@
     <header>
       <!-- BURGER MENU -->
       <nav
-      class="z-40 sticky top-0 w-screen px-5 py-2  bg-eggshell-200 md:top-0 md:w-full"
-    >
-      <div class="flex items-center lg:hidden">
-        <a class="mr-auto" href="index.html">
-          <img
-            src="/images/goodieboxlogo.svg"
-            alt="goodiebox logo"
-            class=""
-        /></a>
-        <div
-          id="menuknap"
-          class="z-20 font-poppins text-center text-m-2xl"
-        >☰
-        </div>
-      </div>
-      <ul
-        id="topnav1"
-        class=" top-16 z-10 w-auto font-poppins leading-10 text-m-sm text-stone-400 lg:hidden"
+        class="sticky top-0 z-40 w-screen bg-eggshell-200 px-5 py-2 md:top-0 md:w-full"
       >
-        <li class="text-right pr-5">
-          <div class="dropdown-end dropdown-bottom dropdown ">
-            <label class="flex hover:text-lavender-300 hover:cursor-pointer" tabindex="0"
-              >Hej Sofie
-              <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20">
-                <path
-                  fill="#353535"
-                  d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"
-                /></svg
-            ></label>
-            <ul
-              tabindex="0"
-              class="dropdown-content text-right w-96 bg-eggshell-200 pr-5 rounded-lg  "
+        <div class="flex items-center lg:hidden">
+          <a class="mr-auto" href="index.html">
+            <img src="/images/goodieboxlogo.svg" alt="goodiebox logo"
+          /></a>
+          <div id="menuknap" class="z-20 text-center text-m-2xl">☰</div>
+        </div>
+        <ul
+          id="topnav1"
+          class="top-16 z-10 w-auto text-m-sm leading-10 text-stone-400 lg:hidden"
+        >
+          <li class="pr-5 text-right">
+            <div class="dropdown-bottom dropdown-end dropdown">
+              <label
+                class="flex hover:cursor-pointer hover:text-lavender-300"
+                tabindex="0"
+                >Hej Sofie
+                <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20">
+                  <path
+                    fill="#353535"
+                    d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"
+                  /></svg
+              ></label>
+              <ul
+                tabindex="0"
+                class="dropdown-content w-96 rounded-lg bg-eggshell-200 pr-5 text-right"
+              >
+                <li class="hover:text-lavender-300">
+                  <a href="beautyprofil.html">Beauty profil</a>
+                </li>
+                <li class="hover:text-lavender-300">
+                  <a href="personligeoplys.html">Personlige oplysninger</a>
+                </li>
+                <li><p>Log ud</p></li>
+              </ul>
+            </div>
+          </li>
+          <li
+            class="pr-5 text-right hover:cursor-pointer hover:text-lavender-300"
+          >
+            <a href="minefordele.html">Mine fordele</a>
+          </li>
+
+          <li class="pr-5 text-right">
+            <div class="dropdown-end dropdown-bottom dropdown">
+              <label
+                class="flex hover:cursor-pointer hover:text-lavender-300"
+                tabindex="0"
+                >Mit Goodiebox
+                <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20">
+                  <path
+                    fill="#353535"
+                    d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"
+                  /></svg
+              ></label>
+              <ul
+                tabindex="0"
+                class="dropdown-content w-96 rounded-lg bg-eggshell-200 pr-5 text-right"
+              >
+                <li class="hover:text-lavender-300">
+                  <a href="mitabonnement.html">Mit abonnement</a>
+                </li>
+                <li class="hover:text-lavender-300">
+                  <a href="tilpasbox.html">Tilpas min box</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="pr-5 text-right">
+            <label
+              for="modal-webshop"
+              class="hover:cursor-pointer hover:text-lavender-300"
+              >Webshop</label
             >
-              <li class="hover:text-lavender-300"><a href="beautyprofil.html">Beauty profil</a></li>
-              <li class="hover:text-lavender-300"><a href="personligeoplys.html">Personlige oplysninger</a></li>
-              <li> <p>Log ud</p> </li>
-            </ul>
-          </div>
-        </li>
-        <li class="text-right pr-5 hover:text-lavender-300 hover:cursor-pointer">
-          <a href="minefordele.html">Mine fordele</a>
-        </li>
-
-        <li class="text-right pr-5">
-          <div class="dropdown-end dropdown-bottom dropdown ">
-            <label class="flex hover:text-lavender-300 hover:cursor-pointer" tabindex="0"
-              >Mit Goodiebox
-              <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20">
-                <path
-                  fill="#353535"
-                  d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"
-                /></svg
-            ></label>
-            <ul
-              tabindex="0"
-              class="dropdown-content text-right w-96 bg-eggshell-200 pr-5 rounded-lg  "
-            >
-              <li class="hover:text-lavender-300"><a href="mitabonnement.html">Mit abonnement</a></li>
-              <li class="hover:text-lavender-300"><a href="tilpasbox.html">Tilpas min box</a></li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="text-right pr-5">
-          <label for="modal-webshop" class="hover:text-lavender-300 hover:cursor-pointer">Webshop</label>
-        </li>
-
-      </ul>
+          </li>
+        </ul>
+      </nav>
       <!-- BURGER MENU SLUT -->
     </header>
     <main class="grid place-items-center p-8">
-      <h1 class="text-emerald-700 font-bely text-m-xs">
+      <h1 class="text-emerald-700 font-bely text-m-3xl">
         Tailwind Template 2023
       </h1>
       <p class="text-emerald-500">
         Powered by <a href="https://vitejs.dev/guide">Vite</a>
       </p>
     </main>
-    <footer></footer>
+    <footer class="bg-lime-100 px-5 py-7">
+      <div class="flex flex-row gap-2">
+        <p>ikon</p>
+        <p>ikon</p>
+        <p>ikon</p>
+      </div>
+      <div class="">
+        <ul class="leading-10 underline">
+          <li><p>Om Goodiebox</p></li>
+          <li><p>Kundeservice</p></li>
+          <li><p>Betingelser</p></li>
+          <li><p>Cookies</p></li>
+          <li><p>Fortrolighedspolitik</p></li>
+          <li><p>FAQ</p></li>
+        </ul>
 
-    <!-- Put this part before </body> tag -->
-<input type="checkbox" id="modal-webshop" class="modal-toggle" />
-<div class="modal ">
-  <div class="modal-box bg-eggshell-200 relative">
-    <label for="modal-webshop" class="btn text-stone-400 bg-lavender-100 hover:bg-lavender-300 hover:text-stone-100 btn-sm btn-circle absolute right-2 top-2">✕</label>
-    <h3 class="text-m-sm font-bold text-stone-400">Hej Birgitte og censor</h3>
-    <p class="py-4 text-stone-400">Her vil du på normal vis blive ført til Goodiebox' webshop. Dog er denne side ikke en del af vores digitale løsning, og er derfor ikke mulig at tilgå herfra.</p>
-  </div>
-</div>
+        <p class="font-bold">Betalingsmuligheder</p>
+        <div class="flex flex-row gap-2">
+          <p>ikon</p>
+          <p>ikon</p>
+          <p>ikon</p>
+          <p>ikon</p>
+          <p>ikon</p>
+          <p>ikon</p>
+        </div>
+      </div>
+
+      <img class="ml-auto" src="/images/goodielogo.svg" alt="Goodiebox logo" />
+    </footer>
+
+    <!-- MODAL POP UP -->
+    <input type="checkbox" id="modal-webshop" class="modal-toggle" />
+    <div class="modal">
+      <div class="modal-box relative bg-eggshell-200">
+        <label
+          for="modal-webshop"
+          class="btn-sm btn-circle btn absolute right-2 top-2 bg-lavender-100 text-stone-400 hover:bg-lavender-300 hover:text-stone-100"
+          >✕</label
+        >
+        <h3 class="text-m-sm font-bold text-stone-400">
+          Hej Birgitte og censor
+        </h3>
+        <p class="py-4 text-stone-400">
+          Her vil du på normal vis blive ført til Goodiebox' webshop. Dog er
+          denne side ikke en del af vores digitale løsning, og er derfor ikke
+          mulig at tilgå herfra.
+        </p>
+      </div>
+    </div>
+    <!-- MODAL POP UP SLUT -->
     <script type="module" src="./main.js"></script>
   </body>
 </html>
