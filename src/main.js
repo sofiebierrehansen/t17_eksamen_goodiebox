@@ -2,7 +2,7 @@ import "./style.css";
 /* Import af Motion One bibliotek */
 import { animate, stagger, inView, scroll, timeline } from "motion";
 
-// LOGIN
+// ---------- LOGIN ----------- //
 class Login extends HTMLElement {
   constructor() {
     super();
@@ -14,7 +14,7 @@ class Login extends HTMLElement {
     this.html = `<style>
           /****** LOGIN MODAL ******/
           #login-modal {
-              background:black;
+              background: #d2f707;
               position:fixed;
               width:100vw;
               height:100vh;
