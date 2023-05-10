@@ -2,6 +2,31 @@ import "./style.css";
 /* Import af Motion One bibliotek */
 import { animate, stagger, inView, scroll, timeline } from "motion";
 
+window.addEventListener("load", sidenVises);
+
+// ------- BURGERMENU -------- //
+
+function sidenVises() {
+  console.log("sidenVises");
+  document.querySelector("#topnav1").classList.add("hidden");
+  document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+}
+
+function toggleMenu() {
+  console.log("toggleMenu");
+  document.querySelector("#topnav1").classList.toggle("hidden");
+
+  let erSkjult = document
+    .querySelector("#topnav1")
+    .classList.contains("hidden");
+
+  if (erSkjult == true) {
+    document.querySelector("#menuknap").textContent = "☰";
+  } else {
+    document.querySelector("#menuknap").textContent = "x";
+  }
+}
+
 // ---------- LOGIN ----------- //
 class Login extends HTMLElement {
   constructor() {
