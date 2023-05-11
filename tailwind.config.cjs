@@ -76,6 +76,11 @@ module.exports = {
       backgroundImage: {
         "hero-mobile": "url('/images/mobile_hero.webp')",
       },
+
+      borderRadius: {
+        "br-30": "1.875rem",
+        "br-7": "0.438rem",
+      },
     },
   },
   plugins: [
