@@ -17,7 +17,9 @@
     </a>
     <header>
       <!-- BURGER MENU -->
-      <nav class="sticky top-0 z-40 w-screen bg-eggshell-200 px-5 py-2">
+      <nav
+        class="sticky top-0 z-40 w-screen bg-eggshell-200 px-5 py-2 lg:bg-stone-100"
+      >
         <div class="flex items-center">
           <a class="mr-auto" href="index.html">
             <img src="/images/goodieboxlogo.svg" alt="goodiebox logo"
@@ -107,8 +109,12 @@
         Goodiebox medlemsunivers
       </h1>
     </main>
-    <footer class="bg-lime-100 px-5 py-7">
-      <div class="flex flex-row gap-5 pb-5 text-lavender-300">
+    <footer
+      class="bg-lime-100 px-5 py-7 md:grid md:grid-flow-row md:grid-cols-2 md:gap-10"
+    >
+      <div
+        class="flex flex-row gap-5 pb-5 text-lavender-300 md:col-start-2 md:ml-auto md:pb-0"
+      >
         <!-- IG -->
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -158,8 +164,9 @@
           />
         </svg>
       </div>
-      <div class="">
-        <ul class="pb-5 leading-10 underline">
+
+      <div class="md:row-start-1">
+        <ul class="pb-5 leading-10 underline md:pb-0">
           <li><p>Om Goodiebox</p></li>
           <li><p>Kundeservice</p></li>
           <li><p>Betingelser</p></li>
@@ -167,9 +174,11 @@
           <li><p>Fortrolighedspolitik</p></li>
           <li><p>FAQ</p></li>
         </ul>
+      </div>
 
+      <div class="md:col-start-1 md:row-start-2">
         <p class="pb-3 font-bold">Betalingsmuligheder</p>
-        <div class="flex flex-row flex-wrap gap-5 pb-10">
+        <div class="flex flex-row flex-wrap gap-5 pb-10 md:pb-0">
           <img class="h-6" src="/images/mc.png" alt="mastercard" />
           <img class="h-6" src="/images/apay.png" alt="appelpay" />
           <img class="h-6" src="/images/gpay.png" alt="Google pay" />
@@ -179,7 +188,11 @@
         </div>
       </div>
 
-      <img class="ml-auto" src="/images/goodielogo.svg" alt="Goodiebox logo" />
+      <img
+        class="ml-auto md:grid-cols-2 md:place-self-end"
+        src="/images/goodielogo.svg"
+        alt="Goodiebox logo"
+      />
     </footer>
 
     <!-- MODAL POP UP -->

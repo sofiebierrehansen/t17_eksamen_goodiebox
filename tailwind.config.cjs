@@ -9,8 +9,11 @@ module.exports = {
       md: "834px",
       // => @media (min-width: 834px) { ... }
 
-      lg: "1512px",
-      // => @media (min-width: 1512px) { ... }
+      lg: "1200px",
+      // => @media (min-width: 1200px) { ... }
+
+      xl: "1440px",
+      // => @media (min-width: 1440px) { ... }
     },
 
     colors: {
