@@ -2,6 +2,17 @@
 module.exports = {
   content: ["./src/**/*.{html,vue,js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      sm: "390px",
+      // => @media (min-width: 390px) { ... }
+
+      md: "834px",
+      // => @media (min-width: 834px) { ... }
+
+      lg: "1512px",
+      // => @media (min-width: 1512px) { ... }
+    },
+
     colors: {
       "eggshell-50": "#FFFFFF",
       "eggshell-100": "#FFFFF8",
