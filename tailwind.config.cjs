@@ -72,7 +72,11 @@ module.exports = {
       "d-3xl": "7.594rem",
     },
 
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero-mobile": "url('/images/mobile_hero.webp')",
+      },
+    },
   },
   plugins: [
     require("@tailwindcss/typography"),
