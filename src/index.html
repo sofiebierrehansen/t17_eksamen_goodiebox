@@ -20,7 +20,7 @@
     <header>
       <!-- BURGER MENU -->
       <nav
-        class="sticky top-0 z-40 w-screen bg-eggshell-200 px-5 py-2 md:px-10 lg:bg-stone-100 xl:max-w-screen-xl"
+        class="sticky top-0 z-40 w-screen bg-eggshell-200 px-5 py-2 md:px-10 lg:hidden xl:max-w-screen-xl"
       >
         <div class="flex items-center">
           <a class="mr-auto" href="index.html">
@@ -38,6 +38,19 @@
                 class="flex hover:cursor-pointer hover:text-lavender-300"
                 tabindex="0"
                 >Hej Sofie
+                <div class="pl-2 pr-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="32"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M224 256a128 128 0 1 0 0-256a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512h388.6c16.4 0 29.7-13.3 29.7-29.7c0-98.5-79.8-178.3-178.3-178.3h-91.4z"
+                    />
+                  </svg>
+                </div>
                 <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20">
                   <path
                     fill="#353535"
@@ -100,17 +113,106 @@
         </ul>
       </nav>
       <!-- BURGER MENU SLUT -->
+
+      <!-- DESKTOP MENU -->
+      <div class="hidden lg:bg-eggshell-200 lg:navbar">
+        <div class="lg:flex-1 lg:pl-36">
+          <a class="lg:mr-auto" href="index.html">
+            <img src="/images/goodieboxlogo.svg" alt="goodiebox logo"
+          /></a>
+        </div>
+        <div class="lg:flex-none lg:pr-36">
+          <ul class="lg:menu lg:menu-horizontal lg:hover:bg-eggshell-200">
+            <li class="lg:hover:text-lavender-300">
+              <a href="minefordele.html">Mine fordele</a>
+            </li>
+
+            <li class="" tabindex="0">
+              <a class="lg:hover:text-lavender-300">
+                Mit Goodiebox
+                <svg
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                  />
+                </svg>
+              </a>
+              <ul class="lg:bg-eggshell-200 lg:p-2">
+                <li class="lg:hover:text-lavender-300">
+                  <a href="mitabonnement.html">Mit abonnement</a>
+                </li>
+                <li class="lg:hover:text-lavender-300">
+                  <a href="tilpasbox.html">Tilpas min box</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="lg:hover:text-lavender-300">
+              <label
+                for="modal-webshop"
+                class="hover:cursor-pointer hover:text-lavender-300"
+                >Webshop</label
+              >
+            </li>
+            <li class="" tabindex="0">
+              <a class="lg:hover:text-lavender-300">
+                Hej Sofie
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="32"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M224 256a128 128 0 1 0 0-256a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512h388.6c16.4 0 29.7-13.3 29.7-29.7c0-98.5-79.8-178.3-178.3-178.3h-91.4z"
+                  />
+                </svg>
+                <svg
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                  />
+                </svg>
+              </a>
+              <ul class="lg:bg-eggshell-200 lg:p-2">
+                <li class="lg:hover:text-lavender-300">
+                  <a href="beautyprofil.html">Min beautyprofil</a>
+                </li>
+                <li class="lg:hover:text-lavender-300">
+                  <a href="personligeoplys.html">Personlige oplysninger</a>
+                  <a href="#">Log ud</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- DESKTOP MENU SLUT -->
     </header>
-    <main class="grid place-items-center">
+
+    <main class="">
       <div
         class="grid w-screen place-items-center bg-bubblegum-200 py-1 px-5 text-m-xs xl:max-w-screen-xl"
       >
-        <p>Happy moments hjem til dig</p>
+        <p class="">Happy moments hjem til dig</p>
       </div>
+
       <h1 class="m-drop-shadow px-5 font-bely text-m-3xl text-lime-300">
         Goodiebox medlemsunivers
       </h1>
     </main>
+
     <footer class="bg-lime-100">
       <!-- MOBIL OG TABLET FOOTER -->
       <div
@@ -199,6 +301,7 @@
         />
       </div>
       <!-- MOBIL OG TABLET FOOTER SLUT -->
+
       <!-- DESKTOP FOOTER -->
       <div
         class="sm:hidden lg:mx-36 lg:grid lg:grid-flow-row lg:grid-cols-3 lg:gap-10 lg:py-14"
@@ -285,7 +388,7 @@
         </div>
 
         <img
-          class="lg:col-start-3 lg:ml-auto lg:place-self-end"
+          class="lg:col-start-3"
           src="/images/goodielogo.svg"
           alt="Goodiebox logo"
         />
