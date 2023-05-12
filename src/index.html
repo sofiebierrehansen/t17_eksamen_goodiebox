@@ -17,7 +17,7 @@
     >
       Skip to content
     </a>
-    <header class="sticky top-0">
+    <header class=" z-50 sticky top-0">
       <!-- BURGER MENU -->
       <nav
         class=" z-40 w-screen bg-eggshell-200 px-5 py-2 md:px-10 lg:hidden xl:max-w-screen-xl"
@@ -266,15 +266,15 @@
         <div class="grid grid-cols-2 gap-3 place-items-center border-b border-peachy-300">
           <div class="text-center">
             <img class="inline-block" src="/images/Percent.svg" alt=" procent ikon">
-            <p class="font-bold pt-2">Optjen 10% af kurvens total </p>
+            <p class=" pt-2">Optjen 10% af kurvens total </p>
           </div>
           <div class="text-center" >
             <img class="inline-block" src="/images/circleplay.svg" alt=" play ikon">
-            <p class=" pt-2 font-bold"> Online masterclasses</p>
+            <p class=" pt-2"> Online masterclasses</p>
           </div>
           <div class="col-span-2 text-center">
             <img class="inline-block" src="/images/gift.svg" alt=" gave ikon">
-            <p class="font-bold pt-2 w-48"> 50 goodiepoints, når du bedømmer din box</p>
+            <p class=" pt-2 w-48"> 50 goodiepoints, når du bedømmer din box</p>
           </div>
           <a class="underline text-center col-span-2 pb-5" href="minefordele.html">Udforsk alle mine fordele</a>
         </div>
@@ -298,28 +298,121 @@
 <section class="px-5 py-5">
   <h2 class="font-bely text-m-xl pb-5"> Vores abonnementer</h2>
 
-  <article>
-    <img class="rounded-br-7" src="/images/classic_box.jpg" alt="the classic box">
-    <p class="text-m-xs">Månedlig</p>
-    <h3>The Classic One</h3>
-   <div class="flex gap-3">
-    <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="28" height="32" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-      <p class="text-m-xs"> 5-7 fantastiske skønheds- og selvplejeprodukterprodukter i hver box. Mindst 2 produkter i fuld størrelse.</p>
-   </div>
-   <div class="flex gap-3">
-    <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="28" height="32" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-  <p class="text-m-xs">Fuld adgang til vores medlemsunivers, mindfulness, yoga, lyde til søvn og meget mere.</p> 
+  <div class="grid place-content-center">
+
+    <!-- THE CLASSIC ONE -->
+    <article class=" bg-eggshell-200 card-shadow border border-peachy-300 rounded-br-7 p-5 mb-5 w-85">
+      <div class="relative">
+        <img class=" rounded-br-7" src="/images/classic_box.jpg" alt="the classic box">
+        <p class=" absolute top-0 left-[69%] rounded-tr-br-7 rounded-bl-br-7 text-m-xs bg-lime-200 text-center w-24 py-1">Månedlig</p>
+      </div>
+      <h3 class="text-m-lg py-3">The Classic One</h3>
+     <div class="flex gap-3 pb-3">
+      <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+        <p class="text-m-xs w-72"> 5-7 fantastiske skønheds- og selvplejeprodukterprodukter i hver box. Mindst 2 produkter i fuld størrelse.</p>
+     </div>
+     <div class="flex gap-3 pb-3">
+      <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+    <p class="text-m-xs w-72">Fuld adgang til vores medlemsunivers, mindfulness, yoga, lyde til søvn og meget mere.</p> 
+    </div>
+    <div class="flex gap-3 pb-3">
+      <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+    <p class="text-m-xs w-72">650 kr. minimumværdi, månedligt kun 199 kr.</p> 
+    </div>
+    <div class="flex gap-3">
+      <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+    <p class="text-m-xs w-72">100% tilfredshedsgaranti</p> 
+    </div>
+    </article>
+
+    <!-- THE CUTE ONE -->
+    <article class=" bg-eggshell-200 card-shadow border border-peachy-300 rounded-br-7 p-5 mb-5 w-85">
+      <div class="relative">
+        <img class=" rounded-br-7" src="/images/cute_box.jpg" alt="the cute box">
+        <p class=" absolute top-0 left-[69%] rounded-tr-br-7 rounded-bl-br-7 text-m-xs bg-lime-200 text-center w-24 py-1">Månedlig</p>
+      </div>
+      <h3 class="text-m-lg py-3">The Cute One</h3>
+     <div class="flex gap-3 pb-3">
+      <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+        <p class="text-m-xs w-72">4 fantastiske skønheds- og selvplejeprodukterprodukter i hver box. Mindst 1 produkt i fuld størrelse.</p>
+     </div>
+     <div class="flex gap-3 pb-3">
+      <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+    <p class="text-m-xs w-72">Fuld adgang til vores medlemsunivers, mindfulness, yoga, lyde til søvn og meget mere.</p> 
+    </div>
+    <div class="flex gap-3 pb-3">
+      <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+    <p class="text-m-xs w-72">450 kr. minimumværdi, månedligt kun 149 kr.</p> 
+    </div>
+    <div class="flex gap-3 pb-5">
+      <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+    <p class="text-m-xs w-72">100% tilfredshedsgaranti</p> 
+    </div>
+    <div class="flex flex-col">
+      <button class="bg-lime-200 self-center rounded-br-30 py-2 w-52 mb-5 button-drop-shadow hover:bg-lime-300">Skift til ‘The Cute One’</button>
+      <a class="underline self-center" href="mitabonnement.html">Rediger mit abonnement</a>
+    </div>
+    </article>
+
+    <!-- THE LUX ONE -->
+    <article class=" bg-eggshell-200 card-shadow border border-peachy-300 rounded-br-7 p-5 mb-5 w-85">
+      <div class="relative">
+        <img class=" rounded-br-7" src="/images/lux_box.jpg" alt="the lux box">
+        <p class=" absolute top-0 left-[69%] rounded-tr-br-7 rounded-bl-br-7 text-m-xs bg-lime-200 text-center w-24 py-1">Kvartalsvis</p>
+      </div>
+      <h3 class="text-m-lg py-3">The Lux One</h3>
+     <div class="flex gap-3 pb-3">
+      <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+        <p class="text-m-xs w-72">Minimum 8 premium skønheds- og selvplejeprodukterprodukter i hver box. Mindst 4 produkter i fuld størrelse.</p>
+     </div>
+     <div class="flex gap-3 pb-3">
+      <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+    <p class="text-m-xs w-72">Fuld adgang til vores medlemsunivers, mindfulness, yoga, lyde til søvn og meget mere.</p> 
+    </div>
+    <div class="flex gap-3 pb-3">
+      <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+    <p class="text-m-xs w-72">1.650 kr. minimumværdi, kvartalsvis kun 549 kr.</p> 
+    </div>
+    <div class="flex gap-3 pb-5">
+      <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+    <p class="text-m-xs w-72">100% tilfredshedsgaranti</p> 
+    </div>
+    <div class="flex flex-col">
+      <button class="bg-lime-200 self-center rounded-br-30 py-2 w-52 mb-5 button-drop-shadow hover:bg-lime-300">Skift til ‘The Lux One’</button>
+      <a class="underline self-center" href="mitabonnement.html">Rediger mit abonnement</a>
+    </div>
+    </article>
+
+    <!-- CRUSH BOX -->
+    <article class=" bg-peachy-100 card-shadow border border-peachy-300 rounded-br-7 p-5 mb-5 w-85">
+      <div class="relative">
+        <img class=" rounded-br-7" src="/images/crush_box.jpg" alt="the crush box">
+        <p class=" absolute top-0 left-[69%] rounded-tr-br-7 rounded-bl-br-7 text-m-xs bg-lime-200 text-center w-24 py-1">Kvartalsvis</p>
+      </div>
+      <h3 class="text-m-lg py-3">Crush</h3>
+     <div class="flex gap-3 pb-3">
+     
+        <p class="text-m-xs w-72">Makeup box for 99 kr./box. Få endnu flere happy moments med et Crush abonnement til en ekstraordinær god pris</p>
+     </div>
+     <div class="flex gap-3 pb-3">
+      
+    <p class="text-m-xs w-72">Det er kun noget der tilbydes vores medlemmer, og vi har endda sørget for, at du sparer 30 kr./md. på Crush, så længe du har et Goodiebox-abonnement.</p> 
+    </div>
+    <div class="flex gap-3 pb-5">
+      
+    <p class="text-m-xs w-72">Du kommer til at modtage din første box indenfor 14 dage. </p> 
+    </div>
+    
+    <div class="flex flex-col">
+      <button class="bg-lime-200 self-center rounded-br-30 py-2 w-52 mb-5 button-drop-shadow hover:bg-lime-300">Tilmed mig Crush</button>
+      <a class="underline self-center" href="mitabonnement.html">Rediger mit abonnement</a>
+    </div>
+    </article>
   </div>
-  <div class="flex gap-3">
-    <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="28" height="32" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-  <p class="text-m-xs">650 kr. minimumværdi, månedligt kun 199 kr. 650 kr.</p> 
-  </div>
-  <div class="flex gap-3">
-    <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="28" height="32" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-  <p class="text-m-xs">100% tilfredshedsgaranti</p> 
-  </div>
-  </article>
 </section>
+
+
+
     </main>
     
     <footer class="bg-lime-100">

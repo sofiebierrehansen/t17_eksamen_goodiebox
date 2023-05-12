@@ -81,6 +81,9 @@ module.exports = {
         "br-30": "1.875rem",
         "br-7": "0.438rem",
       },
+      width: {
+        85: "21.875rem",
+      },
     },
   },
   plugins: [
