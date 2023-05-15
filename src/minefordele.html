@@ -9,6 +9,409 @@
     <title>Mine fordele</title>
   </head>
   <body>
+    <!--------Skip to content--------------->
+    <a
+      class="absolute top-32 -left-full font-poppins transition-transform focus:left-8 focus:outline-none focus:outline-bubblegum-300"
+      href="#main"
+    >
+      Skip to content
+    </a>
+    <header class="sticky top-0 z-50">
+      <!-- BURGER MENU -->
+      <nav
+        class="z-40 w-screen bg-eggshell-200 px-5 py-2 md:px-10 lg:hidden xl:max-w-screen-xl"
+      >
+        <div class="flex items-center">
+          <a class="mr-auto" href="index.html">
+            <img src="/images/goodieboxlogo.svg" alt="goodiebox logo"
+          /></a>
+          <div id="menuknap" class="z-20 text-center text-m-2xl">☰</div>
+        </div>
+        <ul
+          id="topnav1"
+          class="top-16 z-10 w-auto text-m-sm leading-10 text-stone-400 lg:hidden"
+        >
+          <li class="pr-5 text-right">
+            <div class="dropdown-bottom dropdown-end dropdown">
+              <label
+                class="flex hover:cursor-pointer hover:text-lavender-300"
+                tabindex="0"
+                >Hej Sofie
+                <div class="pl-2 pr-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="32"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M224 256a128 128 0 1 0 0-256a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512h388.6c16.4 0 29.7-13.3 29.7-29.7c0-98.5-79.8-178.3-178.3-178.3h-91.4z"
+                    />
+                  </svg>
+                </div>
+                <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20">
+                  <path
+                    fill="#353535"
+                    d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"
+                  /></svg
+              ></label>
+              <ul
+                tabindex="0"
+                class="dropdown-content w-96 rounded-lg bg-eggshell-200 pr-5 text-right"
+              >
+                <li class="hover:text-lavender-300">
+                  <a href="beautyprofil.html">Beauty profil</a>
+                </li>
+                <li class="hover:text-lavender-300">
+                  <a href="personligeoplys.html">Personlige oplysninger</a>
+                </li>
+                <li><p>Log ud</p></li>
+              </ul>
+            </div>
+          </li>
+          <li
+            class="pr-5 text-right hover:cursor-pointer hover:text-lavender-300"
+          >
+            <a href="minefordele.html">Mine fordele</a>
+          </li>
+
+          <li class="pr-5 text-right">
+            <div class="dropdown-end dropdown-bottom dropdown">
+              <label
+                class="flex hover:cursor-pointer hover:text-lavender-300"
+                tabindex="0"
+                >Mit Goodiebox
+                <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20">
+                  <path
+                    fill="#353535"
+                    d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"
+                  /></svg
+              ></label>
+              <ul
+                tabindex="0"
+                class="dropdown-content w-96 rounded-lg bg-eggshell-200 pr-5 text-right"
+              >
+                <li class="hover:text-lavender-300">
+                  <a href="mitabonnement.html">Mit abonnement</a>
+                </li>
+                <li class="hover:text-lavender-300">
+                  <a href="tilpasbox.html">Tilpas min box</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="pr-5 text-right">
+            <label
+              for="modal-webshop"
+              class="hover:cursor-pointer hover:text-lavender-300"
+              >Webshop</label
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- BURGER MENU SLUT -->
+
+      <!-- DESKTOP MENU -->
+      <div class="hidden lg:bg-eggshell-200 lg:navbar">
+        <div class="lg:flex-1 lg:pl-36">
+          <a class="lg:mr-auto" href="index.html">
+            <img src="/images/goodieboxlogo.svg" alt="goodiebox logo"
+          /></a>
+        </div>
+        <div class="lg:flex-none lg:pr-36">
+          <ul class="lg:menu lg:menu-horizontal lg:hover:bg-eggshell-200">
+            <li class="lg:hover:text-lavender-300">
+              <a href="minefordele.html">Mine fordele</a>
+            </li>
+
+            <li class="" tabindex="0">
+              <a class="lg:hover:text-lavender-300">
+                Mit Goodiebox
+                <svg
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                  />
+                </svg>
+              </a>
+              <ul class="lg:bg-eggshell-200 lg:p-2">
+                <li class="lg:hover:text-lavender-300">
+                  <a href="mitabonnement.html">Mit abonnement</a>
+                </li>
+                <li class="lg:hover:text-lavender-300">
+                  <a href="tilpasbox.html">Tilpas min box</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="lg:hover:text-lavender-300">
+              <label
+                for="modal-webshop"
+                class="hover:cursor-pointer hover:text-lavender-300"
+                >Webshop</label
+              >
+            </li>
+            <li class="" tabindex="0">
+              <a class="lg:hover:text-lavender-300">
+                Hej Sofie
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="32"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M224 256a128 128 0 1 0 0-256a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512h388.6c16.4 0 29.7-13.3 29.7-29.7c0-98.5-79.8-178.3-178.3-178.3h-91.4z"
+                  />
+                </svg>
+                <svg
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                  />
+                </svg>
+              </a>
+              <ul class="lg:bg-eggshell-200 lg:p-2">
+                <li class="lg:hover:text-lavender-300">
+                  <a href="beautyprofil.html">Min beautyprofil</a>
+                </li>
+                <li class="lg:hover:text-lavender-300">
+                  <a href="personligeoplys.html">Personlige oplysninger</a>
+                  <a href="#">Log ud</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- DESKTOP MENU SLUT -->
+
+      <!-- HAPPY MOMENT BANNER -->
+      <div
+        class="grid w-screen place-items-center bg-bubblegum-200 py-1 px-5 text-m-xs xl:max-w-screen-xl"
+      >
+        <p class="">Happy moments hjem til dig</p>
+      </div>
+      <!-- HAPPY MOMENT BANNER SLUT -->
+    </header>
+    <main></main>
+    <footer class="bg-lime-100">
+      <!-- MOBIL OG TABLET FOOTER -->
+      <div
+        class="px-5 py-7 md:grid md:grid-flow-row md:grid-cols-2 md:gap-10 md:px-10 md:py-10 lg:hidden"
+      >
+        <div
+          class="flex flex-row gap-5 pb-5 text-lavender-300 md:col-start-2 md:ml-auto md:pb-0"
+        >
+          <!-- IG -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"
+            />
+          </svg>
+          <!-- FB -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
+            />
+          </svg>
+          <!-- YT -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73Z"
+            />
+          </svg>
+          <!-- TT -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 256 256"
+          >
+            <path
+              fill="currentColor"
+              d="M224 72a48.05 48.05 0 0 1-48-48a8 8 0 0 0-8-8h-40a8 8 0 0 0-8 8v132a20 20 0 1 1-28.57-18.08a8 8 0 0 0 4.57-7.23V88a8 8 0 0 0-9.4-7.88C50.91 86.48 24 119.1 24 156a76 76 0 0 0 152 0v-39.71A103.25 103.25 0 0 0 224 128a8 8 0 0 0 8-8V80a8 8 0 0 0-8-8Zm-8 39.64a87.19 87.19 0 0 1-43.33-16.15A8 8 0 0 0 160 102v54a60 60 0 0 1-120 0c0-25.9 16.64-49.13 40-57.6v27.67A36 36 0 1 0 136 156V32h24.5A64.14 64.14 0 0 0 216 87.5Z"
+            />
+          </svg>
+        </div>
+
+        <div class="md:row-start-1">
+          <ul class="pb-5 leading-10 underline md:pb-0">
+            <li><p>Om Goodiebox</p></li>
+            <li><p>Kundeservice</p></li>
+            <li><p>Betingelser</p></li>
+            <li><p>Cookies</p></li>
+            <li><p>Fortrolighedspolitik</p></li>
+            <li><p>FAQ</p></li>
+          </ul>
+        </div>
+
+        <div class="md:col-start-1 md:row-start-2">
+          <p class="pb-3 font-bold">Betalingsmuligheder</p>
+          <div class="flex flex-row flex-wrap gap-5 pb-10 md:pb-0">
+            <img class="h-6" src="/images/mc.png" alt="mastercard" />
+            <img class="h-6" src="/images/apay.png" alt="appelpay" />
+            <img class="h-6" src="/images/gpay.png" alt="Google pay" />
+            <img class="h-6" src="/images/paypal.png" alt="paypal" />
+            <img class="h-6" src="/images/visa.png" alt="visa" />
+            <img class="h-6" src="/images/mpay.png" alt="mobilepay" />
+          </div>
+        </div>
+
+        <img
+          class="ml-auto md:grid-cols-2 md:place-self-end"
+          src="/images/goodielogo.svg"
+          alt="Goodiebox logo"
+        />
+      </div>
+      <!-- MOBIL OG TABLET FOOTER SLUT -->
+
+      <!-- DESKTOP FOOTER -->
+      <div
+        class="sm:hidden lg:mx-36 lg:grid lg:grid-flow-row lg:grid-cols-3 lg:gap-10 lg:py-14"
+      >
+        <div
+          class="lg:col-span-3 lg:flex lg:flex-row lg:gap-5 lg:text-lavender-300"
+        >
+          <!-- IG -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="45"
+            height="45"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"
+            />
+          </svg>
+          <!-- FB -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="45"
+            height="45"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
+            />
+          </svg>
+          <!-- YT -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="45"
+            height="45"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73Z"
+            />
+          </svg>
+          <!-- TT -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="45"
+            height="45"
+            viewBox="0 0 256 256"
+          >
+            <path
+              fill="currentColor"
+              d="M224 72a48.05 48.05 0 0 1-48-48a8 8 0 0 0-8-8h-40a8 8 0 0 0-8 8v132a20 20 0 1 1-28.57-18.08a8 8 0 0 0 4.57-7.23V88a8 8 0 0 0-9.4-7.88C50.91 86.48 24 119.1 24 156a76 76 0 0 0 152 0v-39.71A103.25 103.25 0 0 0 224 128a8 8 0 0 0 8-8V80a8 8 0 0 0-8-8Zm-8 39.64a87.19 87.19 0 0 1-43.33-16.15A8 8 0 0 0 160 102v54a60 60 0 0 1-120 0c0-25.9 16.64-49.13 40-57.6v27.67A36 36 0 1 0 136 156V32h24.5A64.14 64.14 0 0 0 216 87.5Z"
+            />
+          </svg>
+        </div>
+
+        <div>
+          <ul class="lg:leading-10 lg:underline">
+            <li><p>Om Goodiebox</p></li>
+            <li><p>Kundeservice</p></li>
+            <li><p>Betingelser</p></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="lg:leading-10 lg:underline">
+            <li><p>Cookies</p></li>
+            <li><p>Fortrolighedspolitik</p></li>
+            <li><p>FAQ</p></li>
+          </ul>
+        </div>
+
+        <div class="">
+          <p class="lg:pb-3 lg:font-bold">Betalingsmuligheder</p>
+          <div class="gap-5 lg:flex lg:flex-row lg:flex-wrap">
+            <img class="h-6" src="/images/mc.png" alt="mastercard" />
+            <img class="h-6" src="/images/apay.png" alt="appelpay" />
+            <img class="h-6" src="/images/gpay.png" alt="Google pay" />
+            <img class="h-6" src="/images/paypal.png" alt="paypal" />
+            <img class="h-6" src="/images/visa.png" alt="visa" />
+            <img class="h-6" src="/images/mpay.png" alt="mobilepay" />
+          </div>
+        </div>
+
+        <img
+          class="lg:col-start-3"
+          src="/images/goodielogo.svg"
+          alt="Goodiebox logo"
+        />
+      </div>
+      <!-- DESKTOP FOOTER SLUT -->
+    </footer>
+
+    <!-- MODAL POP UP -->
+    <input type="checkbox" id="modal-webshop" class="modal-toggle" />
+    <div class="modal">
+      <div class="modal-box relative bg-eggshell-200">
+        <label
+          for="modal-webshop"
+          class="btn-sm btn-circle btn absolute right-2 top-2 bg-lavender-100 text-stone-400 hover:bg-lavender-300 hover:text-stone-100"
+          >✕</label
+        >
+        <h3 class="text-m-sm font-bold text-stone-400">
+          Hej Birgitte og censor
+        </h3>
+        <p class="py-4 text-stone-400">
+          Her vil du på normal vis blive ført til Goodiebox' webshop. Dog er
+          denne side ikke en del af vores digitale løsning, og er derfor ikke
+          mulig at tilgå herfra.
+        </p>
+      </div>
+    </div>
+    <!-- MODAL POP UP SLUT -->
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
