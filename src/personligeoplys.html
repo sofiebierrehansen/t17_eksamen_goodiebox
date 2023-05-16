@@ -209,7 +209,272 @@
       </div>
       <!-- HAPPY MOMENT BANNER SLUT -->
     </header>
-    <main></main>
+    <main>
+      <!-- BREADCRUMBS -->
+      <section>
+        <div class="breadcrumbs px-5 pt-5 text-m-xs">
+          <ul>
+            <li class="underline"><a href="index.html">Forside</a></li>
+            <li>Min profil</li>
+            <li class="font-bold">Personlige oplysninger</li>
+          </ul>
+        </div>
+      </section>
+      <!-- BREADCRUMBS SLUT -->
+      <section class="mb-10 px-5 py-5">
+        <h1 class="pb-5 font-bely text-m-2xl">Mine personlige oplysninger</h1>
+        <div class="grid place-content-center justify-items-center">
+          <img
+            class="mb-2 w-48"
+            src="/images/avatar_img.webp"
+            alt="profil billede"
+          />
+          <button
+            class="flex flex-row items-center gap-4 rounded-xl bg-lime-200 px-3 pt-1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="32"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M149.1 64.8L138.7 96H64c-35.3 0-64 28.7-64 64v256c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64h-74.7l-10.4-31.2C356.4 45.2 338.1 32 317.4 32H194.6c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192a96 96 0 1 1 0-192z"
+              /></svg
+            >Rediger profilbillede
+          </button>
+        </div>
+
+        <div class="mt-10 flex w-85">
+          <h2 class="text-m-lg">Profil</h2>
+          <button
+            class="button-drop-shadow ml-auto self-center rounded-br-30 bg-bubblegum-100 px-4 pt-1 hover:bg-bubblegum-200"
+          >
+            Rediger
+          </button>
+        </div>
+        <p class="mt-5">Hold din profil opdateret nedenunder.</p>
+
+        <div class="mt-5 flex w-85 flex-col gap-y-7">
+          <div class="relative">
+            <label
+              class="absolute -top-[0.625rem] left-[0.813rem] bg-eggshell-50 px-1"
+              for="name"
+              >Fornavn</label
+            >
+            <input
+              id="name"
+              name="name"
+              required
+              type="text"
+              placeholder="Sofie"
+              class="input w-full border border-lavender-300"
+            />
+          </div>
+          <div class="relative">
+            <label
+              class="absolute -top-[0.625rem] left-[0.813rem] bg-eggshell-50 px-1"
+              for="lastname"
+              >Efternavn</label
+            >
+            <input
+              id="lastname"
+              name="name"
+              required
+              type="text"
+              placeholder="Hansen"
+              class="input w-full border border-lavender-300"
+            />
+          </div>
+          <div class="relative">
+            <label
+              class="absolute -top-[0.625rem] left-[0.813rem] bg-eggshell-50 px-1"
+              for="email"
+              >E-mail</label
+            >
+            <input
+              id="email"
+              name="email"
+              inputmode="email"
+              required
+              type="email"
+              placeholder="sofiehansen@hotmail.dk"
+              class="input w-full border border-lavender-300"
+            />
+          </div>
+          <div class="relative">
+            <label
+              class="absolute -top-[0.625rem] left-[0.813rem] bg-eggshell-50 px-1"
+              for="password"
+              >Password</label
+            >
+            <input
+              id="password"
+              name="password"
+              required
+              type="password"
+              placeholder="********"
+              class="input w-full border border-lavender-300"
+            />
+          </div>
+
+          <div class="relative">
+            <label
+              class="absolute -top-[0.625rem] left-[0.813rem] bg-eggshell-50 px-1"
+              for="phone"
+              >Telefon</label
+            >
+            <input
+              id="phone"
+              name="phone"
+              inputmode=" numeric"
+              required
+              type="tel"
+              placeholder="+45 12 34 56 78"
+              class="input w-full border border-lavender-300"
+            />
+          </div>
+
+          <div class="relative">
+            <label
+              class="absolute -top-[0.625rem] left-[0.813rem] bg-eggshell-50 px-1"
+              for="birthday"
+              >Fødselsdag</label
+            >
+            <input
+              id="birthday"
+              name="birthday"
+              required
+              type="date"
+              placeholder="09/01/1999"
+              class="input w-full border border-lavender-300"
+            />
+          </div>
+        </div>
+
+        <div class="mt-10 flex w-85">
+          <h2 class="text-m-lg">Levering</h2>
+          <button
+            class="button-drop-shadow ml-auto self-center rounded-br-30 bg-bubblegum-100 px-4 pt-1 hover:bg-bubblegum-200"
+          >
+            Rediger
+          </button>
+        </div>
+        <p class="mt-5">Hvor skal din Goodiebox leveres?</p>
+
+        <div class="mt-5 flex w-85 flex-col gap-y-7">
+          <div class="relative">
+            <label
+              class="absolute -top-[0.625rem] left-[0.813rem] bg-eggshell-50 px-1"
+              for="adresse"
+              >Adresse</label
+            >
+            <input
+              id="adresse"
+              name="adresse"
+              required
+              type="text"
+              placeholder="Morbærhaven 24P"
+              class="input w-full border border-lavender-300"
+            />
+          </div>
+          <div class="flex gap-x-3">
+            <div class="relative">
+              <label
+                class="absolute -top-[0.625rem] left-[0.813rem] bg-eggshell-50 px-1"
+                for="post"
+                >Post nr.</label
+              >
+              <input
+                id="post"
+                name="post"
+                required
+                type="text"
+                placeholder="2620"
+                class="input w-full border border-lavender-300"
+              />
+            </div>
+            <div class="relative">
+              <label
+                class="absolute -top-[0.625rem] left-[0.813rem] bg-eggshell-50 px-1"
+                for="by"
+                >By</label
+              >
+              <input
+                id="by"
+                name="by"
+                required
+                type="text"
+                placeholder="Albertslund"
+                class="input w-full border border-lavender-300"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 flex w-85">
+          <h2 class="text-m-lg">Betaling</h2>
+          <button
+            class="button-drop-shadow ml-auto self-center rounded-br-30 bg-bubblegum-100 px-4 pt-1 hover:bg-bubblegum-200"
+          >
+            Rediger
+          </button>
+        </div>
+        <p class="mt-5">Hvordan vil du betale?</p>
+
+        <div class="mt-5 flex w-85 flex-col gap-y-7">
+          <div class="relative">
+            <label
+              class="absolute -top-[0.625rem] left-[0.813rem] bg-eggshell-50 px-1"
+              for="kort"
+              >Kort nr.</label
+            >
+            <input
+              id="kort"
+              name="kort"
+              required
+              type="text"
+              placeholder="XXXX XXXX XXXX 1234"
+              class="input w-full border border-lavender-300"
+            />
+          </div>
+          <div class="flex gap-x-3">
+            <div class="relative">
+              <label
+                class="absolute -top-[0.625rem] left-[0.813rem] bg-eggshell-50 px-1"
+                for="udløbsdato"
+                >Udløbsdato</label
+              >
+              <input
+                id="udløbsdato"
+                name="udløbsdato"
+                required
+                type="text"
+                placeholder="10/26"
+                class="input w-full border border-lavender-300"
+              />
+            </div>
+            <div class="relative">
+              <label
+                class="absolute -top-[0.625rem] left-[0.813rem] bg-eggshell-50 px-1"
+                for="cvc"
+                >CVC</label
+              >
+              <input
+                id="cvc"
+                name="cvc"
+                required
+                type="text"
+                placeholder="222"
+                class="input w-full border border-lavender-300"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer class="bg-lime-100">
       <!-- MOBIL OG TABLET FOOTER -->
       <div
