@@ -230,16 +230,18 @@
           den bedste udgave af dig selv.
         </p>
 
-        <div class="grid place-content-center">
+        <div class="grid place-content-center justify-items-center">
           <img
-            class="w-48"
+            class="mb-2 w-48"
             src="/images/avatar_img.webp"
             alt="profil billede"
           />
-          <button class="flex flex-row gap-4 rounded-xl bg-lime-200 px-3">
+          <button
+            class="flex flex-row items-center gap-4 rounded-xl bg-lime-200 px-3 pt-1"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="32"
+              width="20"
               height="32"
               viewBox="0 0 512 512"
             >
@@ -250,8 +252,185 @@
             >Rediger profilbillede
           </button>
         </div>
+
+        <!-- PROGRESS BAR -->
+        <progress
+          class="progress progress-warning mt-10 w-85 bg-lavender-100"
+          value="20"
+          max="100"
+        ></progress>
+
+        <!-- HUD -->
+        <h2 class="mt-2 text-m-md">Hud</h2>
+        <div class="flex flex-wrap gap-3">
+          <p class="bg-[#fef5eb] text-center text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">100</p>
+          <p class="bg-[#fcead4] text-center text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">130</p>
+          <p class="bg-[#fce2c4] text-center text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">160</p>
+          <p class="bg-[#fad3a5] text-center text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">190</p>
+          <p class="bg-[#f8c386] text-center text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">200</p>
+          <p class="bg-[#f6ac58] text-center text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">230</p>
+          <p class="bg-[#f5a140] text-center text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">260</p>
+          <p class="bg-[#f28a12] text-center text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">290</p>
+          <p class="bg-[#ba6809] text-center text-eggshell-50 text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">300</p>
+          <p class="bg-[#9b5607] text-center text-eggshell-50 text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">330</p>
+          <p class="bg-[#8b4e07] text-center text-eggshell-50 text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">360</p>
+          <p class="bg-[#744105] text-center text-eggshell-50 text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">390</p>
+          <p class="bg-[#552f04] text-center text-eggshell-50 text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">400</p>
+          <p class="bg-[#452703] text-center text-eggshell-50 text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">430</p>
+          <p class="bg-[#361e02] text-center text-eggshell-50 text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">460</p>
+          <p class="bg-[#261501] text-center text-eggshell-50 text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">490</p>
+        </div>
+        </div>
+        <p class="pt-3 pb-1">Hvilken farve beskriver bedst din hudtone?</p>
+        <select class="select w-full max-w-sm bg-lavender-100">
+          <option disabled selected>Vælg farve</option>
+          <option>100</option>
+          <option>130</option>
+          <option>160</option>
+          <option>190</option>
+          <option>200</option>
+          <option>230</option>
+          <option>260</option>
+          <option>290</option>
+          <option>300</option>
+          <option>330</option>
+          <option>360</option>
+          <option>390</option>
+          <option>400</option>
+          <option>430</option>
+          <option>460</option>
+          <option>490</option>
+        </select>
+
+        <div class=" flex items-center gap-2 mt-10">
+          <p class="pt-3 pb-1">Hvordan vil du beskrive din hudtype? </p>
+          <label for="my-modal-hudtype" class=" cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 40 40"><path fill="currentColor" d="M20.75 15.75a1.11 1.11 0 0 0 1.107-1.107v-1.11c0-.605-.497-1.107-1.107-1.107s-1.109.502-1.109 1.107v1.11c0 .609.499 1.107 1.109 1.107zm-2.214 4.431h1.105v6.278c0 .609.499 1.107 1.109 1.107a1.11 1.11 0 0 0 1.107-1.107v-7.386a1.11 1.11 0 0 0-1.107-1.107h-2.214c-.611 0-1.109.499-1.109 1.107c0 .61.498 1.108 1.109 1.108zm0 0"/><path fill="currentColor" d="M20 33.75c-7.582 0-13.75-6.168-13.75-13.749C6.25 12.419 12.418 6.25 20 6.25s13.75 6.169 13.75 13.751c0 7.581-6.168 13.749-13.75 13.749zm0-26.5c-7.03 0-12.75 5.72-12.75 12.751c0 7.03 5.72 12.749 12.75 12.749s12.75-5.719 12.75-12.749C32.75 12.97 27.03 7.25 20 7.25z"/></svg></label>
+        </div>
+        
+        <select class="select w-full max-w-sm bg-lavender-100">
+          <option disabled selected>Vælg hudtype</option>
+          <option>Fedtet</option>
+          <option>Tør</option>
+          <option>Kombination</option>
+          <option>Sensitiv</option>
+          <option>Normal</option>
+         
+        </select>
+
+        <form class="flex flex-col mt-10" action="">
+          <div class="flex items-center gap-2 pb-1">
+            <legend>Hudproblemer</legend>
+            <label for="my-modal-hudproblemer" class=" cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 40 40"><path fill="currentColor" d="M20.75 15.75a1.11 1.11 0 0 0 1.107-1.107v-1.11c0-.605-.497-1.107-1.107-1.107s-1.109.502-1.109 1.107v1.11c0 .609.499 1.107 1.109 1.107zm-2.214 4.431h1.105v6.278c0 .609.499 1.107 1.109 1.107a1.11 1.11 0 0 0 1.107-1.107v-7.386a1.11 1.11 0 0 0-1.107-1.107h-2.214c-.611 0-1.109.499-1.109 1.107c0 .61.498 1.108 1.109 1.108zm0 0"/><path fill="currentColor" d="M20 33.75c-7.582 0-13.75-6.168-13.75-13.749C6.25 12.419 12.418 6.25 20 6.25s13.75 6.169 13.75 13.751c0 7.581-6.168 13.749-13.75 13.749zm0-26.5c-7.03 0-12.75 5.72-12.75 12.751c0 7.03 5.72 12.749 12.75 12.749s12.75-5.719 12.75-12.749C32.75 12.97 27.03 7.25 20 7.25z"/></svg></label>
+          </div>
+
+          <div class="flex gap-5 p-5 rounded-br-7 max-w-sm text-m-xs bg-lavender-100">
+            <div class="basis-1/2">
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="Dehydrering"
+                  name="Dehydrering"
+                />
+                <label class="label cursor-pointer" for="Dehydrering"
+                  >Dehydrering</label
+                >
+              </div>
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="rynker"
+                  name="rynker"
+                />
+                <label class="label cursor-pointer" for="rynker"
+                  >Fine linjer / rynker</label
+                >
+              </div>
+            
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="neglelak"
+                  name="neglelak"
+                />
+                <label class="label cursor-pointer" for="neglelak"
+                  >Skader / bumser / urenheder</label
+                >
+              </div>
+           
+
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="Hyperpigmentering"
+                  name="Hyperpigmentering"
+                />
+                <label class="label cursor-pointer" for="Hyperpigmentering"
+                  >Hyperpigmentering / solskader</label
+                >
+              </div>
+            </div>
+            <div class="basis-1/2">
+              
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="Rødme"
+                  name="Rødme"
+                />
+                <label class="label cursor-pointer" for="Rødme"
+                  >Rødme</label
+                >
+              </div>
+              
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="Dybeporer"
+                  name="Dybeporer"
+                />
+                <label class="label cursor-pointer" for="Dybeporer"
+                  >Dybe porer</label
+                >
+              </div>
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="elasticitet"
+                  name="elasticitet"
+                />
+                <label class="label cursor-pointer" for="elasticitet"
+                  > Tab af elasticitet</label
+                >
+              </div>
+
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="Ingenhudproblemer"
+                  name="Ingenhudproblemer"
+                />
+                <label class="label cursor-pointer" for="Ingenhudproblemer"
+                  >Ingen hudproblemer</label
+                >
+              </div>
+
+            
+            </div>
+          </div>
+        </form>
+
+        
       </section>
     </main>
+
     <footer class="bg-lime-100">
       <!-- MOBIL OG TABLET FOOTER -->
       <div
@@ -445,7 +624,7 @@
       <!-- DESKTOP FOOTER SLUT -->
     </footer>
 
-    <!-- MODAL POP UP -->
+    <!-- MODAL WEBSHOP POP UP -->
     <input type="checkbox" id="modal-webshop" class="modal-toggle" />
     <div class="modal">
       <div class="modal-box relative bg-eggshell-200">
@@ -464,7 +643,109 @@
         </p>
       </div>
     </div>
-    <!-- MODAL POP UP SLUT -->
+    
+    <!-- MODAL HUDTYPE -->
+    <input type="checkbox" id="my-modal-hudtype" class="modal-toggle" />
+    <div class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box max-h-96">
+    <h3 class="font-bold">Hudtyper</h3>
+    <p class="py-4 text-m-xs"> <span class="font-bold ">Fedtet hud</span> er en hudtype med en høj produktion - eller overproduktion - af olie/talg.
+      </p>
+      <p class="text-m-xs">Sådan identificerer du fedtet hud:</p>
+        <ul class=" text-m-xs list-disc list-inside">
+          <li>Udvidede og mere synlige porer</li>
+          <li>En skinnende overflade</li>
+          <li>Tykkere og mere bleg hud</li>
+          <li>En tendens til tilstopning af porer</li>
+        </ul>
+        <p class="py-4 text-m-xs"> <span class="font-bold">Tør hud</span> er en hudtype, der producerer mindre olie/talg end normal hud.
+        </p>
+        <p class="text-m-xs">Sådan identificerer du tør hud:</p>
+          <ul class="text-m-xs list-disc list-inside">
+            <li>Udvidede og mere synlige porer</li>
+            <li>En skinnende overflade</li>
+            <li>Tykkere og mere bleg hud</li>
+            <li>En tendens til tilstopning af porer</li>
+          </ul>
+          <p class="py-4 text-m-xs"> <span class="font-bold">Kombineret hud</span>, består af en blanding af forskellige hudtyper.
+          </p>
+          <p class="text-m-xs">Sådan identificerer du kombineret hud:</p>
+            <ul class="text-m-xs list-disc list-inside">
+              <li>En fedtet T-zone (pande, hage og næse)</li>
+              <li>Normale til tørre kinder</li>
+              <li>Forstørrede porer</li>
+              <li>Tilbøjelig til at få urenheder/hudorme</li>
+            </ul>
+            <p class="py-4 text-m-xs"> <span class="font-bold">Sensitiv hud</span> er en hudtype, der har en tendens til at føles tør, ofte rød/rødsprængt, og hvor næsten al hudpleje synes at svie, brænde eller kløe på huden.
+            </p>
+            <p class="text-m-xs">Sådan identificerer du sensitiv hud:</p>
+              <ul class="text-m-xs list-disc list-inside">
+                <li>Huden føles stram, kløende og ru</li>
+                <li>Lav elasticitet i huden</li>
+                <li>Rødme i dele af ansigtet</li>
+                <li>Huden Rødmer let</li>
+                <li>Huden bliver let irriteret</li>
+              </ul>
+              <p class="py-4 text-m-xs"> <span class="font-bold">Normal hud</span> er en velafbalanceret hud, der ikke reagerer og forbliver rolig det meste af tiden.
+              </p>
+              <p class="text-m-xs">Sådan identificerer du normal hud:</p>
+                <ul class="text-m-xs list-disc list-inside">
+                  <li>Finere porer</li>
+                  <li>God blodcirkulation</li>
+                  <li>En glat og blød overflade på hudend</li>
+                  <li>Ingen urenheder</li>
+                  <li>Ingen følsomhed</li>
+                </ul>
+    <div class="modal-action">
+      <label for="my-modal-hudtype" class="bg-lime-200 px-5 py-3 rounded-br-30 button-drop-shadow cursor-pointer">Fortsæt</label>
+    </div>
+  </div>
+    </div>
+
+     <!-- MODAL HUDPROBLEMER -->
+     <input type="checkbox" id="my-modal-hudproblemer" class="modal-toggle" />
+     <div class="modal modal-bottom sm:modal-middle">
+   <div class="modal-box max-h-96">
+     <h3 class="font-bold">Hudproblemer</h3>
+     <p class="py-4 font-bold  text-m-xs"> Dehydrering 
+       </p>
+       <p class="text-m-xs">Enhver hudtype, uanset om den er tør, fedtet eller kombineret, kan have problemer med dehydrering fra tid til anden. Det er en ændring i det overfladiske lag af overhuden, der mangler vand. Denne mangel på hydrering forstyrrer hudens barrierefunktion og fører til ubehag. Selv om symptomerne er meget ens, bør dehydreret hud ikke forveksles med tør hud. Der er tale om to forskellige hudproblemer. Dehydreret hud er en midlertidig tilstand, der kan hjælpes med passende produkter - mens tør hud er en hudtype og en mere permanent tilstand
+       </p>
+
+       <p class="py-4 font-bold  text-m-xs">Rødme 
+      </p>
+      <p class="text-m-xs">Rødme kan være forbundet med en følsom hudtype. Andre årsager kan være potentielle hudlidelser, herunder hudinfektioner og -tilstande som rosacea, akne og eksem samt allergiske og inflammatoriske tilstande. Sådanne tilstande bør altid behandles/konsulteres af en læge.</p>
+
+      <p class="py-4 font-bold  text-m-xs"> Dybe porer 
+      </p>
+      <p class="text-m-xs">Forstørrede porer er ofte genetiske og knyttet til en bestemt hudtype. Årsagerne er normalt et højt niveau af olieproduktion (talg).</p>
+
+      <p class="py-4 font-bold  text-m-xs"> Hyperpigmentering / solskader 
+      </p>
+      <p class="text-m-xs">Hyperpigmentering er et begreb, der henviser til misfarvning eller mørkfarvning af huden på grund af en overskydende melaninproduktion. Dette kan skyldes en række forskellige faktorer: Solskader, akne ar og i nogle tilfælde kan hormoner forårsage, at din hud bliver mørkere.</p>
+
+      <p class="py-4 font-bold  text-m-xs"> Fine linjer / rynker
+      </p>
+      <p class="text-m-xs">Mens fine linjer er overfladiske og ligger tættere på hudens overflade, er rynker mere dybdegående. Med alderen kan nogle fine linjer blive til rynker, efterhånden som huden mister sin elasticitet og fasthed. Selv om alder er en vigtig faktor i forbindelse med linjer og rynker, kan eksterne faktorer som f.eks. soleksponering og forurening også have en indvirkning.</p>
+
+      <p class="py-4 font-bold  text-m-xs"> Skader / bumser / urenheder 
+      </p>
+      <p class="text-m-xs">Urenheder i huden, bumser og hudorme opstår normalt i perioder med hormonelle udsving. Det kan være et midlertidigt problem eller et mere permanent problem, der er knyttet til en bestemt hudtype.</p>
+
+      <p class="py-4 font-bold  text-m-xs"> Tab af elasticitet 
+      </p>
+      <p class="text-m-xs">Hudens elasticitet er hudens evne til at strække sig og vende tilbage til sin oprindelige form. Huden kan virke kedelig eller ru. Hovedårsagerne er moden hud, soleksponering, luftforurening, ernæring og rygning.</p>
+
+      <p class="py-4 font-bold  text-m-xs"> Ingen hudproblemer 
+      </p>
+      <p class="text-m-xs">Hvis du ikke har nogen hudproblemer, kan du give os besked ved at vælge denne.</p>
+       
+         
+     <div class="modal-action">
+       <label for="my-modal-hudproblemer" class="bg-lime-200 px-5 py-3 rounded-br-30 button-drop-shadow cursor-pointer">Fortsæt</label>
+     </div>
+   </div>
+     </div>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
