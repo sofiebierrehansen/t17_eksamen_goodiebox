@@ -27,9 +27,6 @@ function toggleMenu() {
   }
 }
 
-// ---------- LOADING----------- //
-animate("body", { opacity: [0, 1] }, { duration: 5 });
-
 // ---------- LOGIN ----------- //
 class Login extends HTMLElement {
   constructor() {
