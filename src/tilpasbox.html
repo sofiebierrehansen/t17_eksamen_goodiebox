@@ -216,7 +216,9 @@
     <main>
       <!-- BREADCRUMBS -->
       <section>
-        <div class="breadcrumbs px-5 pt-5 text-m-xs">
+        <div
+          class="breadcrumbs px-5 pt-5 text-m-xs md:px-10 md:pt-10 md:text-t-xs"
+        >
           <ul>
             <li class="underline"><a href="index.html">Forside</a></li>
             <li>Mit Goodiebox</li>
@@ -226,35 +228,39 @@
       </section>
       <!-- BREADCRUMBS SLUT -->
 
-      <section class="px-5 py-5">
-        <h1 class="pb-5 font-bely text-m-2xl">Tilpas min box</h1>
-        <p class="pb-5">
-          Vi ønsker at din Goodiebox indeholder lige dén form for selvforkælelse
-          du har brug for. Vi har derfor gjort det muligt for dig at tilpasse
-          din box ud fra dine behov.
-        </p>
-        <p class="pb-5">
-          Hvis der er et mærke eller en produkttype du ikke er interesseret i at
-          modtage, kan du angive det på denne side, og vi vil tilpasse indholdet
-          derefter.
-        </p>
-        <div
-          class="grid-row-1 grid max-w-sm grid-cols-4 place-content-center pb-5"
-        >
-          <img
-            class="col-span-3 col-start-2 row-start-1 mt-12 ml-auto"
-            src="/images/bubblegumbox.svg"
-            alt="lyserødfarvet baggrund"
-          />
-          <img
-            class="col-span-3 col-start-1 row-start-1 w-64"
-            src="/images/mobile_tilpas_min_box_img.webp"
-            alt="slørret hånd med et beautyprodukt i hånden. baggrunden er en åben beautybox"
-          />
-        </div>
+      <section class="px-5 py-5 md:px-10 md:py-10">
+        <h1 class="pb-5 font-bely text-m-2xl md:text-t-2xl">Tilpas min box</h1>
+        <div class="md:grid md:w-100 md:grid-cols-2">
+          <div class="md:w-[450px] md:bg-bubblegum-100 md:py-10 md:px-10 ">
+            <p class="pb-5 md:pr-12">
+              Vi ønsker at din Goodiebox indeholder lige dén form for
+              selvforkælelse du har brug for. Vi har derfor gjort det muligt for
+              dig at tilpasse din box ud fra dine behov.
+            </p>
+            <p class="pb-5 md:pr-12">
+              Hvis der er et mærke eller en produkttype du ikke er interesseret
+              i at modtage, kan du angive det på denne side, og vi vil tilpasse
+              indholdet derefter.
+            </p>
+          </div>
+          <div
+            class="grid-row-1 grid max-w-sm grid-cols-4 place-content-center pb-5 md:relative md:grid-cols-none md:pb-0"
+          >
+            <img
+              class="col-span-3 col-start-2 row-start-1 mt-12 ml-auto md:hidden"
+              src="/images/bubblegumbox.svg"
+              alt="lyserødfarvet baggrund"
+            />
+            <img
+              class="col-span-3 col-start-1 row-start-1 w-64 md:h-[20.938rem] md:object-cover md:absolute md:top-11 md:left-0 md:w-full"
+              src="/images/mobile_tilpas_min_box_img.webp"
+              alt="slørret hånd med et beautyprodukt i hånden. baggrunden er en åben beautybox"
+            />
+          </div>
+        </div">
       </section>
 
-      <section class="px-5 py-5">
+      <section class="px-5 py-5 md:px-10 md:py-10">
         <h2 class="pb-10 font-bely text-m-xl">Jeg ønsker ikke at modtage:</h2>
 
         <!-- PRODUKTTYPE -->
