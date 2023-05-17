@@ -229,7 +229,7 @@
       <!-- BREADCRUMBS SLUT -->
 
       <section class="px-5 py-5 md:px-10 md:py-10">
-        <h1 class="pb-5 font-bely text-m-2xl md:text-t-2xl">Tilpas min box</h1>
+        <h1 class="pb-5 font-bely text-m-2xl md:text-t-2xl md:max-w-lg">Tilpas min box</h1>
         <div class="md:grid md:w-100 md:grid-cols-2">
           <div class="md:w-[450px] md:bg-bubblegum-100 md:py-10 md:px-10 ">
             <p class="pb-5 md:pr-12">
@@ -261,11 +261,11 @@
       </section>
 
       <section class="px-5 py-5 md:px-10 md:py-10">
-        <h2 class="pb-10 font-bely text-m-xl">Jeg ønsker ikke at modtage:</h2>
+        <h2 class="pb-10 font-bely text-m-xl md:max-w-lg md:text-t-xl">Jeg ønsker ikke at modtage:</h2>
 
-        <!-- PRODUKTTYPE -->
-        <form class="flex flex-col border-b border-lavender-300" action="">
-          <legend class="text-m-lg">Produkttype</legend>
+        <!-- PRODUKTTYPE MOBIL -->
+        <form class="flex flex-col border-b border-lavender-300 md:hidden" action="">
+          <legend class="text-m-lg ">Produkttype</legend>
 
           <div class="flex gap-5 pb-5">
             <div class="basis-1/2">
@@ -421,10 +421,174 @@
             >Gem valgte</label
           >
         </form>
+        <!-- PRODUKTTYPE TABLET + DESKTOP -->
+        <form class="md:flex md:flex-col border-b border-lavender-300 hidden " action="">
+          <div class="md:flex md:flex-row">
+            <legend class="text-m-lg ">Produkttype</legend>
+            <label
+            for="my-modal-gem"
+            class="button-drop-shadow ml-auto rounded-br-30 bg-bubblegum-100 px-5 pt-2 pb-1 hover:bg-bubblegum-200"
+            >Gem valgte</label
+          >
+          </div>
+          <div class="flex gap-5 pb-5">
+            <div class="md:basis-1/4">
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="læbestift"
+                  name="læbestift"
+                />
+                <label class="label cursor-pointer" for="læbestift"
+                  >Læbestift</label
+                >
+              </div>
 
-        <!-- MAKEUP FARVE -->
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="øjenskygge"
+                  name="øjenskygge"
+                />
+                <label class="label cursor-pointer" for="øjenskygge"
+                  >Øjenskygge</label
+                >
+              </div>
+
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="brynprodukter"
+                  name="brynprodukter"
+                />
+                <label class="label cursor-pointer" for="brynprodukter"
+                  >Bryn produkter</label
+                >
+              </div>
+
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="ansigtscreme"
+                  name="ansigtscreme"
+                />
+                <label class="label cursor-pointer" for="ansigtscreme"
+                  >Ansigtscreme</label
+                >
+              </div>
+
+              
+            </div>
+            <div class="md:basis-1/4">
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox border-lavender-300"
+                  type="checkbox"
+                  id="bodylotion"
+                  name="bodylotion"
+                />
+                <label class="label cursor-pointer" for="bodylotion"
+                  >Bodylotion</label
+                >
+              </div>
+
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="håndcreme"
+                  name="håndcreme"
+                />
+                <label class="label cursor-pointer" for="håndcreme"
+                  >Håndcreme</label
+                >
+              </div>
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="hårprodukter"
+                  name="hårprodukter"
+                />
+                <label class="label cursor-pointer" for="hårprodukter"
+                  >Hår produkter</label
+                >
+              </div>
+
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="neglelak"
+                  name="neglelak"
+                />
+                <label class="label cursor-pointer" for="neglelak"
+                  >Neglelak</label
+                >
+              </div>
+
+              
+            </div>
+            <div class="md:basis-1/4">
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="vitaminer"
+                  name="vitaminer"
+                />
+                <label class="label cursor-pointer" for="vitaminer"
+                  >Vitaminer</label
+                >
+              </div>
+
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="accessories"
+                  name="accessories"
+                />
+                <label class="label cursor-pointer" for="accessories"
+                  >Accessories</label
+                >
+              </div>
+
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox border-lavender-300"
+                  type="checkbox"
+                  id="parfume"
+                  name="parfume"
+                />
+                <label class="label cursor-pointer" for="parfume"
+                  >Parfume</label
+                >
+              </div>
+
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="ansigtsmaske"
+                  name="ansigtsmaske"
+                />
+                <label class="label cursor-pointer" for="ansigtsmaske"
+                  >Ansigtsmaske</label
+                >
+              </div>
+            </div>
+          </div>
+          
+        </form>
+
+        <!-- MAKEUP FARVE MOBIL -->
         <form
-          class="flex flex-col border-b border-lavender-300 pt-10"
+          class="flex flex-col border-b border-lavender-300 pt-10 md:hidden"
           action=""
         >
           <legend class="text-m-lg">Makeup farve</legend>
@@ -582,6 +746,168 @@
             class="button-drop-shadow mb-10 self-end rounded-br-30 bg-bubblegum-100 px-5 pt-2 pb-1 hover:bg-bubblegum-200"
             >Gem valgte</label
           >
+        </form>
+
+        <!-- MAKEUP FARVE TABLET + DESKTOP -->
+        <form
+          class="md:flex md:flex-col border-b border-lavender-300 pt-10 hidden"
+          action=""
+        >
+          <div class="md:flex md:flex-row">
+            <legend class="text-m-lg">Makeup farve</legend>
+            <label
+            for="my-modal-gem"
+            class="button-drop-shadow ml-auto self-end rounded-br-30 bg-bubblegum-100 px-5 pt-2 pb-1 hover:bg-bubblegum-200"
+            >Gem valgte</label
+          >
+          </div>
+          <div class="flex gap-5 pb-5">
+            <div class="md:basis-1/4">
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="rød"
+                  name="rød"
+                />
+                <label class="label cursor-pointer" for="rød">Rød</label>
+              </div>
+
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="blå"
+                  name="blå"
+                />
+                <label class="label cursor-pointer" for="blå">Blå</label>
+              </div>
+
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="gul"
+                  name="gul"
+                />
+                <label class="label cursor-pointer" for="gul">Gul</label>
+              </div>
+
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="grøn"
+                  name="grøn"
+                />
+                <label class="label cursor-pointer" for="grøn">Grøn</label>
+              </div>
+
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox border-lavender-300"
+                  type="checkbox"
+                  id="orange"
+                  name="orange"
+                />
+                <label class="label cursor-pointer" for="orange">Orange</label>
+              </div>
+            </div>
+            <div class="md:basis-1/4">
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="brun"
+                  name="brun"
+                />
+                <label class="label cursor-pointer" for="brun">Brun</label>
+              </div>
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="glimmer"
+                  name="glimmer"
+                />
+                <label class="label cursor-pointer" for="glimmer"
+                  >Glimmer</label
+                >
+              </div>
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="lyserød"
+                  name="lyserød"
+                />
+                <label class="label cursor-pointer" for="lyserød"
+                  >Lyserød</label
+                >
+              </div>
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="beige"
+                  name="beige"
+                />
+                <label class="label cursor-pointer" for="beige">Beige</label>
+              </div>
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="lilla"
+                  name="lilla"
+                />
+                <label class="label cursor-pointer" for="lilla">Lilla</label>
+              </div>
+            </div>
+            <div class="md:basis-1/4">
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="sort"
+                  name="sort"
+                />
+                <label class="label cursor-pointer" for="sort">Sort</label>
+              </div>
+
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox border-lavender-300"
+                  type="checkbox"
+                  id="hvid"
+                  name="hvid"
+                />
+                <label class="label cursor-pointer" for="hvid">Hvid</label>
+              </div>
+
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="grå"
+                  name="grå"
+                />
+                <label class="label cursor-pointer" for="grå">Grå</label>
+              </div>
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="multifarvet"
+                  name="multifarvet"
+                />
+                <label class="label cursor-pointer" for="multifarvet"
+                  >Multifarvet</label
+                >
+              </div>
+            </div>
+          </div>
+          
         </form>
 
         <!-- BRANDS -->
