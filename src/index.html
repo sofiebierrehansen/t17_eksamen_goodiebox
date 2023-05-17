@@ -303,12 +303,12 @@
 </section>
 
 <section class="px-5 py-5 md:px-10 md:py-10">
-  <h2 class="font-bely text-m-xl pb-5 md:text-t-xl"> Vores abonnementer</h2>
+  <h2 class="font-bely text-m-xl pb-5 md:text-t-xl md:pb-10 md:max-w-lg"> Vores abonnementer</h2>
 
-  <div class="grid place-content-center">
+  <div class="grid place-content-center md:grid-cols-2 md:gap-10">
 
     <!-- THE CLASSIC ONE -->
-    <article class=" bg-eggshell-200 card-shadow border border-peachy-300 rounded-br-7 p-5 mb-5 w-85">
+    <article class=" bg-eggshell-200 card-shadow border border-peachy-300 rounded-br-7 p-5 mb-5 w-85 md:mb-0">
       <div class="relative">
         <img class=" rounded-br-7" src="/images/classic_box.jpg" alt="the classic box">
         <p class=" absolute top-0 left-[69%] rounded-tr-br-7 rounded-bl-br-7 text-m-xs bg-lime-200 text-center w-24 py-1">Månedlig</p>
@@ -336,7 +336,7 @@
     </article>
 
     <!-- THE CUTE ONE -->
-    <article class=" bg-eggshell-200 card-shadow border border-peachy-300 rounded-br-7 p-5 mb-5 w-85">
+    <article class=" bg-eggshell-200 card-shadow border border-peachy-300 rounded-br-7 p-5 mb-5 w-85 md:mb-0">
       <div class="relative">
         <img class=" rounded-br-7" src="/images/cute_box.jpg" alt="the cute box">
         <p class=" absolute top-0 left-[69%] rounded-tr-br-7 rounded-bl-br-7 text-m-xs bg-lime-200 text-center w-24 py-1">Månedlig</p>
@@ -365,7 +365,7 @@
     </article>
 
     <!-- THE LUX ONE -->
-    <article class=" bg-eggshell-200 card-shadow border border-peachy-300 rounded-br-7 p-5 mb-5 w-85">
+    <article class=" bg-eggshell-200 card-shadow border border-peachy-300 rounded-br-7 p-5 mb-5 w-85 md:mb-0">
       <div class="relative">
         <img class=" rounded-br-7" src="/images/lux_box.jpg" alt="the lux box">
         <p class=" absolute top-0 left-[69%] rounded-tr-br-7 rounded-bl-br-7 text-m-xs bg-lime-200 text-center w-24 py-1">Kvartalsvis</p>
@@ -393,7 +393,7 @@
     </article>
 
     <!-- CRUSH BOX -->
-    <article class=" bg-peachy-100 card-shadow border border-peachy-300 rounded-br-7 p-5 mb-5 w-85">
+    <article class=" bg-peachy-100 card-shadow border border-peachy-300 rounded-br-7 p-5 mb-5 w-85 md:mb-0">
       <div class="relative">
         <img class=" rounded-br-7" src="/images/crush_box.jpg" alt="the crush box">
         <p class=" absolute top-0 left-[69%] rounded-tr-br-7 rounded-bl-br-7 text-m-xs bg-lime-200 text-center w-24 py-1">Kvartalsvis</p>
@@ -419,20 +419,27 @@
   </div>
 </section>
 
-<section class="px-5 py-5" >
-  <h2 class="font-bely text-m-xl pb-5">Tilpas min box</h2>
-  <p class="pb-5">Goodiebox tilbyder en personlig tilpasning af din månedlige Goodiebox, så den matcher dine individuelle præferencer og behov.</p>
-  <p class="pb-5">Du kan ændre dine præferencer til hver en tid ved at opdatere dine oplysninger. På den måde kan du sikre dig, at din Goodiebox altid indeholder produkter, der passer til dig og din personlige stil.</p>
-  <p class="">Vores mål er at give dig en unik og glædelig oplevelse. Ved at tilpasse din boks efter dine ønsker , kan vi sikre dig en endnu større glæde ved din Goodiebox' ankomst.</p>
-<div class="flex flex-col">
-  <button class=" bg-bubblegum-100 self-center rounded-br-30 py-2 w-52 my-10 button-drop-shadow hover:bg-bubblegum-200">Tilpas min box her</button>
-</div>
- <img src="/images/tilpas_box.webp" alt="åben box med en masse beauty produkter">
- <p class=" text-center text-lavender-300 text-m-md pt-10">“Self care is health care”</p>
+<section class="px-5 py-5 md:px-10 md:py-10" >
+  <div class=" md:grid md:grid-cols-2">
+    <div class="md:bg-lime-100 md:col-start-2 md:px-8 md:pt-8 md:h-[39.375rem]">
+      <h2 class="font-bely text-m-xl pb-5 md:text-t-xl md:max-w-lg">Tilpas min box</h2>
+      <p class="pb-5">Goodiebox tilbyder en personlig tilpasning af din månedlige Goodiebox, så den matcher dine individuelle præferencer og behov.</p>
+      <p class="pb-5">Du kan ændre dine præferencer til hver en tid ved at opdatere dine oplysninger. På den måde kan du sikre dig, at din Goodiebox altid indeholder produkter, der passer til dig og din personlige stil.</p>
+      <p class="">Vores mål er at give dig en unik og glædelig oplevelse. Ved at tilpasse din boks efter dine ønsker , kan vi sikre dig en endnu større glæde ved din Goodiebox' ankomst.</p>
+    <div class="flex flex-col">
+      <button class=" bg-bubblegum-100 self-center rounded-br-30 py-2 w-52 my-10 button-drop-shadow hover:bg-bubblegum-200">Tilpas min box her</button>
+    </div>
+    </div>
+   <img class="md:col-start-1 md:row-start-1 md:h-[39.375rem] md:object-cover" src="/images/tilpas_box.webp" alt="åben box med en masse beauty produkter">
+   
+  </div>
+
+   <p class=" text-center text-lavender-300 text-m-md pt-10 md:text-t-lg md:pt-20">“Self care is health care”</p>
+  
 </section>
 
-<section class="px-5 py-5" >
-  <h2 class="font-bely text-m-xl pb-5">Beauty profil</h2>
+<section class="px-5 py-5 md:px-10 md:py-10" >
+  <h2 class="font-bely text-m-xl pb-5 md:text-t-xl md:max-w-lg">Beauty profil</h2>
   <p class="">Vi ønsker, at du får en skønhedsoplevelse, der er tilpasset dig og dine unikke træk. Ved at personalisere din beauty profil kan vi sikre en mere skræddersyet Goodiebox til dig, som hjælper dig med at opnå den bedste udgave af dig selv.</p>
 <div class="flex flex-col">
   <button class=" bg-bubblegum-100 self-center rounded-br-30 py-2 w-52 my-10 button-drop-shadow hover:bg-bubblegum-200">Se min beauty profil</button>
