@@ -102,6 +102,9 @@ module.exports = {
         85: "21.875rem",
         100: "47.125rem",
       },
+      height: {
+        85: "21.875rem",
+      },
     },
   },
   plugins: [
