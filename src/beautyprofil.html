@@ -216,7 +216,7 @@
     <main>
       <!-- BREADCRUMBS -->
       <section>
-        <div class="breadcrumbs px-5 pt-5 text-m-xs">
+        <div class="breadcrumbs px-5 pt-5 text-m-xs md:px-10 md:pt-10 md:text-t-xs">
           <ul>
             <li class="underline"><a href="index.html">Forside</a></li>
             <li>Min profil</li>
@@ -225,48 +225,52 @@
         </div>
       </section>
       <!-- BREADCRUMBS SLUT -->
-      <section class="px-5 py-5">
-        <h1 class="pb-5 font-bely text-m-2xl">Min beauty profil</h1>
-        <p class="pb-5">
-          Vi ønsker, at du får en skønhedsoplevelse, der er tilpasset dig og
-          dine unikke træk. Ved at personalisere din beauty profil kan vi sikre
-          en mere skræddersyet Goodiebox til dig, som hjælper dig med at opnå
-          den bedste udgave af dig selv.
-        </p>
-
-        <div class="grid place-content-center justify-items-center">
-          <img
-            class="mb-2 w-48"
-            src="/images/avatar_img.webp"
-            alt="profil billede"
-          />
-          <button
-            class="flex flex-row items-center gap-4 rounded-xl bg-lime-200 px-3 pt-1"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="32"
-              viewBox="0 0 512 512"
+      <section class="px-5 py-5 md:px-10 md:py-10">
+       <div class="md:flex">
+          <div class="md:basis-1/2">
+            <h1 class="pb-5 font-bely text-m-2xl md:text-t-2xl md:max-w-lg">Min beauty profil</h1>
+            <p class="pb-5">
+              Vi ønsker, at du får en skønhedsoplevelse, der er tilpasset dig og
+              dine unikke træk. Ved at personalisere din beauty profil kan vi sikre
+              en mere skræddersyet Goodiebox til dig, som hjælper dig med at opnå
+              den bedste udgave af dig selv.
+            </p>
+          </div>
+  
+          <div class="grid place-content-center justify-items-center md:self-center md:mx-auto">
+            <img
+              class="mb-2 w-48"
+              src="/images/avatar_img.webp"
+              alt="profil billede"
+            />
+            <button
+              class="flex flex-row items-center gap-4 rounded-xl bg-lime-200 px-3 pt-1"
             >
-              <path
-                fill="currentColor"
-                d="M149.1 64.8L138.7 96H64c-35.3 0-64 28.7-64 64v256c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64h-74.7l-10.4-31.2C356.4 45.2 338.1 32 317.4 32H194.6c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192a96 96 0 1 1 0-192z"
-              /></svg
-            >Rediger profilbillede
-          </button>
-        </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M149.1 64.8L138.7 96H64c-35.3 0-64 28.7-64 64v256c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64h-74.7l-10.4-31.2C356.4 45.2 338.1 32 317.4 32H194.6c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192a96 96 0 1 1 0-192z"
+                /></svg
+              >Rediger profilbillede
+            </button>
+          </div>
+       </div>
 
         <!-- PROGRESS BAR -->
         <progress
-          class="progress progress-warning mt-10 w-85 bg-lavender-100"
+          class="progress progress-warning mt-10 w-85 bg-lavender-100 md:w-100"
           value="20"
           max="100"
         ></progress>
 
         <!-- HUD -->
-        <h2 class="mt-2 text-m-md">Hud</h2>
-        <div class="flex pt-3 flex-wrap gap-3">
+        <h2 class="mt-2 text-m-md md:mt-5 md:text-t-md">Hud</h2>
+        <div class="flex pt-3 flex-wrap gap-3 max-w-xs">
           <p class="bg-[#fef5eb] text-center text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">100</p>
           <p class="bg-[#fcead4] text-center text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">130</p>
           <p class="bg-[#fce2c4] text-center text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">160</p>
@@ -285,8 +289,8 @@
           <p class="bg-[#261501] text-center text-eggshell-50 text-m-xs pt-5 pb-4 w-16  rounded-br-7 border border-stone-400">490</p>
         </div>
         </div>
-        <p class="pt-3 pb-1">Hvilken farve beskriver bedst din hudtone?</p>
-        <select class="select w-full max-w-sm bg-lavender-100">
+        <p class="pt-3 pb-1 md:pt-5 md:pb-3">Hvilken farve beskriver bedst din hudtone?</p>
+        <select class="select w-full max-w-sm bg-lavender-100 md:max-w-3xl">
           <option disabled selected >Vælg farve</option>
           <option>100</option>
           <option>130</option>
@@ -307,11 +311,11 @@
         </select>
 
         <div class=" flex items-center gap-2 mt-10">
-          <p class="pt-3 pb-1">Hvordan vil du beskrive din hudtype? </p>
+          <p class="pt-3 pb-1 md:pt-5 md:pb-3">Hvordan vil du beskrive din hudtype? </p>
           <label for="my-modal-hudtype" class=" cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 40 40"><path fill="currentColor" d="M20.75 15.75a1.11 1.11 0 0 0 1.107-1.107v-1.11c0-.605-.497-1.107-1.107-1.107s-1.109.502-1.109 1.107v1.11c0 .609.499 1.107 1.109 1.107zm-2.214 4.431h1.105v6.278c0 .609.499 1.107 1.109 1.107a1.11 1.11 0 0 0 1.107-1.107v-7.386a1.11 1.11 0 0 0-1.107-1.107h-2.214c-.611 0-1.109.499-1.109 1.107c0 .61.498 1.108 1.109 1.108zm0 0"/><path fill="currentColor" d="M20 33.75c-7.582 0-13.75-6.168-13.75-13.749C6.25 12.419 12.418 6.25 20 6.25s13.75 6.169 13.75 13.751c0 7.581-6.168 13.749-13.75 13.749zm0-26.5c-7.03 0-12.75 5.72-12.75 12.751c0 7.03 5.72 12.749 12.75 12.749s12.75-5.719 12.75-12.749C32.75 12.97 27.03 7.25 20 7.25z"/></svg></label>
         </div>
         
-        <select class="select w-full max-w-sm bg-lavender-100">
+        <select class="select w-full max-w-sm bg-lavender-100 md:max-w-3xl">
           <option disabled selected >Vælg hudtype</option>
           <option>Fedtet</option>
           <option>Tør</option>
@@ -322,13 +326,11 @@
         </select>
 
         <form class="flex flex-col mt-10" action="">
-          <div class="flex items-center gap-2 pb-1">
+          <div class="flex items-center gap-2 pb-1 md:pt-5 md:pb-3">
             <legend>Hudproblemer</legend>
             <label for="my-modal-hudproblemer" class=" cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 40 40"><path fill="currentColor" d="M20.75 15.75a1.11 1.11 0 0 0 1.107-1.107v-1.11c0-.605-.497-1.107-1.107-1.107s-1.109.502-1.109 1.107v1.11c0 .609.499 1.107 1.109 1.107zm-2.214 4.431h1.105v6.278c0 .609.499 1.107 1.109 1.107a1.11 1.11 0 0 0 1.107-1.107v-7.386a1.11 1.11 0 0 0-1.107-1.107h-2.214c-.611 0-1.109.499-1.109 1.107c0 .61.498 1.108 1.109 1.108zm0 0"/><path fill="currentColor" d="M20 33.75c-7.582 0-13.75-6.168-13.75-13.749C6.25 12.419 12.418 6.25 20 6.25s13.75 6.169 13.75 13.751c0 7.581-6.168 13.749-13.75 13.749zm0-26.5c-7.03 0-12.75 5.72-12.75 12.751c0 7.03 5.72 12.749 12.75 12.749s12.75-5.719 12.75-12.749C32.75 12.97 27.03 7.25 20 7.25z"/></svg></label>
-          </div>
-          
-
-          <div class="flex gap-5 p-5 rounded-br-7 max-w-sm text-m-xs bg-lavender-100">
+          </div> 
+          <div class="flex gap-5 p-5 rounded-br-7 max-w-sm text-m-xs md:text-t-xs bg-lavender-100 md:max-w-3xl">
             <div class="basis-1/2">
               <div class="flex flex-row items-center">
                 <input
@@ -432,166 +434,303 @@
           </div>
 
         <!-- HÅR -->
-        <h2 class="mt-10  mb-1 text-m-md">Hår</h2>
+        <h2 class="mt-10  mb-1 text-m-md md:text-t-md md:mt-14">Hår</h2>
         <form class="flex pt-3 flex-col" action="">
-          <div class="flex items-center gap-2 pb-1">
+          <div class="flex items-center gap-2 pb-1 md:pt-5 md:pb-3">
           <legend>Hvordan vil du beskrive din hårtype?</legend>
           </div>
 
-          <div class="flex gap-5 p-5 rounded-br-7 max-w-sm text-m-xs bg-lavender-100">
-    <div class="basis-1/2">
-      <div class="flex flex-row items-center">
-        <input
-          class="checkbox-secondary checkbox"
-          type="checkbox"
-          id="Glat"
-          name="Glat"
-        />
-        <label class="label cursor-pointer" for="Glat"
-          >Glat</label
-        >
-      </div>
-      <div class="flex flex-row items-center">
-        <input
-          class="checkbox-secondary checkbox"
-          type="checkbox"
-          id="Bølget"
-          name="Bølget"
-        />
-        <label class="label cursor-pointer" for="Bølget"
-          >Bølget</label
-        >
-      </div>
-    
-      <div class="flex flex-row items-center">
-        <input
-          class="checkbox-secondary checkbox"
-          type="checkbox"
-          id="Krøllet"
-          name="Krøllet"
-        />
-        <label class="label cursor-pointer" for="Krøllet"
-          >Krøllet</label
-        >
-      </div>
-   
-
-      <div class="flex flex-row items-center">
-        <input
-          class="checkbox-secondary checkbox"
-          type="checkbox"
-          id="Coily"
-          name="Coily"
-        />
-        <label class="label cursor-pointer" for="Coily"
-          >Coily</label
-        >
-      </div>
-      <div class="flex flex-row items-center">
-        <input
-          class="checkbox-secondary checkbox"
-          type="checkbox"
-          id="Tyndt"
-          name="Tyndt"
-        />
-        <label class="label cursor-pointer" for="Tyndt"
-          >Tyndt</label
-        >
-      </div>
-      <div class="flex flex-row items-center">
-        <input
-          class="checkbox-secondary checkbox"
-          type="checkbox"
-          id="Tykt"
-          name="Tykt"
-        />
-        <label class="label cursor-pointer" for="Tykt"
-          >Tykt</label
-        >
-      </div>
-    </div>
-    <div class="basis-1/2">
+          <!-- mobil -->
+          <div class="flex gap-5 p-5 rounded-br-7 max-w-sm text-m-xs md:text-t-xs bg-lavender-100 md:hidden ">
+            <div class="basis-1/2">
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Glat"
+            name="Glat"
+          />
+          <label class="label cursor-pointer" for="Glat"
+            >Glat</label
+          >
+        </div>
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Bølget"
+            name="Bølget"
+          />
+          <label class="label cursor-pointer" for="Bølget"
+            >Bølget</label
+          >
+        </div>
       
-      <div class="flex flex-row items-center">
-        <input
-          class="checkbox-secondary checkbox"
-          type="checkbox"
-          id="Tør"
-          name="Tør"
-        />
-        <label class="label cursor-pointer" for="Tør"
-          >Tør</label
-        >
-      </div>
-      <div class="flex flex-row items-center">
-        <input
-          class="checkbox-secondary checkbox"
-          type="checkbox"
-          id="Normal"
-          name="Normal"
-        />
-        <label class="label cursor-pointer" for="Normal"
-          >Normal</label
-        >
-      </div>
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Krøllet"
+            name="Krøllet"
+          />
+          <label class="label cursor-pointer" for="Krøllet"
+            >Krøllet</label
+          >
+        </div>
+     
+  
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Coily"
+            name="Coily"
+          />
+          <label class="label cursor-pointer" for="Coily"
+            >Coily</label
+          >
+        </div>
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Tyndt"
+            name="Tyndt"
+          />
+          <label class="label cursor-pointer" for="Tyndt"
+            >Tyndt</label
+          >
+        </div>
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Tykt"
+            name="Tykt"
+          />
+          <label class="label cursor-pointer" for="Tykt"
+            >Tykt</label
+          >
+        </div>
+            </div>
+            <div class="basis-1/2">
+        
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Tør"
+            name="Tør"
+          />
+          <label class="label cursor-pointer" for="Tør"
+            >Tør</label
+          >
+        </div>
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Normal"
+            name="Normal"
+          />
+          <label class="label cursor-pointer" for="Normal"
+            >Normal</label
+          >
+        </div>
+        
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Fedtet"
+            name="Fedtet"
+          />
+          <label class="label cursor-pointer" for="Fedtet"
+            >Fedtet</label
+          >
+        </div>
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Meget kort"
+            name="Meget kort"
+          />
+          <label class="label cursor-pointer" for="Meget kort"
+            >Meget kort</label
+          >
+        </div>
+  
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="intethår"
+            name="intethår"
+          />
+          <label class="label cursor-pointer" for="intethår"
+            >Intet hår</label
+          >
+        </div>
+  
       
-      <div class="flex flex-row items-center">
-        <input
-          class="checkbox-secondary checkbox"
-          type="checkbox"
-          id="Fedtet"
-          name="Fedtet"
-        />
-        <label class="label cursor-pointer" for="Fedtet"
-          >Fedtet</label
-        >
-      </div>
-      <div class="flex flex-row items-center">
-        <input
-          class="checkbox-secondary checkbox"
-          type="checkbox"
-          id="Meget kort"
-          name="Meget kort"
-        />
-        <label class="label cursor-pointer" for="Meget kort"
-          >Meget kort</label
-        >
-      </div>
-
-      <div class="flex flex-row items-center">
-        <input
-          class="checkbox-secondary checkbox"
-          type="checkbox"
-          id="intethår"
-          name="intethår"
-        />
-        <label class="label cursor-pointer" for="intethår"
-          >Intet hår</label
-        >
-      </div>
-
-    
-    </div>
+            </div>
           </div>
+
+          <!-- tablet og desktop -->
+          <div class="hidden md:max-w-3xl md:flex gap-5 p-5 rounded-br-7 max-w-sm text-m-xs md:text-t-xs bg-lavender-100">
+            <div class="basis-1/3">
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Glat"
+            name="Glat"
+          />
+          <label class="label cursor-pointer" for="Glat"
+            >Glat</label
+          >
+        </div>
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Bølget"
+            name="Bølget"
+          />
+          <label class="label cursor-pointer" for="Bølget"
+            >Bølget</label
+          >
+        </div>
+      
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Krøllet"
+            name="Krøllet"
+          />
+          <label class="label cursor-pointer" for="Krøllet"
+            >Krøllet</label
+          >
+        </div>
+     
+  
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Coily"
+            name="Coily"
+          />
+          <label class="label cursor-pointer" for="Coily"
+            >Coily</label
+          >
+        </div>
+            </div>
+            <div class="basis-1/3">
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Tyndt"
+            name="Tyndt"
+          />
+          <label class="label cursor-pointer" for="Tyndt"
+            >Tyndt</label
+          >
+        </div>
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Tykt"
+            name="Tykt"
+          />
+          <label class="label cursor-pointer" for="Tykt"
+            >Tykt</label
+          >
+        </div>
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Tør"
+            name="Tør"
+          />
+          <label class="label cursor-pointer" for="Tør"
+            >Tør</label
+          >
+        </div>
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Normal"
+            name="Normal"
+          />
+          <label class="label cursor-pointer" for="Normal"
+            >Normal</label
+          >
+        </div>
+            </div>
+            <div class="basis-1/3">
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Fedtet"
+            name="Fedtet"
+          />
+          <label class="label cursor-pointer" for="Fedtet"
+            >Fedtet</label
+          >
+        </div>
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="Meget kort"
+            name="Meget kort"
+          />
+          <label class="label cursor-pointer" for="Meget kort"
+            >Meget kort</label
+          >
+        </div>
+  
+        <div class="flex flex-row items-center">
+          <input
+            class="checkbox-secondary checkbox"
+            type="checkbox"
+            id="intethår"
+            name="intethår"
+          />
+          <label class="label cursor-pointer" for="intethår"
+            >Intet hår</label
+          >
+        </div>
+            </div>
+          </div>  
         </form>
 
         <form class="flex mt-10 flex-col" action="">
-          <div class="flex items-center gap-2 pb-1">
+          <div class="flex items-center gap-2 pb-1 md:pt-5 md:pb-3">
           <legend>Hvordan vil du beskrive din hårfarve?</legend>
           </div>
 
-          <div class="flex gap-5 p-5 rounded-br-7 max-w-sm text-m-xs bg-lavender-100">
-    <div class="basis-1/2">
-      <div class="flex flex-row items-center">
-        <input
-          class="checkbox-secondary checkbox"
-          type="checkbox"
-          id="Blond"
-          name="Blond"
-        />
-        <label class="label cursor-pointer" for="Blond"
-          >Blond</label
-        >
+          <!-- mobil -->
+          <div class="flex gap-5 p-5 rounded-br-7 max-w-sm text-m-xs md:text-t-xs bg-lavender-100 md:hidden">
+            <div class="basis-1/2">
+              <div class="flex flex-row items-center">
+              <input
+                class="checkbox-secondary checkbox"
+                type="checkbox"
+                id="Blond"
+                name="Blond"
+                />
+              <label class="label cursor-pointer" for="Blond"
+              >Blond</label
+              >
       </div>
       <div class="flex flex-row items-center">
         <input
@@ -641,8 +780,8 @@
         >
       </div>
      
-    </div>
-    <div class="basis-1/2">
+            </div>
+            <div class="basis-1/2">
       
       <div class="flex flex-row items-center">
         <input
@@ -689,17 +828,131 @@
           >Intet hår</label
         >
       </div>    
-    </div>
+            </div>
+          </div>
+
+          <!-- tablet og desktop -->
+          <div class="hidden md:max-w-3xl md:flex gap-5 p-5 rounded-br-7 max-w-sm text-m-xs md:text-t-xs bg-lavender-100">
+            <div class="basis-1/3">
+              <div class="flex flex-row items-center">
+              <input
+                class="checkbox-secondary checkbox"
+                type="checkbox"
+                id="Blond"
+                name="Blond"
+                />
+              <label class="label cursor-pointer" for="Blond"
+              >Blond</label
+              >
+      </div>
+      <div class="flex flex-row items-center">
+        <input
+          class="checkbox-secondary checkbox"
+          type="checkbox"
+          id="Rødt"
+          name="Rødt"
+        />
+        <label class="label cursor-pointer" for="Rødt"
+          >Rødt</label
+        >
+      </div>
+    
+      <div class="flex flex-row items-center">
+        <input
+          class="checkbox-secondary checkbox"
+          type="checkbox"
+          id="Lysebrun"
+          name="Lysebrun"
+        />
+        <label class="label cursor-pointer" for="Lysebrun"
+          >Lysebrun</label
+        >
+      </div>
+   
+
+      <div class="flex flex-row items-center">
+        <input
+          class="checkbox-secondary checkbox"
+          type="checkbox"
+          id="Mørkebrun"
+          name="Mørkebrun"
+        />
+        <label class="label cursor-pointer" for="Mørkebrun"
+          >Mørkebrun</label
+        >
+      </div>
+            </div>
+            <div class="basis-1/3">
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="Sort"
+                  name="Sort"
+                />
+                <label class="label cursor-pointer" for="Sort"
+                  >Sort</label
+                >
+              </div>
+      <div class="flex flex-row items-center">
+        <input
+          class="checkbox-secondary checkbox"
+          type="checkbox"
+          id="Grå"
+          name="Grå"
+        />
+        <label class="label cursor-pointer" for="Grå"
+          >Grå</label
+        >
+      </div>
+      <div class="flex flex-row items-center">
+        <input
+          class="checkbox-secondary checkbox"
+          type="checkbox"
+          id="Hvid"
+          name="Hvid"
+        />
+        <label class="label cursor-pointer" for="Hvid"
+          >Hvid</label
+        >
+      </div>
+      
+      <div class="flex flex-row items-center">
+        <input
+          class="checkbox-secondary checkbox"
+          type="checkbox"
+          id="Farvet"
+          name="Farvet"
+        />
+        <label class="label cursor-pointer" for="Farvet"
+          >Farvet</label
+        >
+      </div>
+       
+            </div>
+            <div class="basis-1/3">
+              <div class="flex flex-row items-center">
+                <input
+                  class="checkbox-secondary checkbox"
+                  type="checkbox"
+                  id="intethår"
+                  name="intethår"
+                />
+                <label class="label cursor-pointer" for="intethår"
+                  >Intet hår</label
+                >
+              </div>   
+            </div>
           </div>
         </form>
         
         <!-- Øjne -->
-        <h2 class="mt-10  mb-1 text-m-md">Øjne</h2>
+        <h2 class="mt-10  mb-1 text-m-md md:text-t-md md:mt-14">Øjne</h2>
 
-        <div class=" flex pt-3 items-center gap-2">
+        <div class=" flex pt-3 items-center gap-2 md:pt-5 md:pb-3">
           <p class=" pb-1">Hvordan vil du beskrive din øjenfarve?</p>
         </div>
-        <select class="select w-full max-w-sm bg-lavender-100">
+        <select class="select w-full max-w-sm bg-lavender-100 md:max-w-3xl">
           <option disabled selected >Vælg øjenfarve</option>
           <option>Grøn</option>
           <option>Blå</option>
@@ -711,14 +964,14 @@
         </select>
 
 <!-- Øjenbryn  -->
-<h2 class="mt-10  mb-1 text-m-md">Øjenbryn </h2>
+<h2 class="mt-10  mb-1 text-m-md md:text-t-md md:mt-14">Øjenbryn </h2>
 
         <form class="flex pt-3 flex-col" action="">
-          <div class="flex items-center gap-2 pb-1">
+          <div class="flex items-center gap-2 pb-1 md:pt-5 md:pb-3">
           <legend>Hvordan vil du beskrive din øjenbrynsfarve?</legend>
           </div>
 
-          <div class="flex gap-5 p-5 rounded-br-7 max-w-sm text-m-xs bg-lavender-100">
+          <div class="flex gap-5 p-5 rounded-br-7 max-w-sm text-m-xs md:text-t-xs bg-lavender-100 md:max-w-3xl">
     <div class="basis-1/2">
       <div class="flex flex-row items-center">
         <input
@@ -821,14 +1074,14 @@
         </form>
 
 <!--Allergier -->
-<h2 class="mt-10  mb-1 text-m-md">Allergier</h2>
+<h2 class="mt-10  mb-1 text-m-md md:text-t-md md:mt-14">Allergier</h2>
 
         <form class="flex pt-3 flex-col" action="">
-          <div class="flex items-center gap-2 pb-1">
+          <div class="flex items-center gap-2 pb-1 md:pt-5 md:pb-3">
           <legend>Jeg kan ikke tåle:</legend>
           </div>
 
-          <div class="flex gap-5 p-5 rounded-br-7 max-w-sm text-m-xs bg-lavender-100">
+          <div class="flex gap-5 p-5 rounded-br-7 max-w-sm text-m-xs md:text-t-xs bg-lavender-100 md:max-w-3xl">
     <div class="basis-1/2">
       <div class="flex flex-row items-center">
         <input
