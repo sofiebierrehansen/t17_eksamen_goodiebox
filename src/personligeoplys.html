@@ -225,113 +225,139 @@
         </div>
       </section>
       <!-- BREADCRUMBS SLUT -->
-      <section class="mb-10 px-5 py-5">
-        <h1 class="pb-5 font-bely text-m-2xl">Mine personlige oplysninger</h1>
-        <div class="grid place-content-center justify-items-center">
-          <img
-            class="mb-2 w-48"
-            src="/images/avatar_img.webp"
-            alt="profil billede"
-          />
-          <button
-            class="flex flex-row items-center gap-4 rounded-xl bg-lime-200 px-3 pt-1"
+      <section class="mb-10 px-5 py-5 md:px-10 md:py-10">
+        <div class="md:flex md:flex-row">
+          <h1 class="pb-5 font-bely text-m-2xl md:text-t-2xl">
+            Mine personlige oplysninger
+          </h1>
+          <div
+            class="grid place-content-center justify-items-center md:basis-3/4"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="32"
-              viewBox="0 0 512 512"
+            <img
+              class="mb-2 w-48"
+              src="/images/avatar_img.webp"
+              alt="profil billede"
+            />
+            <button
+              class="flex flex-row items-center gap-4 rounded-xl bg-lime-200 px-3 pt-1"
             >
-              <path
-                fill="currentColor"
-                d="M149.1 64.8L138.7 96H64c-35.3 0-64 28.7-64 64v256c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64h-74.7l-10.4-31.2C356.4 45.2 338.1 32 317.4 32H194.6c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192a96 96 0 1 1 0-192z"
-              /></svg
-            >Rediger profilbillede
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M149.1 64.8L138.7 96H64c-35.3 0-64 28.7-64 64v256c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64h-74.7l-10.4-31.2C356.4 45.2 338.1 32 317.4 32H194.6c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192a96 96 0 1 1 0-192z"
+                /></svg
+              >Rediger profilbillede
+            </button>
+          </div>
         </div>
 
-        <div class="mt-10 flex w-85">
-          <h2 class="text-m-lg">Profil</h2>
+        <div
+          class="md:mt-10 md:flex md:flex-row md:flex-wrap md:gap-x-12 md:gap-y-10"
+        >
+          <!--PROFIL -->
+          <div class="md:order-1">
+            <div class="mt-10 flex w-85">
+              <h2 class="text-m-lg">Profil</h2>
+              <a
+                href="singleview.html"
+                class="button-drop-shadow ml-auto self-center rounded-br-30 bg-bubblegum-100 px-4 pt-1 hover:bg-bubblegum-200 md:hidden"
+              >
+                Rediger</a
+              >
+            </div>
+
+            <div class="mt-5 flex w-85 flex-col gap-y-5">
+              <div class="flex flex-col gap-y-1 md:flex-row md:gap-x-4">
+                <p class="font-bold">Fulde navn</p>
+                <p class="text-stone-300">Sofie Hansen</p>
+              </div>
+
+              <div class="flex flex-col gap-y-1 md:flex-row md:gap-x-4">
+                <p class="font-bold">E-mail</p>
+                <p class="text-stone-300">sofiehansen@hotmail.dk</p>
+              </div>
+
+              <div class="flex flex-col gap-y-1 md:flex-row md:gap-x-4">
+                <p class="font-bold">Password</p>
+                <p class="text-stone-300">********</p>
+              </div>
+
+              <div class="flex flex-col gap-y-1 md:flex-row md:gap-x-4">
+                <p class="font-bold">Telefon</p>
+                <p class="text-stone-300">+45 12 34 56 78</p>
+              </div>
+
+              <div class="flex flex-col gap-y-1 md:flex-row md:gap-x-4">
+                <p class="font-bold">Fødselsdag</p>
+                <p class="text-stone-300">09/01/1999</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- LEVERING -->
+          <div class="md:order-3">
+            <div class="mt-10 flex w-85 md:mt-0">
+              <h2 class="text-m-lg">Levering</h2>
+            </div>
+
+            <div class="mt-5 flex w-85 flex-col gap-y-5">
+              <div class="flex flex-col gap-y-1 md:flex-row md:gap-x-4">
+                <p class="font-bold">Adresse</p>
+                <p class="text-stone-300">Morbærhaven 24P</p>
+              </div>
+
+              <div class="flex flex-col gap-y-1 md:flex-row md:gap-x-4">
+                <p class="font-bold">Post nr.</p>
+                <p class="text-stone-300">2620</p>
+              </div>
+
+              <div class="flex flex-col gap-y-1 md:flex-row md:gap-x-4">
+                <p class="font-bold">By</p>
+                <p class="text-stone-300">Albertslund</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- BETALING -->
+          <div class="md:order-2">
+            <div class="mt-10 flex w-85">
+              <h2 class="text-m-lg">Betaling</h2>
+            </div>
+
+            <div class="mt-5 flex w-85 flex-col gap-y-5">
+              <div class="flex flex-col gap-y-1 md:flex-row md:gap-x-4">
+                <p class="font-bold">Kort nr.</p>
+                <p class="text-stone-300">XXXX XXXX XXXX 1234</p>
+              </div>
+
+              <div class="flex flex-col gap-y-1 md:flex-row md:gap-x-4">
+                <p class="font-bold">Kort indehavner</p>
+                <p class="text-stone-300">Sofie Hansen</p>
+              </div>
+
+              <div class="flex flex-col gap-y-1 md:flex-row md:gap-x-4">
+                <p class="font-bold">Udløbsdato</p>
+                <p class="text-stone-300">10/26</p>
+              </div>
+
+              <div class="flex flex-col gap-y-1 md:flex-row md:gap-x-4">
+                <p class="font-bold">CVC</p>
+                <p class="text-stone-300">222</p>
+              </div>
+            </div>
+          </div>
+
           <a
             href="singleview.html"
-            class="button-drop-shadow ml-auto self-center rounded-br-30 bg-bubblegum-100 px-4 pt-1 hover:bg-bubblegum-200"
+            class="button-drop-shadow hidden self-start rounded-br-30 bg-bubblegum-100 px-4 pt-1 hover:bg-bubblegum-200 md:order-4 md:block"
           >
             Rediger</a
           >
-        </div>
-
-        <div class="mt-5 flex w-85 flex-col gap-y-5">
-          <div class="flex flex-col gap-y-1">
-            <p class="font-bold">Fulde navn</p>
-            <p class="text-stone-300">Sofie Hansen</p>
-          </div>
-
-          <div class="flex flex-col gap-y-1">
-            <p class="font-bold">E-mail</p>
-            <p class="text-stone-300">sofiehansen@hotmail.dk</p>
-          </div>
-
-          <div class="flex flex-col gap-y-1">
-            <p class="font-bold">Password</p>
-            <p class="text-stone-300">********</p>
-          </div>
-
-          <div class="flex flex-col gap-y-1">
-            <p class="font-bold">Telefon</p>
-            <p class="text-stone-300">+45 12 34 56 78</p>
-          </div>
-
-          <div class="flex flex-col gap-y-1">
-            <p class="font-bold">Fødselsdag</p>
-            <p class="text-stone-300">09/01/1999</p>
-          </div>
-        </div>
-
-        <div class="mt-10 flex w-85">
-          <h2 class="text-m-lg">Levering</h2>
-        </div>
-
-        <div class="mt-5 flex w-85 flex-col gap-y-5">
-          <div class="flex flex-col gap-y-1">
-            <p class="font-bold">Adresse</p>
-            <p class="text-stone-300">Morbærhaven 24P</p>
-          </div>
-
-          <div class="flex flex-col gap-y-1">
-            <p class="font-bold">Post nr.</p>
-            <p class="text-stone-300">2620</p>
-          </div>
-
-          <div class="flex flex-col gap-y-1">
-            <p class="font-bold">By</p>
-            <p class="text-stone-300">Albertslund</p>
-          </div>
-        </div>
-
-        <div class="mt-10 flex w-85">
-          <h2 class="text-m-lg">Betaling</h2>
-        </div>
-
-        <div class="mt-5 flex w-85 flex-col gap-y-5">
-          <div class="flex flex-col gap-y-1">
-            <p class="font-bold">Kort nr.</p>
-            <p class="text-stone-300">XXXX XXXX XXXX 1234</p>
-          </div>
-
-          <div class="flex flex-col gap-y-1">
-            <p class="font-bold">Kort indehavner</p>
-            <p class="text-stone-300">Sofie Hansen</p>
-          </div>
-
-          <div class="flex flex-col gap-y-1">
-            <p class="font-bold">Udløbsdato</p>
-            <p class="text-stone-300">10/26</p>
-          </div>
-
-          <div class="flex flex-col gap-y-1">
-            <p class="font-bold">CVC</p>
-            <p class="text-stone-300">222</p>
-          </div>
         </div>
       </section>
     </main>
