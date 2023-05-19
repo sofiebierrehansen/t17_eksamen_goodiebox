@@ -18,10 +18,10 @@
     >
       Skip to content
     </a>
-    <header class=" z-50 sticky top-0">
+    <header class="sticky top-0 z-50">
       <!-- BURGER MENU -->
       <nav
-        class=" z-40 w-screen bg-eggshell-200 px-5 py-2 md:px-10 lg:hidden xl:max-w-screen-xl"
+        class="z-40 w-screen bg-eggshell-200 px-5 py-2 md:px-10 lg:hidden xl:max-w-screen-xl"
       >
         <div class="flex items-center">
           <a class="mr-auto" href="index.html">
@@ -207,13 +207,11 @@
 
       <!-- HAPPY MOMENT BANNER -->
       <div
-        class="grid w-screen place-items-center bg-bubblegum-200 py-1 px-5 text-m-xs xl:max-w-screen-xl lg:grid-cols-none lg:flex lg:flex-row lg:justify-between lg:px-36"
+        class="grid w-screen place-items-center bg-bubblegum-200 py-1 px-5 text-m-xs lg:flex lg:grid-cols-none lg:flex-row lg:justify-between lg:px-36 xl:max-w-screen-xl"
       >
-        
-          <p class="hidden lg:block">Happy moments hjem til dig</p>
-          <p class="">Happy moments hjem til dig</p>
-          <p class=" hidden lg:block">Happy moments hjem til dig</p>
-        
+        <p class="hidden lg:block">Happy moments hjem til dig</p>
+        <p class="">Happy moments hjem til dig</p>
+        <p class="hidden lg:block">Happy moments hjem til dig</p>
       </div>
       <!-- HAPPY MOMENT BANNER SLUT -->
     </header>
@@ -221,7 +219,7 @@
       <!-- BREADCRUMBS -->
       <section>
         <div
-          class="breadcrumbs px-5 pt-5 text-m-xs md:px-10 md:pt-10 md:text-t-xs"
+          class="breadcrumbs px-5 pt-5 text-m-xs md:px-10 md:pt-10 md:text-t-xs lg:px-36 lg:text-d-xs"
         >
           <ul>
             <li class="underline"><a href="index.html">Forside</a></li>
@@ -232,10 +230,16 @@
       </section>
       <!-- BREADCRUMBS SLUT -->
 
-      <section class="px-5 py-5 md:px-10 md:py-10">
-        <h1 class="pb-5 font-bely text-m-2xl md:text-t-2xl md:max-w-lg">Tilpas min box</h1>
-        <div class="md:grid md:w-100 md:grid-cols-2">
-          <div class="md:w-[450px] md:bg-bubblegum-100 md:py-10 md:px-10 ">
+      <section class="px-5 py-5 md:px-10 md:py-10 lg:px-36 lg:py-20">
+        <h1
+          class="pb-5 font-bely text-m-2xl md:max-w-lg md:text-t-2xl lg:max-w-fit lg:text-d-2xl"
+        >
+          Tilpas min box
+        </h1>
+
+        <!-- mobil + tabelt -->
+        <div class="md:grid md:w-100 md:grid-cols-2 lg:hidden">
+          <div class="md:w-[450px] md:bg-bubblegum-100 md:py-10 md:px-10">
             <p class="pb-5 md:pr-12">
               Vi ønsker at din Goodiebox indeholder lige dén form for
               selvforkælelse du har brug for. Vi har derfor gjort det muligt for
@@ -256,20 +260,56 @@
               alt="lyserødfarvet baggrund"
             />
             <img
-              class="col-span-3 col-start-1 row-start-1 w-64 md:h-[20.938rem] md:object-cover md:absolute md:top-11 md:left-0 md:w-full"
+              class="col-span-3 col-start-1 row-start-1 w-64 md:absolute md:top-11 md:left-0 md:h-[20.938rem] md:w-full md:object-cover"
               src="/images/mobile_tilpas_min_box_img.webp"
               alt="slørret hånd med et beautyprodukt i hånden. baggrunden er en åben beautybox"
             />
           </div>
-        </div">
+        </div>
+
+        <!-- desktop -->
+        <div class="hidden lg:relative lg:flex lg:flex-row">
+          <div class="lg:basis-1/2">
+            <p class="pb-5 md:pr-12">
+              Vi ønsker at din Goodiebox indeholder lige dén form for
+              selvforkælelse du har brug for. Vi har derfor gjort det muligt for
+              dig at tilpasse din box ud fra dine behov.
+            </p>
+            <p class="pb-5 md:pr-12">
+              Hvis der er et mærke eller en produkttype du ikke er interesseret
+              i at modtage, kan du angive det på denne side, og vi vil tilpasse
+              indholdet derefter.
+            </p>
+          </div>
+
+          <div class="lg:basis-1/2">
+            <img
+              class="lg:ml-auto lg:w-[420px]"
+              src="/images/bubblegumbox.svg"
+              alt="lyserødfarvet baggrund"
+            />
+            <img
+              class="lg:absolute lg:top-10 lg:w-[420px]"
+              src="/images/mobile_tilpas_min_box_img.webp"
+              alt="slørret hånd med et beautyprodukt i hånden. baggrunden er en åben beautybox"
+            />
+          </div>
+        </div>
       </section>
 
-      <section class="px-5 py-5 md:px-10 md:py-10">
-        <h2 class="pb-10 font-bely text-m-xl md:max-w-lg md:text-t-xl">Jeg ønsker ikke at modtage:</h2>
+      <section class="px-5 py-5 md:px-10 md:py-10 lg:px-36 lg:py-20">
+        <h2
+          class="pb-10 font-bely text-m-xl md:max-w-lg md:text-t-xl lg:max-w-fit lg:text-d-xl"
+        >
+          Jeg ønsker ikke at modtage:
+        </h2>
 
         <!-- PRODUKTTYPE MOBIL -->
-        <form class="flex flex-col border-b border-lavender-300 md:hidden" action="">
-          <legend class="text-m-lg ">Produkttype</legend>
+        <form
+          class="flex flex-col border-b border-lavender-300 md:hidden"
+          action=""
+        >
+          <legend class="text-m-lg">Produkttype</legend>
 
           <div class="flex gap-5 pb-5">
             <div class="basis-1/2">
@@ -426,14 +466,19 @@
           >
         </form>
         <!-- PRODUKTTYPE TABLET + DESKTOP -->
-        <form class="md:flex md:flex-col border-b border-lavender-300 hidden " action="">
+        <form
+          class="hidden border-b border-lavender-300 md:flex md:flex-col"
+          action=""
+        >
           <div class="md:flex md:flex-row">
-            <legend class="text-m-lg ">Produkttype</legend>
+            <legend class="text-m-lg md:text-t-lg lg:text-d-lg">
+              Produkttype
+            </legend>
             <label
-            for="my-modal-gem"
-            class="button-drop-shadow ml-auto rounded-br-30 bg-bubblegum-100 px-5 pt-2 pb-1 hover:bg-bubblegum-200"
-            >Gem valgte</label
-          >
+              for="my-modal-gem"
+              class="button-drop-shadow ml-auto rounded-br-30 bg-bubblegum-100 px-5 pt-2 pb-1 hover:bg-bubblegum-200"
+              >Gem valgte</label
+            >
           </div>
           <div class="flex gap-5 pb-5">
             <div class="md:basis-1/4">
@@ -484,8 +529,6 @@
                   >Ansigtscreme</label
                 >
               </div>
-
-              
             </div>
             <div class="md:basis-1/4">
               <div class="flex flex-row items-center">
@@ -534,8 +577,6 @@
                   >Neglelak</label
                 >
               </div>
-
-              
             </div>
             <div class="md:basis-1/4">
               <div class="flex flex-row items-center">
@@ -587,7 +628,6 @@
               </div>
             </div>
           </div>
-          
         </form>
 
         <!-- MAKEUP FARVE MOBIL -->
@@ -595,7 +635,9 @@
           class="flex flex-col border-b border-lavender-300 pt-10 md:hidden"
           action=""
         >
-          <legend class="text-m-lg">Makeup farve</legend>
+          <legend class="text-m-lg md:text-t-lg lg:text-d-lg">
+            Makeup farve
+          </legend>
 
           <div class="flex gap-5 pb-5">
             <div class="basis-1/2">
@@ -754,16 +796,18 @@
 
         <!-- MAKEUP FARVE TABLET + DESKTOP -->
         <form
-          class="md:flex md:flex-col border-b border-lavender-300 pt-10 hidden"
+          class="hidden border-b border-lavender-300 pt-10 md:flex md:flex-col"
           action=""
         >
           <div class="md:flex md:flex-row">
-            <legend class="text-m-lg">Makeup farve</legend>
+            <legend class="text-m-lg md:text-t-lg lg:text-d-lg">
+              Makeup farve
+            </legend>
             <label
-            for="my-modal-gem"
-            class="button-drop-shadow ml-auto self-end rounded-br-30 bg-bubblegum-100 px-5 pt-2 pb-1 hover:bg-bubblegum-200"
-            >Gem valgte</label
-          >
+              for="my-modal-gem"
+              class="button-drop-shadow ml-auto self-end rounded-br-30 bg-bubblegum-100 px-5 pt-2 pb-1 hover:bg-bubblegum-200"
+              >Gem valgte</label
+            >
           </div>
           <div class="flex gap-5 pb-5">
             <div class="md:basis-1/4">
@@ -911,12 +955,11 @@
               </div>
             </div>
           </div>
-          
         </form>
 
         <!-- BRANDS MOBIL -->
         <form class="flex flex-col pt-10 md:hidden" action="">
-          <legend class="text-m-lg">Brands</legend>
+          <legend class="text-m-lg md:text-t-lg lg:text-d-lg">Brands</legend>
 
           <div class="flex gap-5 pb-5">
             <div class="basis-1/2">
@@ -1088,14 +1131,14 @@
         </form>
 
         <!-- BRANDS TABLET + DESKTOP -->
-        <form class="md:flex md:flex-col pt-10 hidden" action="">
+        <form class="hidden pt-10 md:flex md:flex-col" action="">
           <div class="md:flex md:flex-row">
-            <legend class="text-m-lg">Brands</legend>
+            <legend class="text-m-lg md:text-t-lg lg:text-d-lg">Brands</legend>
             <label
-            for="my-modal-gem"
-            class="button-drop-shadow ml-auto self-end rounded-br-30 bg-bubblegum-100 px-5 pt-2 pb-1 hover:bg-bubblegum-200"
-            >Gem valgte</label
-          >
+              for="my-modal-gem"
+              class="button-drop-shadow ml-auto self-end rounded-br-30 bg-bubblegum-100 px-5 pt-2 pb-1 hover:bg-bubblegum-200"
+              >Gem valgte</label
+            >
           </div>
           <div class="flex gap-5 pb-5">
             <div class="md:basis-1/4">
