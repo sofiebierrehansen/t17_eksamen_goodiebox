@@ -219,7 +219,7 @@
       <!-- BREADCRUMBS -->
       <section>
         <div
-          class="breadcrumbs px-5 pt-5 text-m-xs md:px-10 md:pt-10 md:text-t-xs"
+          class="breadcrumbs px-5 pt-5 text-m-xs md:px-10 md:pt-10 md:text-t-xs lg:text-d-xs"
         >
           <ul>
             <li class="underline"><a href="index.html">Forside</a></li>
@@ -229,9 +229,12 @@
       </section>
       <!-- BREADCRUMBS SLUT -->
 
-      <section class="px-5 py-5 md:px-10 md:py-10">
-        <h1 class="pb-5 font-bely text-m-2xl md:text-t-2xl">Mine fordele</h1>
-        <div class="md:grid md:w-100 md:grid-cols-2">
+      <section class="px-5 py-5 md:px-10 md:py-10 lg:px-36 lg:py-20">
+        <h1 class="pb-5 font-bely text-m-2xl md:text-t-2xl lg:text-d-2xl">
+          Mine fordele
+        </h1>
+        <!-- mobil og tablet -->
+        <div class="md:grid md:w-100 md:grid-cols-2 lg:hidden">
           <div class="md:w-[450px] md:bg-peachy-100 md:py-10 md:px-10">
             <p class="pb-5 font-bold">Goodiebox ages like fine wine</p>
             <p class="pb-5 md:pb-0 md:pr-14">
@@ -247,14 +250,41 @@
             class="grid-row-1 grid max-w-sm grid-cols-4 place-content-center pb-5 md:relative md:grid-cols-none md:pb-0"
           >
             <img
-              class="col-span-3 col-start-2 row-start-1 mt-8 ml-auto md:hidden"
+              class="col-span-3 col-start-2 row-start-1 mt-8 ml-auto md:hidden lg:mt-0"
               src="/images/peachbox.svg"
               alt="ferskenfarvet baggrund"
             />
             <img
               class="col-span-3 col-start-1 row-start-1 w-64 md:absolute md:top-11 md:left-0 md:w-full"
               src="/images/mobile_mine_fordele_img.webp"
-              alt="slørret hånd med et beautyprodukt i hånden. baggrunden er en åben beautybox"
+              alt="person der kigger i et spejl med en sheetmaske og solbriller på"
+            />
+          </div>
+        </div>
+        <!-- desktop -->
+        <div class="hidden lg:relative lg:flex lg:flex-row">
+          <div class="lg:basis-1/2">
+            <p class="pb-5 font-bold">Goodiebox ages like fine wine</p>
+            <p class="pb-5 md:pb-0 md:pr-14">
+              Akkurat ligesom vin bliver din tid som Goodiemedlem kun bedre og
+              bedre med tiden. Vores fornemmeste opgave er at sikre din glæde
+              ved at være medlem, og derfor vil får du en række fantastiske
+              fordele såsom goodiepoints, eksklusive rabatter, online
+              masterclasses, og gode priser hos andre skønne brands, som med
+              tiden kun bliver flere!
+            </p>
+          </div>
+
+          <div class="lg:basis-1/2">
+            <img
+              class="lg:ml-auto lg:w-[420px]"
+              src="/images/peachbox.svg"
+              alt="ferskenfarvet baggrund"
+            />
+            <img
+              class="lg:absolute lg:top-10 lg:w-[420px]"
+              src="/images/mobile_mine_fordele_img.webp"
+              alt="person der kigger i et spejl med en sheetmaske og solbriller på"
             />
           </div>
         </div>
