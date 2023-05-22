@@ -58,6 +58,7 @@ module.exports = {
     fontFamily: {
       bely: "'bely-display', sans-serif",
       poppins: "'poppins', sans-serif",
+      lindsey: "'lindsey-signature', sans-serif",
     },
 
     fontSize: {
