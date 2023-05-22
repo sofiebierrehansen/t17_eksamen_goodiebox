@@ -26,6 +26,14 @@ function toggleMenu() {
     document.querySelector("#menuknap").textContent = "x";
   }
 }
+//  --------- INVIEW ANIMATION --------- //
+inView(".cardinview", ({ target }) => {
+  animate(
+    target.querySelectorAll("article"),
+    { x: [-2000, 0] },
+    { duration: 1, delay: stagger(1, { start: 0.25 }) }
+  );
+});
 
 // ---------- LOGIN ----------- //
 class Login extends HTMLElement {
