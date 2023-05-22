@@ -7,10 +7,6 @@ img {
   height: auto;
 }
 
-a:hover {
-  color: #7462ff;
-}
-
 .m-drop-shadow {
   text-shadow: 0px 4px 4px rgba(20, 20, 20, 0.25);
 }
