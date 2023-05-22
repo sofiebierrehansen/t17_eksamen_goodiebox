@@ -17,7 +17,7 @@
     >
       Skip to content
     </a>
-    <header class=" z-50 sticky top-0">
+    <header class=" z-40 sticky top-0">
       <!-- BURGER MENU -->
       <nav
         class=" z-40 w-screen bg-eggshell-200 px-5 py-2 md:px-10 lg:hidden xl:max-w-screen-xl"
@@ -218,6 +218,36 @@
     </header>
 
     <main>
+
+      <!-- Cookieboks -->
+      <div
+        id="cookieboks"
+        class=" h-full w-full flex  flex-col px-6 py-6 fixed top-0 left-0 z-50 backdrop-blur"
+      >
+        <div class="bg-eggshell-200 border-2 border-lavender-300 rounded-br-7 max-w-lg mx-auto">
+          <p class=" flex flex-row py-4 px-4 font-bold text-m-md">
+            Cookies og indsamling af oplysninger om besøgende på sitet.
+          </p>
+          <p class="px-4 pb-1 ">
+            Vi bruger Cookies til at indsamle og behandle oplysninger om dig til
+            følgende formål:
+          </p>
+          <ol class="mb-4 list-decimal px-9 ">
+            <li>Funktionalitet</li>
+            <li>Statiske analyser</li>
+            <li>Markedsføring</li>
+          </ol>
+          <a class="underline px-4 hover:text-lavender-300" href="#"
+            >Læs cookiepolitik</a
+          >
+          <div class="mt-4 flex justify-center gap-4 py-4">
+            <button id="afvis" class="button-drop-shadow px-5 py-2 border-2 border-lavender-200 bg-eggshell-100 rounded-br-30 hover:border-bubblegum-200">Afvis alle</button>
+            <button id="accepter" class="button-drop-shadow px-5 bg-lavender-200 rounded-br-30 hover:bg-bubblegum-200 ">
+              Accepter alle
+            </button>
+          </div>
+        </div>
+      </div>
       <section
         class="grid-rows-auto grid h-[16.35rem] md:h-[27.25rem] lg:h-[32.125rem] content-end bg-hero-mobile bg-cover bg-no-repeat"
       >
