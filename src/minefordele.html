@@ -798,21 +798,27 @@
         <!-- NYHEDSBREV -->
 
         <h4 class="pb-1 text-m-md md:pt-20 md:text-t-md">Nyhedsbrev</h4>
-        <p class="pb-2">Tilmeld dig nyhedsbrevet og få 25 goodiepoints</p>
+        <p class="pb-4">Tilmeld dig nyhedsbrevet og få 25 goodiepoints</p>
         <form class="pb-10" action="">
           <div class="md:flex">
-            <div class="flex flex-col pb-2 md:mr-5 md:pb-0">
-              <label class="text-m-xs md:text-t-xs" for="email">E-mail</label>
+            <div class="relative flex flex-col pb-2 md:mr-5 md:pb-0">
+              <label
+                class="absolute -top-[0.625rem] left-[0.813rem] bg-eggshell-50 px-1"
+                for="email"
+                >E-mail*</label
+              >
               <input
-                class="w-85 rounded-br-7 border-lavender-300"
                 id="email"
-                placeholder="navn@email.dk"
                 name="email"
+                inputmode="email"
+                required
                 type="email"
+                placeholder="sofiehansen@hotmail.dk"
+                class="input w-full border border-lavender-300 caret-lavender-300"
               />
             </div>
             <button
-              class="rounded-br-30 bg-lavender-300 px-6 pb-1 pt-2 text-eggshell-50 hover:bg-lavender-200 md:mt-5"
+              class="button-drop-shadow card mt-2 rounded-br-30 bg-bubblegum-100 px-6 pb-1 pt-2 hover:bg-bubblegum-200 md:mt-0 md:pt-3"
             >
               Tilmeld
             </button>
