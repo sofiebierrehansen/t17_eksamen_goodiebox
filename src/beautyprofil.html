@@ -1417,113 +1417,123 @@
       </div>
     </div>
     
-    <!-- MODAL HUDTYPE -->
+    <!-- MODAL POP UP HUDTYPE  -->
     <input type="checkbox" id="my-modal-hudtype" class="modal-toggle" />
     <div class="modal">
-  <div class="modal-box max-h-96">
-    <h3 class="font-bold">Hudtyper</h3>
-    <p class="py-4 text-m-xs"> <span class="font-bold ">Fedtet hud</span> er en hudtype med en høj produktion - eller overproduktion - af olie/talg.
-      </p>
-      <p class="text-m-xs">Sådan identificerer du fedtet hud:</p>
-        <ul class=" text-m-xs list-disc list-inside">
-          <li>Udvidede og mere synlige porer</li>
-          <li>En skinnende overflade</li>
-          <li>Tykkere og mere bleg hud</li>
-          <li>En tendens til tilstopning af porer</li>
-        </ul>
-        <p class="py-4 text-m-xs"> <span class="font-bold">Tør hud</span> er en hudtype, der producerer mindre olie/talg end normal hud.
+      <div class="modal-box relative bg-eggshell-200">
+        <label
+          for="my-modal-hudtype"
+          class="btn-sm btn-circle btn absolute right-2 top-2 pt-1 bg-lavender-100 border-lavender-100 text-stone-400 hover:bg-lavender-300 hover:border-lavender-300 hover:text-eggshell-50"
+          >✕</label
+        >
+        <h3 class="font-bold text-stone-400">
+          Hudtyper
+        </h3>
+        <p class="py-4 text-m-xs"> <span class="font-bold ">Fedtet hud</span> er en hudtype med en høj produktion - eller overproduktion - af olie/talg.
         </p>
-        <p class="text-m-xs">Sådan identificerer du tør hud:</p>
-          <ul class="text-m-xs list-disc list-inside">
+        <p class="text-m-xs">Sådan identificerer du fedtet hud:</p>
+          <ul class=" text-m-xs list-disc list-inside">
             <li>Udvidede og mere synlige porer</li>
             <li>En skinnende overflade</li>
             <li>Tykkere og mere bleg hud</li>
             <li>En tendens til tilstopning af porer</li>
           </ul>
-          <p class="py-4 text-m-xs"> <span class="font-bold">Kombineret hud</span>, består af en blanding af forskellige hudtyper.
+          <p class="py-4 text-m-xs"> <span class="font-bold">Tør hud</span> er en hudtype, der producerer mindre olie/talg end normal hud.
           </p>
-          <p class="text-m-xs">Sådan identificerer du kombineret hud:</p>
+          <p class="text-m-xs">Sådan identificerer du tør hud:</p>
             <ul class="text-m-xs list-disc list-inside">
-              <li>En fedtet T-zone (pande, hage og næse)</li>
-              <li>Normale til tørre kinder</li>
-              <li>Forstørrede porer</li>
-              <li>Tilbøjelig til at få urenheder/hudorme</li>
+              <li>Udvidede og mere synlige porer</li>
+              <li>En skinnende overflade</li>
+              <li>Tykkere og mere bleg hud</li>
+              <li>En tendens til tilstopning af porer</li>
             </ul>
-            <p class="py-4 text-m-xs"> <span class="font-bold">Sensitiv hud</span> er en hudtype, der har en tendens til at føles tør, ofte rød/rødsprængt, og hvor næsten al hudpleje synes at svie, brænde eller kløe på huden.
+            <p class="py-4 text-m-xs"> <span class="font-bold">Kombineret hud</span>, består af en blanding af forskellige hudtyper.
             </p>
-            <p class="text-m-xs">Sådan identificerer du sensitiv hud:</p>
+            <p class="text-m-xs">Sådan identificerer du kombineret hud:</p>
               <ul class="text-m-xs list-disc list-inside">
-                <li>Huden føles stram, kløende og ru</li>
-                <li>Lav elasticitet i huden</li>
-                <li>Rødme i dele af ansigtet</li>
-                <li>Huden Rødmer let</li>
-                <li>Huden bliver let irriteret</li>
+                <li>En fedtet T-zone (pande, hage og næse)</li>
+                <li>Normale til tørre kinder</li>
+                <li>Forstørrede porer</li>
+                <li>Tilbøjelig til at få urenheder/hudorme</li>
               </ul>
-              <p class="py-4 text-m-xs"> <span class="font-bold">Normal hud</span> er en velafbalanceret hud, der ikke reagerer og forbliver rolig det meste af tiden.
+              <p class="py-4 text-m-xs"> <span class="font-bold">Sensitiv hud</span> er en hudtype, der har en tendens til at føles tør, ofte rød/rødsprængt, og hvor næsten al hudpleje synes at svie, brænde eller kløe på huden.
               </p>
-              <p class="text-m-xs">Sådan identificerer du normal hud:</p>
+              <p class="text-m-xs">Sådan identificerer du sensitiv hud:</p>
                 <ul class="text-m-xs list-disc list-inside">
-                  <li>Finere porer</li>
-                  <li>God blodcirkulation</li>
-                  <li>En glat og blød overflade på hudend</li>
-                  <li>Ingen urenheder</li>
-                  <li>Ingen følsomhed</li>
+                  <li>Huden føles stram, kløende og ru</li>
+                  <li>Lav elasticitet i huden</li>
+                  <li>Rødme i dele af ansigtet</li>
+                  <li>Huden Rødmer let</li>
+                  <li>Huden bliver let irriteret</li>
                 </ul>
-    <div class="modal-action">
-      <label for="my-modal-hudtype" class="bg-lime-200 px-5 py-3 rounded-br-30 button-drop-shadow cursor-pointer">Fortsæt</label>
+                <p class="py-4 text-m-xs"> <span class="font-bold">Normal hud</span> er en velafbalanceret hud, der ikke reagerer og forbliver rolig det meste af tiden.
+                </p>
+                <p class="text-m-xs">Sådan identificerer du normal hud:</p>
+                  <ul class="text-m-xs list-disc list-inside">
+                    <li>Finere porer</li>
+                    <li>God blodcirkulation</li>
+                    <li>En glat og blød overflade på hudend</li>
+                    <li>Ingen urenheder</li>
+                    <li>Ingen følsomhed</li>
+                  </ul>
+      </div>
     </div>
-  </div>
+
+    <!-- MODAL HUDPROBLEMER -->
+    <input type="checkbox" id="my-modal-hudproblemer" class="modal-toggle" />
+    <div class="modal">
+      <div class="modal-box relative bg-eggshell-200">
+        <label
+          for="my-modal-hudproblemer"
+          class="btn-sm btn-circle btn absolute right-2 top-2 pt-1 bg-lavender-100 border-lavender-100 text-stone-400 hover:bg-lavender-300 hover:border-lavender-300 hover:text-eggshell-50"
+          >✕</label
+        >
+        <h3 class="font-bold text-stone-400">
+          Hudproblemer
+        </h3>
+        <p class="py-4 font-bold  text-m-xs"> Dehydrering 
+        </p>
+        <p class="text-m-xs">Enhver hudtype, uanset om den er tør, fedtet eller kombineret, kan have problemer med dehydrering fra tid til anden. Det er en ændring i det overfladiske lag af overhuden, der mangler vand. Denne mangel på hydrering forstyrrer hudens barrierefunktion og fører til ubehag. Selv om symptomerne er meget ens, bør dehydreret hud ikke forveksles med tør hud. Der er tale om to forskellige hudproblemer. Dehydreret hud er en midlertidig tilstand, der kan hjælpes med passende produkter - mens tør hud er en hudtype og en mere permanent tilstand
+        </p>
+ 
+        <p class="py-4 font-bold  text-m-xs">Rødme 
+       </p>
+       <p class="text-m-xs">Rødme kan være forbundet med en følsom hudtype. Andre årsager kan være potentielle hudlidelser, herunder hudinfektioner og -tilstande som rosacea, akne og eksem samt allergiske og inflammatoriske tilstande. Sådanne tilstande bør altid behandles/konsulteres af en læge.</p>
+ 
+       <p class="py-4 font-bold  text-m-xs"> Dybe porer 
+       </p>
+       <p class="text-m-xs">Forstørrede porer er ofte genetiske og knyttet til en bestemt hudtype. Årsagerne er normalt et højt niveau af olieproduktion (talg).</p>
+ 
+       <p class="py-4 font-bold  text-m-xs"> Hyperpigmentering / solskader 
+       </p>
+       <p class="text-m-xs">Hyperpigmentering er et begreb, der henviser til misfarvning eller mørkfarvning af huden på grund af en overskydende melaninproduktion. Dette kan skyldes en række forskellige faktorer: Solskader, akne ar og i nogle tilfælde kan hormoner forårsage, at din hud bliver mørkere.</p>
+ 
+       <p class="py-4 font-bold  text-m-xs"> Fine linjer / rynker
+       </p>
+       <p class="text-m-xs">Mens fine linjer er overfladiske og ligger tættere på hudens overflade, er rynker mere dybdegående. Med alderen kan nogle fine linjer blive til rynker, efterhånden som huden mister sin elasticitet og fasthed. Selv om alder er en vigtig faktor i forbindelse med linjer og rynker, kan eksterne faktorer som f.eks. soleksponering og forurening også have en indvirkning.</p>
+ 
+       <p class="py-4 font-bold  text-m-xs"> Skader / bumser / urenheder 
+       </p>
+       <p class="text-m-xs">Urenheder i huden, bumser og hudorme opstår normalt i perioder med hormonelle udsving. Det kan være et midlertidigt problem eller et mere permanent problem, der er knyttet til en bestemt hudtype.</p>
+ 
+       <p class="py-4 font-bold  text-m-xs"> Tab af elasticitet 
+       </p>
+       <p class="text-m-xs">Hudens elasticitet er hudens evne til at strække sig og vende tilbage til sin oprindelige form. Huden kan virke kedelig eller ru. Hovedårsagerne er moden hud, soleksponering, luftforurening, ernæring og rygning.</p>
+ 
+       <p class="py-4 font-bold  text-m-xs"> Ingen hudproblemer 
+       </p>
+       <p class="text-m-xs">Hvis du ikke har nogen hudproblemer, kan du give os besked ved at vælge denne.</p>
+        
+      </div>
     </div>
 
-     <!-- MODAL HUDPROBLEMER -->
-     <input type="checkbox" id="my-modal-hudproblemer" class="modal-toggle" />
-     <div class="modal">
-   <div class="modal-box max-h-96">
-     <h3 class="font-bold">Hudproblemer</h3>
-     <p class="py-4 font-bold  text-m-xs"> Dehydrering 
-       </p>
-       <p class="text-m-xs">Enhver hudtype, uanset om den er tør, fedtet eller kombineret, kan have problemer med dehydrering fra tid til anden. Det er en ændring i det overfladiske lag af overhuden, der mangler vand. Denne mangel på hydrering forstyrrer hudens barrierefunktion og fører til ubehag. Selv om symptomerne er meget ens, bør dehydreret hud ikke forveksles med tør hud. Der er tale om to forskellige hudproblemer. Dehydreret hud er en midlertidig tilstand, der kan hjælpes med passende produkter - mens tør hud er en hudtype og en mere permanent tilstand
-       </p>
 
-       <p class="py-4 font-bold  text-m-xs">Rødme 
-      </p>
-      <p class="text-m-xs">Rødme kan være forbundet med en følsom hudtype. Andre årsager kan være potentielle hudlidelser, herunder hudinfektioner og -tilstande som rosacea, akne og eksem samt allergiske og inflammatoriske tilstande. Sådanne tilstande bør altid behandles/konsulteres af en læge.</p>
 
-      <p class="py-4 font-bold  text-m-xs"> Dybe porer 
-      </p>
-      <p class="text-m-xs">Forstørrede porer er ofte genetiske og knyttet til en bestemt hudtype. Årsagerne er normalt et højt niveau af olieproduktion (talg).</p>
-
-      <p class="py-4 font-bold  text-m-xs"> Hyperpigmentering / solskader 
-      </p>
-      <p class="text-m-xs">Hyperpigmentering er et begreb, der henviser til misfarvning eller mørkfarvning af huden på grund af en overskydende melaninproduktion. Dette kan skyldes en række forskellige faktorer: Solskader, akne ar og i nogle tilfælde kan hormoner forårsage, at din hud bliver mørkere.</p>
-
-      <p class="py-4 font-bold  text-m-xs"> Fine linjer / rynker
-      </p>
-      <p class="text-m-xs">Mens fine linjer er overfladiske og ligger tættere på hudens overflade, er rynker mere dybdegående. Med alderen kan nogle fine linjer blive til rynker, efterhånden som huden mister sin elasticitet og fasthed. Selv om alder er en vigtig faktor i forbindelse med linjer og rynker, kan eksterne faktorer som f.eks. soleksponering og forurening også have en indvirkning.</p>
-
-      <p class="py-4 font-bold  text-m-xs"> Skader / bumser / urenheder 
-      </p>
-      <p class="text-m-xs">Urenheder i huden, bumser og hudorme opstår normalt i perioder med hormonelle udsving. Det kan være et midlertidigt problem eller et mere permanent problem, der er knyttet til en bestemt hudtype.</p>
-
-      <p class="py-4 font-bold  text-m-xs"> Tab af elasticitet 
-      </p>
-      <p class="text-m-xs">Hudens elasticitet er hudens evne til at strække sig og vende tilbage til sin oprindelige form. Huden kan virke kedelig eller ru. Hovedårsagerne er moden hud, soleksponering, luftforurening, ernæring og rygning.</p>
-
-      <p class="py-4 font-bold  text-m-xs"> Ingen hudproblemer 
-      </p>
-      <p class="text-m-xs">Hvis du ikke har nogen hudproblemer, kan du give os besked ved at vælge denne.</p>
-       
-         
-     <div class="modal-action">
-       <label for="my-modal-hudproblemer" class="bg-lime-200 px-5 py-3 rounded-br-30 button-drop-shadow cursor-pointer">Fortsæt</label>
-     </div>
-   </div>
-     </div>
 <!-- MODAL GEM -->
      <input type="checkbox" id="my-modal-gem" class="modal-toggle" />
 <div class="modal">
-  <div class="modal-box relative">
-    <label for="my-modal-gem" class="btn-sm btn-circle btn absolute right-2 top-2 bg-lavender-100 text-stone-400 hover:bg-lavender-300 hover:text-stone-100">✕</label>
+  <div class="modal-box relative bg-eggshell-200">
+    <label for="my-modal-gem" class="btn-sm btn-circle btn absolute right-2 top-2 pt-1 bg-lavender-100 border-lavender-100 text-stone-400 hover:bg-lavender-300 hover:border-lavender-300 hover:text-eggshell-50">✕</label>
     <h3 class="text-lg font-bold">Dine ændinger er gemt!</h3>
     <p class="py-4">Din beautyprofil er opdateret og du er nu klar til at fortsætte rundt på medlemsuniverset.</p>
   </div>
