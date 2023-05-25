@@ -55,6 +55,9 @@ module.exports = {
       "bubblegum-100": "#F6DCFB",
       "bubblegum-200": "#EDB5F7",
       "bubblegum-300": "#D54CEC",
+      "bronze-100": "#b9763d",
+      "silver-100": "#c8c8c8",
+      "gold-100": "#a68932",
     },
 
     fontFamily: {
