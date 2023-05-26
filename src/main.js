@@ -26,13 +26,20 @@ function toggleMenu() {
     document.querySelector("#menuknap").textContent = "x";
   }
 }
+
 //  --------- INVIEW ANIMATION --------- //
+// flere elementer slider ind fra venstre en af gangen
 inView(".cardinview", ({ target }) => {
   animate(
     target.querySelectorAll("article"),
     { x: [-2000, 0] },
     { duration: 1, delay: stagger(1, { start: 0.25 }) }
   );
+});
+
+// et element slider ind fra højre
+inView(".txtinview", () => {
+  animate(".txtinview", { x: [2000, 0] }, { duration: 1 });
 });
 
 // ----------- COOKIE BOKS ------------- //
