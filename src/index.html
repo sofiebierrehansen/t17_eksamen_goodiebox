@@ -10,17 +10,17 @@
   <body
     class="bg-eggshell-100 font-poppins text-stone-400 xl:mx-auto xl:max-w-screen-xl"
   >
-    <!--------Skip to content--------------->
+    <!-- Skip to content-->
     <a
       class="absolute top-32 -left-full font-poppins transition-transform focus:left-8 focus:outline-none focus:outline-bubblegum-300"
       href="#main"
     >
       Skip to content
     </a>
-    <header class=" z-40 sticky top-0">
+    <header class="sticky top-0 z-40">
       <!-- BURGER MENU -->
       <nav
-        class=" z-40 w-screen bg-eggshell-200 px-5 py-2 md:px-10 lg:hidden xl:max-w-screen-xl"
+        class="z-40 w-screen bg-eggshell-200 px-5 py-2 md:px-10 lg:hidden xl:max-w-screen-xl"
       >
         <div class="flex items-center">
           <a class="mr-auto" href="index.html">
@@ -39,7 +39,7 @@
           </li>
 
           <li class="pr-5 text-right">
-            <div class="dropdown-end dropdown-bottom dropdown">
+            <div class="dropdown-bottom dropdown-end dropdown">
               <label
                 class="flex hover:cursor-pointer hover:text-lavender-300"
                 tabindex="0"
@@ -97,7 +97,7 @@
         </div>
         <div class="lg:flex-none lg:pr-[120px]">
           <ul class="lg:menu lg:menu-horizontal lg:hover:bg-eggshell-200">
-            <li class="lg:hover:text-lavender-300 ">
+            <li class="lg:hover:text-lavender-300">
               <a href="minefordele.html">Mine fordele</a>
             </li>
 
@@ -143,6 +143,7 @@
               <li class="lg:hover:text-lavender-300">
                 <a href="#">Log ud</a>
               </li>
+            </ul>
           </ul>
         </div>
       </div>
@@ -150,13 +151,11 @@
 
       <!-- HAPPY MOMENT BANNER -->
       <div
-        class="grid w-screen place-items-center bg-bubblegum-200 py-1 px-5 text-m-xs md:text-t-xs lg:text-d-xs xl:max-w-screen-xl lg:grid-cols-none lg:flex lg:flex-row lg:justify-between lg:px-36"
+        class="grid w-screen place-items-center bg-bubblegum-200 py-1 px-5 text-m-xs md:text-t-xs lg:flex lg:grid-cols-none lg:flex-row lg:justify-between lg:px-36 lg:text-d-xs xl:max-w-screen-xl"
       >
-        
-          <p class="hidden lg:block">Et univers fyldt med beauty og self care</p>
-          <p class="">Happy moments hjem til dig</p>
-          <p class=" hidden lg:block">Fordele der bliver bedre med tiden</p>
-        
+        <p class="hidden lg:block">Et univers fyldt med beauty og self care</p>
+        <p class="">Happy moments hjem til dig</p>
+        <p class="hidden lg:block">Fordele der bliver bedre med tiden</p>
       </div>
       <!-- HAPPY MOMENT BANNER SLUT -->
     </header>
@@ -165,337 +164,837 @@
       <!-- Cookieboks -->
       <div
         id="cookieboks"
-        class=" h-full w-full flex  flex-col px-6 py-6 fixed top-0 left-0 z-50 backdrop-blur"
+        class="fixed top-0 left-0 z-50 flex h-full w-full flex-col px-6 py-6 backdrop-blur"
       >
-        <div class="bg-eggshell-200 border-2 border-lavender-300 rounded-br-7 max-w-lg mx-auto">
-          <p class=" flex flex-row py-4 px-4 font-bold text-m-md">
+        <div
+          class="mx-auto max-w-lg rounded-br-7 border-2 border-lavender-300 bg-eggshell-200"
+        >
+          <p class="flex flex-row py-4 px-4 text-m-md font-bold">
             Cookies og indsamling af oplysninger om besøgende på sitet.
           </p>
-          <p class="px-4 pb-1 ">
+          <p class="px-4 pb-1">
             Vi bruger Cookies til at indsamle og behandle oplysninger om dig til
             følgende formål:
           </p>
-          <ol class="mb-4 list-decimal px-9 ">
+          <ol class="mb-4 list-decimal px-9">
             <li>Funktionalitet</li>
             <li>Statiske analyser</li>
             <li>Markedsføring</li>
           </ol>
-          <a class="underline px-4 hover:text-lavender-300" href="#"
+          <a class="px-4 underline hover:text-lavender-300" href="#"
             >Læs cookiepolitik</a
           >
           <div class="mt-4 flex justify-center gap-4 py-4">
-            <button id="afvis" class="button-drop-shadow px-5 py-2 border-2 border-lavender-200 bg-eggshell-100 rounded-br-30 hover:border-bubblegum-200">Afvis alle</button>
-            <button id="accepter" class="button-drop-shadow px-5 bg-lavender-200 rounded-br-30 hover:bg-bubblegum-200 ">
+            <button
+              id="afvis"
+              class="button-drop-shadow rounded-br-30 border-2 border-lavender-200 bg-eggshell-100 px-5 py-2 hover:border-bubblegum-200"
+            >
+              Afvis alle
+            </button>
+            <button
+              id="accepter"
+              class="button-drop-shadow rounded-br-30 bg-lavender-200 px-5 hover:bg-bubblegum-200"
+            >
               Accepter alle
             </button>
           </div>
         </div>
       </div>
-<!-- Cookieboks slut -->
+      <!-- Cookieboks slut -->
 
       <!-- HERO -->
       <section
-        class="grid-rows-auto grid h-[16.35rem] md:h-[27.25rem] lg:h-[32.125rem] content-end bg-hero-mobile bg-cover bg-no-repeat"
+        class="grid-rows-auto grid h-[16.35rem] content-end bg-hero-mobile bg-cover bg-no-repeat md:h-[27.25rem] lg:h-[32.125rem]"
       >
         <h1
-          class="leading-tight m-drop-shadow lg:leading-tight px-5 font-bely md:px-10 lg:px-36 text-m-3xl md:text-t-3xl lg:text-d-3xl text-lime-300"
+          class="m-drop-shadow px-5 font-bely text-m-3xl leading-tight text-lime-300 md:px-10 md:text-t-3xl lg:px-36 lg:text-d-3xl lg:leading-tight"
         >
           Goodiebox medlemsunivers
         </h1>
 
-        <a href="minefordele.html" class=" mx-5 md:mx-10 lg:mb-16 lg:mx-36 mb-5 mt-2 text-center bg-bubblegum-100 self-center rounded-br-30 py-2 w-52  button-drop-shadow hover:bg-bubblegum-200">Udforsk mine fordele</a>
+        <a
+          href="minefordele.html"
+          class="button-drop-shadow mx-5 mb-5 mt-2 w-52 self-center rounded-br-30 bg-bubblegum-100 py-2 text-center hover:bg-bubblegum-200 md:mx-10 lg:mx-36 lg:mb-16"
+          >Udforsk mine fordele</a
+        >
       </section>
 
       <!-- POINTS OG FORDELE -->
       <section class="px-5 py-10 md:px-10 md:pb-14 lg:px-36">
-
         <!-- POINTS OG NIVEAU -->
-          <div class="flex flex-col border-b border-peachy-300">
-          
+        <div class="flex flex-col border-b border-peachy-300">
           <div class="md:order-1 md:flex md:flex-row">
-            <div class="flex justify-center order-2 md:ml-auto">
-                <h2 class="text-m-md pb-3">Medlemsniveau:</h2>
-                <a href="minefordele.html" class="flex pl-2 gap-2">
-                  
-                  <svg class="heartbeat text-silver-100" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="m10.65 19.8l-1.725-1.575q-2.65-2.425-4.788-4.813T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.538t2.5-.562q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.575.525-1.35.525t-1.35-.525Z"/></svg>
-                  <svg class="heartbeat text-silver-100" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="m10.65 19.8l-1.725-1.575q-2.65-2.425-4.788-4.813T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.538t2.5-.562q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.575.525-1.35.525t-1.35-.525Z"/></svg>
-              
-                  <svg class="text-gold-100" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="m10.65 19.8l-1.725-1.575q-2.65-2.425-4.788-4.813T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.538t2.5-.562q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.575.55-1.35.55t-1.35-.55Zm.4-13.05q-.725-1.025-1.55-1.563t-2-.537q-1.5 0-2.5 1t-1 2.5q0 1.3.925 2.763t2.213 2.837q1.287 1.375 2.65 2.575T12 18.3q.85-.775 2.213-1.975t2.65-2.575q1.287-1.375 2.212-2.837T20 8.15q0-1.5-1-2.5t-2.5-1q-1.175 0-2 .537T12.95 6.75q-.175.25-.425.375T12 7.25q-.275 0-.525-.125t-.425-.375Zm.95 4.725Z"/></svg>
-                </a>     
+            <div class="order-2 flex justify-center md:ml-auto">
+              <h2 class="pb-3 text-m-md">Medlemsniveau:</h2>
+              <a href="minefordele.html" class="flex gap-2 pl-2">
+                <svg
+                  class="heartbeat text-silver-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m10.65 19.8l-1.725-1.575q-2.65-2.425-4.788-4.813T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.538t2.5-.562q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.575.525-1.35.525t-1.35-.525Z"
+                  />
+                </svg>
+                <svg
+                  class="heartbeat text-silver-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m10.65 19.8l-1.725-1.575q-2.65-2.425-4.788-4.813T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.538t2.5-.562q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.575.525-1.35.525t-1.35-.525Z"
+                  />
+                </svg>
+
+                <svg
+                  class="text-gold-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m10.65 19.8l-1.725-1.575q-2.65-2.425-4.788-4.813T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.538t2.5-.562q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.575.55-1.35.55t-1.35-.55Zm.4-13.05q-.725-1.025-1.55-1.563t-2-.537q-1.5 0-2.5 1t-1 2.5q0 1.3.925 2.763t2.213 2.837q1.287 1.375 2.65 2.575T12 18.3q.85-.775 2.213-1.975t2.65-2.575q1.287-1.375 2.212-2.837T20 8.15q0-1.5-1-2.5t-2.5-1q-1.175 0-2 .537T12.95 6.75q-.175.25-.425.375T12 7.25q-.275 0-.525-.125t-.425-.375Zm.95 4.725Z"
+                  />
+                </svg>
+              </a>
             </div>
-            <h2 class="text-center text-m-md order-3 pb-10 md:order-1">268 Goodiepoint = 134 Kr </h2>
+            <h2 class="order-3 pb-10 text-center text-m-md md:order-1">
+              268 Goodiepoint = 134 Kr
+            </h2>
           </div>
-          <h3 class="text-m-lg text-center pb-2 order-1 md:order-2 md:mb-10 md:pb-0">Hej Sofie</h3>
-          </div>
+          <h3
+            class="order-1 pb-2 text-center text-m-lg md:order-2 md:mb-10 md:pb-0"
+          >
+            Hej Sofie
+          </h3>
+        </div>
 
         <!-- FORDELE -->
         <div class="">
-          
           <div class="">
-            <h2 class="pt-10 pb-5 font-bely text-center text-m-xl md:text-t-xl lg:text-d-xl lg:pt-14">Mine fordele</h2>
-            
-            <div class=" border-b border-peachy-300 grid place-content-center md:flex md:flex-row md:justify-around lg:gap-x-10 lg:pb-14">
-              <a href="minefordele.html" class="text-center mt-5 md:order-1 hover:scale-105">
-                <img class="inline-block w-48 md:w-56 lg:w-80" src="images/point_ved_koeb_grafik.svg" alt="illustraion af køb der bliver til pints der bliver til procenter">
-                <p class=" pt-3">Optjen 10% af kurvens total </p>
+            <h2
+              class="pt-10 pb-5 text-center font-bely text-m-xl md:text-t-xl lg:pt-14 lg:text-d-xl"
+            >
+              Mine fordele
+            </h2>
+
+            <div
+              class="grid place-content-center border-b border-peachy-300 md:flex md:flex-row md:justify-around lg:gap-x-10 lg:pb-14"
+            >
+              <a
+                href="minefordele.html"
+                class="mt-5 text-center hover:scale-105 md:order-1"
+              >
+                <img
+                  class="inline-block w-48 md:w-56 lg:w-80"
+                  src="images/point_ved_koeb_grafik.svg"
+                  alt="illustraion af køb der bliver til pints der bliver til procenter"
+                />
+                <p class="pt-3">Optjen 10% af kurvens total</p>
               </a>
-              <a href="minefordele.html" class="text-center mt-5 md:order-3 hover:scale-105" >
-                <img class="inline-block w-48 md:w-56 lg:w-80" src="images/online_masterclasses_grafik.svg" alt="illustration af en person der dyrker yoga til en online masterclas">
-                <p class=" pt-3"> Online masterclasses</p>
+              <a
+                href="minefordele.html"
+                class="mt-5 text-center hover:scale-105 md:order-3"
+              >
+                <img
+                  class="inline-block w-48 md:w-56 lg:w-80"
+                  src="images/online_masterclasses_grafik.svg"
+                  alt="illustration af en person der dyrker yoga til en online masterclas"
+                />
+                <p class="pt-3">Online masterclasses</p>
               </a>
-              <a href="minefordele.html" class="text-center mt-5 md:order-2 hover:scale-105">
-                <img class="inline-block w-48 md:w-56 lg:w-80" src="images/bedoem_box_grafik.svg" alt="illustraion af person der sidder med en laptop">
-                <p class="pt-3 pb-10 w-48 md:w-56 lg:w-80"> 50 goodiepoints, når du  bedømmer din box</p>
+              <a
+                href="minefordele.html"
+                class="mt-5 text-center hover:scale-105 md:order-2"
+              >
+                <img
+                  class="inline-block w-48 md:w-56 lg:w-80"
+                  src="images/bedoem_box_grafik.svg"
+                  alt="illustraion af person der sidder med en laptop"
+                />
+                <p class="w-48 pt-3 pb-10 md:w-56 lg:w-80">
+                  50 goodiepoints, når du bedømmer din box
+                </p>
               </a>
-              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- OM MEDLEMSUNIVERSET -->
       <section class="px-5 py-10 md:px-10 md:py-14 lg:px-36 lg:py-20">
-        <h2 class="font-bely max-w-sm text-m-xl pb-5 md:text-t-xl lg:text-d-xl md:pb-10 md:max-w-lg lg:max-w-xl">Et univers fyldt med 
-           beauty & self care</h2>
-
-    <div class="md:flex md:flex-row md:gap-x-10 ">
-      <div class="grid place-content-center grid-cols-4 grid-row-1 lg:pb-0 max-w-sm md:max-w-none pb-5 md:order-2 md:ml-auto">
-        <!-- limebox mobil -->
-        <img class=" md:hidden lg:hidden ml-auto col-span-3 col-start-2 row-start-1" src="/images/limebox.svg" alt="limefarvet baggrund"> 
-        <!-- limebox tablet -->
-        <img class=" hidden md:block lg:hidden ml-auto col-span-3 col-start-2 row-start-1" src="/images/tabletlimebox.svg" alt="limefarvet baggrund"> 
-        <!-- lime desktoptop -->
-        <img class="hidden lg:block ml-auto col-span-3 col-start-2 row-start-1 lg:-mt-40" src="/images/limebox_desktop.svg" alt="limefarvet baggrund"> 
-        <!-- billede -->
-        <img class="w-64 col-span-3 col-start-1 row-start-1 mt-8 md:mt-16 lg:w-85 lg:-mt-24" src="/images/medlemsunivers_intro.webp" alt="slørret hånd med et beautyprodukt i hånden. baggrunden er en åben beautybox"> 
-    </div>
-  <div class="max-w-md md:max-w-none md:basis-1/2 md:order-1">
-      <p class="pb-5">Goodiebox er mere end blot en boks, men et helt univers som beriger din hverdag med velfortjent me-time i flere former.</p>
-     <p class="pb-5">Deltag i masterclasses, hvor eksperterne uddeler tips og tricks til at forbedre din skønhedsrutine og lære aktuelle trends.
-      Gør brug af eksklusive tilbud og rabatter på skønhedsprodukter samt andre wellness services og spændende konkurrencer, som giver dig mulighed for at vinde skønne præmier.</p>
-    <p class="pb-5">Lad dig forkæle, lære og udforske i Goodiebox' verden fuld af wellness og beauty.</p> 
-  </div>
-    </div>     
-</section>
-
-<!-- VORES ABONNEMENTER -->
-<section class="px-5 py-10 md:px-10 md:py-14 lg:px-36 lg:py-20">
-  <h2 class="font-bely text-m-xl pb-5 md:text-t-xl lg:text-d-xl md:pb-10 md:max-w-lg lg:max-w-xl "> Vores abonnementer</h2>
-  <div class="lg:flex lg:flex-row lg:pb-20">
-    <div class="md:max-w-lg lg2:w-85">
-      <p class="font-bold">Hos  Goodiebox ønsker vi at hvert medlem får mest muligt ud af deres abonnement.</p>
-      <p class="pb-5">Derfor har vi sørget for at der er en box der passer til forskellige behov og ønsker.</p>
-      <p class="pb-10">Vi er klar over at ens behov og ønsker er skiftende og du kan derfor til enhver tid skifte mellem vores forskellige abonnementer, så det passer til lige præcis der du er i livet. Det er nemt og hurtigt!</p>
-    
-      <div class="flex flex-col pb-5 md:flex-row md:pb-14 lg:pb-0">
-        <a href="mitabonnement.html" class=" text-center bg-bubblegum-100 md:mb-0 self-center rounded-br-30 py-2 w-48  button-drop-shadow hover:bg-bubblegum-200">Skift abonnement</a>
-      </div>
-    </div>
-  
-    <!-- CRUSH BOX DESKTOP -->
-    <a href="mitabonnement.html" class="hidden lg2:block hover:scale-105 lg2:ml-auto" >
-      <article itemscope itemtype="https://schema.org/Product"
-      class=" card-shadow w-85 rounded-br-7 bg-peachy-100 p-5 lg:flex lg:w-100 lg:flex-row lg:gap-x-5 "
-    >
-      <div  class="relative lg:w-85">
-        <img itemprop="image"
-          class="rounded-br-7"
-          src="/images/crush_box.jpg"
-          alt="the crush box"
-        />
-        <p
-          class="absolute top-0 left-[69%] w-24 rounded-tr-br-7 rounded-bl-br-7 bg-lime-200 py-1 text-center lg:text-d-xs"
+        <h2
+          class="max-w-sm pb-5 font-bely text-m-xl md:max-w-lg md:pb-10 md:text-t-xl lg:max-w-xl lg:text-d-xl"
         >
-          Kvartalsvis
+          Et univers fyldt med beauty & self care
+        </h2>
+
+        <div class="md:flex md:flex-row md:gap-x-10">
+          <div
+            class="grid-row-1 grid max-w-sm grid-cols-4 place-content-center pb-5 md:order-2 md:ml-auto md:max-w-none lg:pb-0"
+          >
+            <!-- limebox mobil -->
+            <img
+              class="col-span-3 col-start-2 row-start-1 ml-auto md:hidden lg:hidden"
+              src="/images/limebox.svg"
+              alt="limefarvet baggrund"
+            />
+            <!-- limebox tablet -->
+            <img
+              class="col-span-3 col-start-2 row-start-1 ml-auto hidden md:block lg:hidden"
+              src="/images/tabletlimebox.svg"
+              alt="limefarvet baggrund"
+            />
+            <!-- lime desktoptop -->
+            <img
+              class="col-span-3 col-start-2 row-start-1 ml-auto hidden lg:-mt-40 lg:block"
+              src="/images/limebox_desktop.svg"
+              alt="limefarvet baggrund"
+            />
+            <!-- billede -->
+            <img
+              class="col-span-3 col-start-1 row-start-1 mt-8 w-64 md:mt-16 lg:-mt-24 lg:w-85"
+              src="/images/medlemsunivers_intro.webp"
+              alt="slørret hånd med et beautyprodukt i hånden. baggrunden er en åben beautybox"
+            />
+          </div>
+          <div class="max-w-md md:order-1 md:max-w-none md:basis-1/2">
+            <p class="pb-5">
+              Goodiebox er mere end blot en boks, men et helt univers som
+              beriger din hverdag med velfortjent me-time i flere former.
+            </p>
+            <p class="pb-5">
+              Deltag i masterclasses, hvor eksperterne uddeler tips og tricks
+              til at forbedre din skønhedsrutine og lære aktuelle trends. Gør
+              brug af eksklusive tilbud og rabatter på skønhedsprodukter samt
+              andre wellness services og spændende konkurrencer, som giver dig
+              mulighed for at vinde skønne præmier.
+            </p>
+            <p class="pb-5">
+              Lad dig forkæle, lære og udforske i Goodiebox' verden fuld af
+              wellness og beauty.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- VORES ABONNEMENTER -->
+      <section class="px-5 py-10 md:px-10 md:py-14 lg:px-36 lg:py-20">
+        <h2
+          class="pb-5 font-bely text-m-xl md:max-w-lg md:pb-10 md:text-t-xl lg:max-w-xl lg:text-d-xl"
+        >
+          Vores abonnementer
+        </h2>
+        <div class="lg:flex lg:flex-row lg:pb-20">
+          <div class="md:max-w-lg lg2:w-85">
+            <p class="font-bold">
+              Hos Goodiebox ønsker vi at hvert medlem får mest muligt ud af
+              deres abonnement.
+            </p>
+            <p class="pb-5">
+              Derfor har vi sørget for at der er en box der passer til
+              forskellige behov og ønsker.
+            </p>
+            <p class="pb-10">
+              Vi er klar over at ens behov og ønsker er skiftende og du kan
+              derfor til enhver tid skifte mellem vores forskellige
+              abonnementer, så det passer til lige præcis der du er i livet. Det
+              er nemt og hurtigt!
+            </p>
+
+            <div class="flex flex-col pb-5 md:flex-row md:pb-14 lg:pb-0">
+              <a
+                href="mitabonnement.html"
+                class="button-drop-shadow w-48 self-center rounded-br-30 bg-bubblegum-100 py-2 text-center hover:bg-bubblegum-200 md:mb-0"
+                >Skift abonnement</a
+              >
+            </div>
+          </div>
+
+          <!-- CRUSH BOX DESKTOP -->
+          <a
+            href="mitabonnement.html"
+            class="hidden hover:scale-105 lg2:ml-auto lg2:block"
+          >
+            <article
+              itemscope
+              itemtype="https://schema.org/Product"
+              class="card-shadow w-85 rounded-br-7 bg-peachy-100 p-5 lg:flex lg:w-100 lg:flex-row lg:gap-x-5"
+            >
+              <div class="relative lg:w-85">
+                <img
+                  itemprop="image"
+                  class="rounded-br-7"
+                  src="/images/crush_box.jpg"
+                  alt="the crush box"
+                />
+                <p
+                  class="absolute top-0 left-[69%] w-24 rounded-tr-br-7 rounded-bl-br-7 bg-lime-200 py-1 text-center lg:text-d-xs"
+                >
+                  Kvartalsvis
+                </p>
+              </div>
+              <div>
+                <h3
+                  itemprop="name"
+                  itemscope
+                  itemtype="https://schema.org/Offer"
+                  class="pb-3 text-m-lg md:w-80 lg:text-d-lg"
+                >
+                  Crush Makeup <span itemprop="price">99 kr./box</span>
+                </h3>
+                <div class="flex gap-3 pb-3">
+                  <p
+                    itemprop="description"
+                    class="w-72 text-m-xs md:w-80 lg:text-d-xs"
+                  >
+                    Få endnu flere happy moments med et Crush abonnement til en
+                    ekstraordinær god pris
+                  </p>
+                </div>
+                <div class="flex gap-3 pb-3">
+                  <p
+                    itemprop="description"
+                    class="w-72 text-m-xs md:w-80 lg:text-d-xs"
+                  >
+                    Det er kun noget der tilbydes vores medlemmer, og vi har
+                    endda sørget for, at du sparer 30 kr./md. på Crush, så længe
+                    du har et Goodiebox-abonnement.
+                  </p>
+                </div>
+                <div class="gap-3md:w-80 flex">
+                  <p itemprop="description" class="w-72 text-m-xs lg:text-d-xs">
+                    Du kommer til at modtage din første box indenfor 14 dage.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </a>
+        </div>
+
+        <div
+          class="cardinview mt-10 grid place-content-center md:grid-cols-2 md:justify-items-center md:gap-10 lg:flex lg:flex-row lg:flex-wrap lg:place-content-around"
+        >
+          <!-- THE CLASSIC ONE -->
+          <a href="mitabonnement.html" class="hover:scale-105">
+            <article
+              itemscope
+              itemtype="https://schema.org/Product"
+              class="card-shadow mb-5 w-85 rounded-br-7 bg-eggshell-200 p-5 md:mb-0"
+            >
+              <div class="relative">
+                <img
+                  itemprop="image"
+                  class="rounded-br-7"
+                  src="/images/classic_box.jpg"
+                  alt="the classic box"
+                />
+                <p
+                  class="absolute top-0 left-[69%] w-24 rounded-tr-br-7 rounded-bl-br-7 bg-lime-200 py-1 text-center text-m-xs md:text-t-xs lg:text-d-xs"
+                >
+                  Månedlig
+                </p>
+              </div>
+              <h3
+                itemprop="name"
+                class="py-3 text-m-lg md:text-t-lg lg:text-d-lg"
+              >
+                The Classic One
+              </h3>
+              <div class="flex gap-3 pb-3">
+                <svg
+                  class="text-bubblegum-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="25"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+                <p
+                  itemprop="description"
+                  class="w-72 text-m-xs md:text-t-xs lg:text-d-xs"
+                >
+                  5-7 fantastiske skønheds- og selvplejeprodukterprodukter i
+                  hver box. Mindst 2 produkter i fuld størrelse.
+                </p>
+              </div>
+              <div class="flex gap-3 pb-3">
+                <svg
+                  class="text-bubblegum-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="25"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+                <p
+                  itemprop="description"
+                  class="w-72 text-m-xs md:text-t-xs lg:text-d-xs"
+                >
+                  Fuld adgang til vores medlemsunivers, mindfulness, yoga, lyde
+                  til søvn og meget mere.
+                </p>
+              </div>
+              <div class="flex gap-3 pb-3">
+                <svg
+                  class="text-bubblegum-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="25"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+                <p
+                  itemprop="description"
+                  class="w-72 text-m-xs md:text-t-xs lg:text-d-xs"
+                >
+                  650 kr. minimumværdi, månedligt kun 199 kr.
+                </p>
+              </div>
+              <div class="flex gap-3">
+                <svg
+                  class="text-bubblegum-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="25"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+                <p
+                  itemprop="description"
+                  class="w-72 pb-5 text-m-xs md:text-t-xs lg:text-d-xs"
+                >
+                  100% tilfredshedsgaranti
+                </p>
+              </div>
+            </article>
+          </a>
+
+          <!-- THE CUTE ONE -->
+          <a href="mitabonnement.html" class="hover:scale-105">
+            <article
+              itemscope
+              itemtype="https://schema.org/Product"
+              class="card-shadow mb-5 w-85 rounded-br-7 bg-eggshell-200 p-5 md:mb-0"
+            >
+              <div class="relative">
+                <img
+                  itemprop="image"
+                  class="rounded-br-7"
+                  src="/images/cute_box.jpg"
+                  alt="the cute box"
+                />
+                <p
+                  class="absolute top-0 left-[69%] w-24 rounded-tr-br-7 rounded-bl-br-7 bg-lime-200 py-1 text-center text-m-xs md:text-t-xs lg:text-d-xs"
+                >
+                  Månedlig
+                </p>
+              </div>
+              <h3
+                itemprop="name"
+                class="py-3 text-m-lg md:text-t-lg lg:text-d-lg"
+              >
+                The Cute One
+              </h3>
+              <div class="flex gap-3 pb-3">
+                <svg
+                  class="text-bubblegum-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="25"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+                <p
+                  itemprop="description"
+                  class="w-72 text-m-xs md:text-t-xs lg:text-d-xs"
+                >
+                  4 fantastiske skønheds- og selvplejeprodukterprodukter i hver
+                  box. Mindst 1 produkt i fuld størrelse.
+                </p>
+              </div>
+              <div class="flex gap-3 pb-3">
+                <svg
+                  class="text-bubblegum-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="25"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+                <p
+                  itemprop="description"
+                  class="w-72 text-m-xs md:text-t-xs lg:text-d-xs"
+                >
+                  Fuld adgang til vores medlemsunivers, mindfulness, yoga, lyde
+                  til søvn og meget mere.
+                </p>
+              </div>
+              <div class="flex gap-3 pb-3">
+                <svg
+                  class="text-bubblegum-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="25"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+                <p
+                  itemprop="description"
+                  class="w-72 text-m-xs md:text-t-xs lg:text-d-xs"
+                >
+                  450 kr. minimumværdi, månedligt kun 149 kr.
+                </p>
+              </div>
+              <div class="flex gap-3 pb-5">
+                <svg
+                  class="text-bubblegum-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="25"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+                <p
+                  itemprop="description"
+                  class="w-72 text-m-xs md:text-t-xs lg:text-d-xs"
+                >
+                  100% tilfredshedsgaranti
+                </p>
+              </div>
+            </article>
+          </a>
+
+          <!-- THE LUX ONE -->
+          <a href="mitabonnement.html" class="hover:scale-105">
+            <article
+              itemscope
+              itemtype="https://schema.org/Product"
+              class="card-shadow mb-5 w-85 rounded-br-7 bg-eggshell-200 p-5 md:mb-0"
+            >
+              <div class="relative">
+                <img
+                  itemprop="image"
+                  class="rounded-br-7"
+                  src="/images/lux_box.jpg"
+                  alt="the lux box"
+                />
+                <p
+                  class="absolute top-0 left-[69%] w-24 rounded-tr-br-7 rounded-bl-br-7 bg-lime-200 py-1 text-center text-m-xs md:text-t-xs lg:text-d-xs"
+                >
+                  Kvartalsvis
+                </p>
+              </div>
+              <h3
+                itemprop="name"
+                class="py-3 text-m-lg md:text-t-lg lg:text-d-lg"
+              >
+                The Lux One
+              </h3>
+              <div class="flex gap-3 pb-3">
+                <svg
+                  class="text-bubblegum-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="25"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+                <p
+                  itemprop="description"
+                  class="w-72 text-m-xs md:text-t-xs lg:text-d-xs"
+                >
+                  Minimum 8 premium skønheds- og selvplejeprodukterprodukter i
+                  hver box. Mindst 4 produkter i fuld størrelse.
+                </p>
+              </div>
+              <div class="flex gap-3 pb-3">
+                <svg
+                  class="text-bubblegum-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="25"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+                <p
+                  itemprop="description"
+                  class="w-72 text-m-xs md:text-t-xs lg:text-d-xs"
+                >
+                  Fuld adgang til vores medlemsunivers, mindfulness, yoga, lyde
+                  til søvn og meget mere.
+                </p>
+              </div>
+              <div class="flex gap-3 pb-3">
+                <svg
+                  class="text-bubblegum-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="25"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+                <p
+                  itemprop="description"
+                  class="w-72 text-m-xs md:text-t-xs lg:text-d-xs"
+                >
+                  1.650 kr. minimumværdi, kvartalsvis kun 549 kr.
+                </p>
+              </div>
+              <div class="flex gap-3 pb-5">
+                <svg
+                  class="text-bubblegum-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="25"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+                <p
+                  itemprop="description"
+                  class="w-72 text-m-xs md:text-t-xs lg:text-d-xs"
+                >
+                  100% tilfredshedsgaranti
+                </p>
+              </div>
+            </article>
+          </a>
+
+          <!-- CRUSH BOX -->
+          <a href="mitabonnement.html" class="ß hover:scale-105">
+            <article
+              itemscope
+              itemtype="https://schema.org/Product"
+              class="card-shadow mb-5 w-85 rounded-br-7 bg-peachy-100 p-5 md:mb-0 lg2:hidden"
+            >
+              <div class="relative">
+                <img
+                  itemprop="image"
+                  class="rounded-br-7"
+                  src="/images/crush_box.jpg"
+                  alt="the crush box"
+                />
+                <p
+                  class="absolute top-0 left-[69%] w-24 rounded-tr-br-7 rounded-bl-br-7 bg-lime-200 py-1 text-center text-m-xs md:text-t-xs"
+                >
+                  Kvartalsvis
+                </p>
+              </div>
+              <h3
+                itemprop="name"
+                itemscope
+                itemtype="https://schema.org/Offer"
+                class="py-3 text-m-lg md:text-t-lg"
+              >
+                Crush Makeup <span itemprop="price">99 kr./box</span>
+              </h3>
+              <div class="flex gap-3 pb-3">
+                <p itemprop="description" class="w-72 text-m-xs md:text-t-xs">
+                  Få endnu flere happy moments med et Crush abonnement til en
+                  ekstraordinær god pris
+                </p>
+              </div>
+              <div class="flex gap-3 pb-3">
+                <p itemprop="description" class="w-72 text-m-xs md:text-t-xs">
+                  Det er kun noget der tilbydes vores medlemmer, og vi har endda
+                  sørget for, at du sparer 30 kr./md. på Crush, så længe du har
+                  et Goodiebox-abonnement.
+                </p>
+              </div>
+              <div class="flex gap-3 pb-5">
+                <p itemprop="description" class="w-72 text-m-xs md:text-t-xs">
+                  Du kommer til at modtage din første box indenfor 14 dage.
+                </p>
+              </div>
+            </article>
+          </a>
+        </div>
+      </section>
+
+      <!-- TILPAS MIN BOX -->
+      <section class="px-5 py-10 md:px-10 md:py-14 lg:px-36 lg:py-20">
+        <div class="md:grid md:grid-cols-2">
+          <div
+            class="md:col-start-2 md:h-[39.375rem] md:bg-lime-100 md:px-8 md:pt-8 lg:h-[33rem]"
+          >
+            <h2
+              class="pb-5 font-bely text-m-xl md:max-w-lg md:text-t-xl lg:max-w-xl lg:text-d-xl"
+            >
+              Tilpas min box
+            </h2>
+            <p class="pb-5">
+              Goodiebox tilbyder en personlig tilpasning af din månedlige
+              Goodiebox, så den matcher dine individuelle præferencer og behov.
+            </p>
+            <p class="pb-5">
+              Du kan ændre dine præferencer til hver en tid ved at opdatere dine
+              oplysninger. På den måde kan du sikre dig, at din Goodiebox altid
+              indeholder produkter, der passer til dig og din personlige stil.
+            </p>
+            <p class="">
+              Vores mål er at give dig en unik og glædelig oplevelse. Ved at
+              tilpasse din boks efter dine ønsker , kan vi sikre dig en endnu
+              større glæde ved din Goodiebox' ankomst.
+            </p>
+            <div class="flex flex-col py-10">
+              <a
+                href="tilpasbox.html"
+                class="button-drop-shadow w-52 self-center rounded-br-30 bg-bubblegum-100 py-2 text-center hover:bg-bubblegum-200 md:mb-0"
+                >Tilpas min box</a
+              >
+            </div>
+          </div>
+          <img
+            class="md:col-start-1 md:row-start-1 md:h-[39.375rem] md:object-cover lg:h-[33rem]"
+            src="/images/tilpas_box.webp"
+            alt="åben box med en masse beauty produkter"
+          />
+        </div>
+
+        <p
+          class="pt-20 text-center font-lindsey text-[2.5rem] text-lavender-300 md:pt-28 md:text-[4.375rem] lg:pt-36 lg:pb-16 lg:text-[6.875rem]"
+        >
+          “Self care is health care”
         </p>
-      </div>
-      <div >
-        <h3 itemprop="name" itemscope itemtype="https://schema.org/Offer" class="pb-3 text-m-lg lg:text-d-lg md:w-80">Crush Makeup <span itemprop="price">99 kr./box</span></h3>
-        <div class="flex gap-3 pb-3">
-          <p itemprop="description" class="w-72 text-m-xs md:w-80 lg:text-d-xs">
-            Få endnu flere happy moments med et Crush abonnement til en
-            ekstraordinær god pris
+      </section>
+
+      <!-- BEAUTY PROFIL -->
+      <section class="px-5 py-10 md:px-10 md:py-14 lg:px-36 lg:pt-0">
+        <div class="md:grid md:grid-cols-2">
+          <div class="md:bg-peachy-100 md:px-8 md:pt-8">
+            <h2
+              class="pb-5 font-bely text-m-xl md:max-w-lg md:text-t-xl lg:max-w-xl lg:text-d-xl"
+            >
+              Beauty profil
+            </h2>
+            <p class="">
+              Vi ønsker, at du får en skønhedsoplevelse, der er tilpasset dig og
+              dine unikke træk. Ved at personalisere din beauty profil kan vi
+              sikre en mere skræddersyet Goodiebox til dig, som hjælper dig med
+              at opnå den bedste udgave af dig selv.
+            </p>
+            <div class="flex flex-col py-10 md:pt-5 md:pb-0 lg:pt-14">
+              <a
+                href="beautyprofil.html"
+                class="button-drop-shadow w-52 self-center rounded-br-30 bg-bubblegum-100 py-2 text-center hover:bg-bubblegum-200 md:mb-0"
+                >Se min beauty profil</a
+              >
+            </div>
+          </div>
+          <img
+            class="lg:h-[400px] lg:w-[576px] lg:object-cover"
+            src="/images/beauty_profile.webp"
+            alt="Beauty portrætbillede af en kvinde"
+          />
+        </div>
+      </section>
+
+      <!-- IG SEKTION -->
+      <section class="px-5 pt-10 pb-20 md:px-10 lg:px-36 lg:py-20">
+        <h2
+          class="pb-5 font-bely text-m-xl md:max-w-lg md:pb-8 md:text-t-xl lg:max-w-2xl lg:text-d-xl"
+        >
+          Del dine happy moments
+        </h2>
+        <div class="grid grid-cols-2 gap-3 md:flex md:justify-between">
+          <img
+            class="md:w-40 md:object-contain lg:w-64"
+            src="/images/social_1.webp"
+            alt="kvinde der læser bog med sheetmaske på"
+          />
+          <img
+            class="md:w-40 md:object-contain lg:w-64"
+            src="/images/social_2.webp"
+            alt="close up af et lår der får smurt creme på huden"
+          />
+          <img
+            class="md:w-40 md:object-contain lg:w-64"
+            src="/images/social_3.webp"
+            alt="kvinde der tager øjenmaske på"
+          />
+          <img
+            class="md:w-40 md:object-contain lg:w-64"
+            src="/images/social_4.webp"
+            alt="kvinde med håndklæde om håret der påføre creme til ansigtet"
+          />
+        </div>
+        <div class="md:grid md:grid-cols-2">
+          <p
+            class="pt-5 text-m-md md:col-start-1 md:pt-8 md:text-t-md lg:text-d-md"
+          >
+            Del dine happy moments med
           </p>
+          <h3
+            class="pb-5 font-bely text-m-xl md:col-start-1 md:pb-0 md:text-t-xl lg:text-d-xl"
+          >
+            #goodieboxdk
+          </h3>
+
+          <button
+            class="button-drop-shadow w-28 rounded-br-30 bg-bubblegum-100 py-2 hover:bg-bubblegum-200 md:col-start-2 md:row-start-1 md:ml-auto md:mt-8"
+          >
+            Følg os
+          </button>
         </div>
-        <div class="flex gap-3 pb-3">
-          <p itemprop="description" class="w-72 text-m-xs md:w-80 lg:text-d-xs">
-            Det er kun noget der tilbydes vores medlemmer, og vi har endda
-            sørget for, at du sparer 30 kr./md. på Crush, så længe du har et
-            Goodiebox-abonnement.
-          </p>
-        </div>
-        <div class="flex gap-3md:w-80">
-          <p itemprop="description" class="w-72 text-m-xs lg:text-d-xs">
-            Du kommer til at modtage din første box indenfor 14 dage.
-          </p>
-        </div>
-      </div>
-    </article>
-    </a>
-  </div>
-
-  <div class="cardinview grid place-content-center mt-10 md:grid-cols-2 md:gap-10 md:justify-items-center lg:flex lg:flex-row lg:flex-wrap lg:place-content-around">
-
-    <!-- THE CLASSIC ONE -->
-    <a href="mitabonnement.html" class="hover:scale-105 ">
-      <article itemscope itemtype="https://schema.org/Product" class=" bg-eggshell-200 card-shadow rounded-br-7 p-5 mb-5 w-85 md:mb-0">
-        <div class="relative">
-          <img itemprop="image" class=" rounded-br-7 " src="/images/classic_box.jpg" alt="the classic box">
-          <p class=" absolute top-0 left-[69%] rounded-tr-br-7 rounded-bl-br-7 text-m-xs md:text-t-xs lg:text-d-xs bg-lime-200 text-center w-24 py-1">Månedlig</p>
-        </div>
-        <h3 itemprop="name" class="text-m-lg md:text-t-lg lg:text-d-lg py-3">The Classic One</h3>
-       <div class="flex gap-3 pb-3">
-        <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-          <p itemprop="description" class="text-m-xs md:text-t-xs lg:text-d-xs w-72"> 5-7 fantastiske skønheds- og selvplejeprodukterprodukter i hver box. Mindst 2 produkter i fuld størrelse.</p>
-       </div>
-       <div class="flex gap-3 pb-3">
-        <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-      <p itemprop="description" class="text-m-xs md:text-t-xs lg:text-d-xs w-72">Fuld adgang til vores medlemsunivers, mindfulness, yoga, lyde til søvn og meget mere.</p> 
-      </div>
-      <div class="flex gap-3 pb-3">
-        <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-      <p itemprop="description" class="text-m-xs md:text-t-xs lg:text-d-xs w-72">650 kr. minimumværdi, månedligt kun 199 kr.</p> 
-      </div>
-      <div class="flex gap-3">
-        <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-      <p itemprop="description" class="text-m-xs pb-5 md:text-t-xs lg:text-d-xs w-72">100% tilfredshedsgaranti</p> 
-      </div>
-      </article>
-    </a>
-
-    <!-- THE CUTE ONE -->
-    <a href="mitabonnement.html" class="hover:scale-105 ">
-      <article itemscope itemtype="https://schema.org/Product" class=" bg-eggshell-200 card-shadow rounded-br-7 p-5 mb-5 w-85 md:mb-0">
-        <div class="relative">
-          <img itemprop="image" class=" rounded-br-7" src="/images/cute_box.jpg" alt="the cute box">
-          <p class=" absolute md:text-t-xs lg:text-d-xs top-0 left-[69%] rounded-tr-br-7 rounded-bl-br-7 text-m-xs bg-lime-200 text-center w-24 py-1">Månedlig</p>
-        </div>
-        <h3 itemprop="name" class="text-m-lg md:text-t-lg lg:text-d-lg py-3">The Cute One</h3>
-       <div class="flex gap-3 pb-3">
-        <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-          <p itemprop="description" class="text-m-xs md:text-t-xs lg:text-d-xs w-72">4 fantastiske skønheds- og selvplejeprodukterprodukter i hver box. Mindst 1 produkt i fuld størrelse.</p>
-       </div>
-       <div class="flex gap-3 pb-3">
-        <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-      <p itemprop="description" class="text-m-xs md:text-t-xs lg:text-d-xs w-72">Fuld adgang til vores medlemsunivers, mindfulness, yoga, lyde til søvn og meget mere.</p> 
-      </div>
-      <div class="flex gap-3 pb-3">
-        <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-      <p itemprop="description" class="text-m-xs md:text-t-xs lg:text-d-xs w-72">450 kr. minimumværdi, månedligt kun 149 kr.</p> 
-      </div>
-      <div class="flex gap-3 pb-5">
-        <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-      <p itemprop="description" class="text-m-xs md:text-t-xs lg:text-d-xs w-72">100% tilfredshedsgaranti</p> 
-      </div>
-      </article>
-    </a>
-
-    <!-- THE LUX ONE -->
-    <a href="mitabonnement.html" class="hover:scale-105 ">
-      <article itemscope itemtype="https://schema.org/Product" class=" bg-eggshell-200 card-shadow rounded-br-7 p-5 mb-5 w-85 md:mb-0">
-        <div class="relative">
-          <img itemprop="image" class=" rounded-br-7" src="/images/lux_box.jpg" alt="the lux box">
-          <p class=" md:text-t-xs lg:text-d-xs absolute top-0 left-[69%] rounded-tr-br-7 rounded-bl-br-7 text-m-xs bg-lime-200 text-center w-24 py-1">Kvartalsvis</p>
-        </div>
-        <h3 itemprop="name" class="text-m-lg md:text-t-lg lg:text-d-lg py-3">The Lux One</h3>
-       <div class="flex gap-3 pb-3">
-        <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-          <p itemprop="description" class="text-m-xs md:text-t-xs lg:text-d-xs w-72">Minimum 8 premium skønheds- og selvplejeprodukterprodukter i hver box. Mindst 4 produkter i fuld størrelse.</p>
-       </div>
-       <div class="flex gap-3 pb-3">
-        <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-      <p itemprop="description" class="text-m-xs md:text-t-xs lg:text-d-xs w-72">Fuld adgang til vores medlemsunivers, mindfulness, yoga, lyde til søvn og meget mere.</p> 
-      </div>
-      <div class="flex gap-3 pb-3">
-        <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-      <p itemprop="description" class="text-m-xs md:text-t-xs lg:text-d-xs w-72">1.650 kr. minimumværdi, kvartalsvis kun 549 kr.</p> 
-      </div>
-      <div class="flex gap-3 pb-5">
-        <svg class="text-bubblegum-300" xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
-      <p itemprop="description" class="text-m-xs md:text-t-xs lg:text-d-xs w-72">100% tilfredshedsgaranti</p> 
-      </div>
-      </article>
-    </a>
-
-    <!-- CRUSH BOX -->
-    <a href="mitabonnement.html" class="hover:scale-105 ß">
-      <article  itemscope itemtype="https://schema.org/Product" class=" lg2:hidden bg-peachy-100 card-shadow rounded-br-7 p-5 mb-5 w-85 md:mb-0">
-        <div class="relative">
-          <img itemprop="image" class=" rounded-br-7" src="/images/crush_box.jpg" alt="the crush box">
-          <p class=" md:text-t-xs absolute top-0 left-[69%] rounded-tr-br-7 rounded-bl-br-7 text-m-xs bg-lime-200 text-center w-24 py-1">Kvartalsvis</p>
-        </div>
-        <h3 itemprop="name" itemscope itemtype="https://schema.org/Offer" class="text-m-lg md:text-t-lg py-3">Crush Makeup <span itemprop="price">99 kr./box</span></h3>
-       <div class="flex gap-3 pb-3">
-       
-          <p itemprop="description" class="text-m-xs md:text-t-xs w-72">Få endnu flere happy moments med et Crush abonnement til en ekstraordinær god pris</p>
-       </div>
-       <div class="flex gap-3 pb-3">
-        
-      <p itemprop="description" class="text-m-xs md:text-t-xs w-72">Det er kun noget der tilbydes vores medlemmer, og vi har endda sørget for, at du sparer 30 kr./md. på Crush, så længe du har et Goodiebox-abonnement.</p> 
-      </div>
-      <div class="flex gap-3 pb-5">
-        
-      <p itemprop="description" class="text-m-xs md:text-t-xs w-72">Du kommer til at modtage din første box indenfor 14 dage. </p> 
-      </div>
-      </article>
-    </a>
-  </div>
-</section>
-
-<!-- TILPAS MIN BOX -->
-<section class="px-5 py-10 md:px-10 md:py-14 lg:px-36 lg:py-20" >
-  <div class=" md:grid md:grid-cols-2">
-    <div class="md:bg-lime-100 md:col-start-2 md:px-8 md:pt-8 md:h-[39.375rem] lg:h-[33rem]">
-      <h2 class="font-bely text-m-xl pb-5 md:text-t-xl lg:text-d-xl md:max-w-lg lg:max-w-xl">Tilpas min box</h2>
-      <p class="pb-5">Goodiebox tilbyder en personlig tilpasning af din månedlige Goodiebox, så den matcher dine individuelle præferencer og behov.</p>
-      <p class="pb-5">Du kan ændre dine præferencer til hver en tid ved at opdatere dine oplysninger. På den måde kan du sikre dig, at din Goodiebox altid indeholder produkter, der passer til dig og din personlige stil.</p>
-      <p class="">Vores mål er at give dig en unik og glædelig oplevelse. Ved at tilpasse din boks efter dine ønsker , kan vi sikre dig en endnu større glæde ved din Goodiebox' ankomst.</p>
-    <div class="flex flex-col py-10">
-      <a href="tilpasbox.html" class=" text-center bg-bubblegum-100 md:mb-0 self-center rounded-br-30 py-2 w-52  button-drop-shadow hover:bg-bubblegum-200">Tilpas min box</a>
-    </div>
-    </div>
-   <img class="md:col-start-1 md:row-start-1 md:h-[39.375rem] lg:h-[33rem] md:object-cover" src="/images/tilpas_box.webp" alt="åben box med en masse beauty produkter">
-   
-  </div>
-
-   <p class=" pt-20 md:pt-28 lg:pt-36 lg:pb-16 font-lindsey text-center text-lavender-300 text-[2.5rem] md:text-[4.375rem] lg:text-[6.875rem]">“Self care is health care”</p>
-  
-</section>
-
-<!-- BEAUTY PROFIL -->
-<section class="px-5 py-10 md:px-10 md:py-14 lg:px-36 lg:pt-0" >
-  <div class="md:grid md:grid-cols-2 ">
-    <div class="md:bg-peachy-100 md:px-8 md:pt-8">
-      <h2 class="font-bely text-m-xl pb-5 md:text-t-xl lg:text-d-xl md:max-w-lg lg:max-w-xl">Beauty profil</h2>
-      <p class="">Vi ønsker, at du får en skønhedsoplevelse, der er tilpasset dig og dine unikke træk. Ved at personalisere din beauty profil kan vi sikre en mere skræddersyet Goodiebox til dig, som hjælper dig med at opnå den bedste udgave af dig selv.</p>
-      <div class="flex flex-col py-10 md:pt-5 md:pb-0 lg:pt-14">
-        <a href="beautyprofil.html" class=" text-center bg-bubblegum-100 md:mb-0 self-center rounded-br-30 py-2 w-52  button-drop-shadow hover:bg-bubblegum-200">Se min beauty profil</a>
-      </div>
-    </div>
-   <img class="lg:h-[400px] lg:w-[576px] lg:object-cover" src="/images/beauty_profile.webp" alt="Beauty portrætbillede af en kvinde">
-  </div>
- 
-</section>
-
-<!-- IG SEKTION -->
-<section class="px-5 pt-10 pb-20 md:px-10 lg:px-36 lg:py-20" >
-  <h2 class="font-bely text-m-xl md:text-t-xl lg:text-d-xl md:max-w-lg lg:max-w-2xl pb-5 md:pb-8">Del dine happy moments</h2> 
-  <div class="grid grid-cols-2 gap-3 md:flex md:justify-between">
-    <img class="md:w-40 lg:w-64 md:object-contain" src="/images/social_1.webp" alt="kvinde der læser bog med sheetmaske på">
-    <img class="md:w-40 lg:w-64 md:object-contain" src="/images/social_2.webp" alt="close up af et lår der får smurt creme på huden">
-    <img class="md:w-40 lg:w-64 md:object-contain" src="/images/social_3.webp" alt="kvinde der tager øjenmaske på">
-    <img class="md:w-40 lg:w-64 md:object-contain" src="/images/social_4.webp" alt="kvinde med håndklæde om håret der påføre creme til ansigtet">
-  </div>
- <div class="md:grid md:grid-cols-2">
-    
-      <p class="text-m-md md:text-t-md lg:text-d-md pt-5 md:col-start-1 md:pt-8">Del dine happy moments med</p>
-      <h3 class="font-bely text-m-xl md:text-t-xl lg:text-d-xl pb-5 md:col-start-1 md:pb-0">#goodieboxdk</h3>
-    
-    <button class="md:col-start-2 md:row-start-1 md:ml-auto md:mt-8  bg-bubblegum-100 rounded-br-30 py-2 w-28 button-drop-shadow hover:bg-bubblegum-200">Følg os</button>
-  
- </div></section>
-
+      </section>
     </main>
-    
+
     <footer class="bg-lime-100">
       <!-- MOBIL OG TABLET FOOTER -->
       <div
@@ -701,7 +1200,7 @@
       <div class="modal-box relative bg-eggshell-200">
         <label
           for="modal-webshop"
-          class="btn-sm btn-circle btn absolute right-2 top-2 pt-1 bg-lavender-100 border-lavender-100 text-stone-400 hover:bg-lavender-300 hover:border-lavender-300 hover:text-eggshell-50"
+          class="btn-sm btn-circle btn absolute right-2 top-2 border-lavender-100 bg-lavender-100 pt-1 text-stone-400 hover:border-lavender-300 hover:bg-lavender-300 hover:text-eggshell-50"
           >✕</label
         >
         <h3 class="text-m-sm font-bold text-stone-400">
