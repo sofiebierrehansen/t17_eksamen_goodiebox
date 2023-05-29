@@ -21,23 +21,6 @@ module.exports = {
   },
   content: ["./src/**/*.{html,vue,js,ts,jsx,tsx}"],
   theme: {
-    screens: {
-      sm: "390px",
-      // => @media (min-width: 390px) { ... }
-
-      md: "834px",
-      // => @media (min-width: 834px) { ... }
-
-      lg: "1200px",
-      // => @media (min-width: 1200px) { ... }
-
-      lg2: "1400px",
-      // => @media (min-width: 1200px) { ... }
-
-      xl: "1440px",
-      // => @media (min-width: 1440px) { ... }
-    },
-
     colors: {
       "eggshell-50": "#FFFFFF",
       "eggshell-100": "#FFFFF8",
@@ -96,6 +79,23 @@ module.exports = {
       "d-xl": "3.375rem",
       "d-2xl": "5.063rem",
       "d-3xl": "7.594rem",
+    },
+
+    screens: {
+      sm: "390px",
+      // => @media (min-width: 390px) { ... }
+
+      md: "834px",
+      // => @media (min-width: 834px) { ... }
+
+      lg: "1200px",
+      // => @media (min-width: 1200px) { ... }
+
+      lg2: "1400px",
+      // => @media (min-width: 1200px) { ... }
+
+      xl: "1440px",
+      // => @media (min-width: 1440px) { ... }
     },
 
     extend: {
